@@ -119,5 +119,3 @@ python -m unittest discover tests
 ## Contributing
 Feel free to open an issue or submit a pull request if you have any suggestions for improvements.
 
-## License
-This project is licensed under the MIT License.
