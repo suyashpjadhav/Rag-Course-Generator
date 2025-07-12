@@ -5,7 +5,8 @@ wheel
 # --- NLP & ML ---
 nltk==3.6.7
 sentence-transformers==2.2.2
-scikit-learn>=1.2,<1.3
+numpy==1.23.5
+scikit-learn==1.2.2
 pandas>=1.3  # Removed exact pin, safe lower bound
 
 # --- PDF & Google Drive ---
