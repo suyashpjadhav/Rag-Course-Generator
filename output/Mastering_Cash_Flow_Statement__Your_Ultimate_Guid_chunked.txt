@@ -1,0 +1,216 @@
+Chunk 1:
+Mastering Cash Flow Statement : Your Ultimate Guide to Accurate Financial Reporting - Part
+1 | by aris budi santoso | Medium
+By aris budi santoso
+Mastering Cash Flow Statement : Your Ultimate Guide to Accurate Financial Reporting■—■Part
+1 Financial statements are important documents that should give a clear picture of any
+business organization’s financial status. These are important in the preparation of
+investment decisions by investors, credit decisions by the creditors, management decisions
+by the management and decisions by other stakeholders.
+==================================================
+Chunk 2:
+The major parts of the financial
+statements comprise Balance Sheet (BS), Income Statement (IS), Cash Flow Statement (CF),
+and Statement of Shareholders’ Equity. The following are the main elements and each of
+them has its own function and when combined they provide a full view of a business.
+==================================================
+Chunk 3:
+A cash
+flow is one of the most important part of financial statements that a company provides to
+its users because it presents the company’s liquidity and its overall financial position. We perceive that the balance sheet and the income statement are informative, but none of
+them are as accurate in their depiction of the flow of fiscal transactions as the cash
+flow statement.
+==================================================
+Chunk 4:
+For this reason, a cash flow statement and its preparation should be
+understood well in order to maximize the chances of a business in investing activities and
+operating activities. In this article, we’ll step you through the process whereby you will
+be able to prepare an accurate and meaningful cash flow statement use undirect method
+which as highlighted above gives you the financial direction of your business. No matter
+you are an entrepreneur, an accountant, or a financial analyst, this guide will enable you
+to prepare the cash flows statement in more understandable way, to present your financial
+reports that are both solid and engaging.
+==================================================
+Chunk 5:
+This article aims to demonstrate how to prepare
+a cash flow statement using the indirect method based on income statements, changes in
+capital, and increases and decreases from each account on the balance sheet. This article
+is also expected to provide an overview of the relationship between the profit and loss
+report, equity changes report, balance sheet, and cash flow statement which are part of
+the financial report.
+==================================================
+Chunk 6:
+The discussion in this article will be structured as follows. Financial statement overview Increase and decrease on balance sheet items Income statement
+and changes in equity Put it together into cash flow statement Financial Statements
+Overview This tutorial will use a set of financial reports published on the internet and
+Microsoft Excel as tools in preparing cash flow statement.
+==================================================
+Chunk 7:
+The Un****er’s 2022
+consolidated financial statements is used as a learning object on how to prepare a cash
+flow statement using the indirect method. Preparing a cash flow report using the indirect
+method requires an understanding of the relationship between the balance sheet, profit and
+loss and changes in equity.
+==================================================
+Chunk 8:
+If you interested to read the financial statements, it is
+available on thislink, and you will find financial statements in Excel spreadsheet file. It consists of balance sheet, income statement, changes in equity, cash flow and also
+notes to the financial statement.
+==================================================
+Chunk 9:
+For this learning purpose please ignore the existing
+cash flow statement on that file, because we will try to preparing it from the income
+statement, balance sheet, and changes in equity. Flashback to the first time worked at
+public accountant office in 2005, I have involved in several audit works for different
+business sectors and experienced in preparing financial statements.
+==================================================
+Chunk 10:
+While preparing the
+statements, we always double check consistency of related items between statements. we
+make some check points as an indicator to make sure that the statements are already
+consistent.
+==================================================
+Chunk 11:
+After read the financial statements and their interrelationships, and apply
+checking mechanism as previously mentioned, we found something interesting fact, that the
+balance of cash and cash equivalents at the end of the year is not consistent between
+balance sheet and cash flow statement. The changes in cash and equivalent is not
+consistent also.
+==================================================
+Chunk 12:
+This error for some accountant may be seem not so significant for the
+readers, but this condition can be confusing, how to determine the actual cash balance,
+whether in the balance sheet or in the cash flow. Increase and decrease on balance sheet
+items The indirect method of preparation of cash flow statement begins with the net income
+at the top of the statement and then adjusts it with the changes in balance sheet accounts
+to get over from accrual accounting to cash accounting.
+==================================================
+Chunk 13:
+The first step is to add all those
+non-cash expense to the net income that has been excluded, expenses such as depreciation
+and amortization expenses, which though they have been deducted in arriving at the net
+income were not actual cash outgoings. Next, there is an adjustment for the changes in the
+working capital sub-accounts including accounts receivable, inventories, and accounts
+payable.
+==================================================
+Chunk 14:
+For example, an increase in accounts receivable is subtracted because even though
+it contains money that a business expects to collect from its customers, this has not been
+realized as cash, an increase in accounts payable is added because it shows that a
+business owes money to its’ suppliers but has not paid this figure in cash yet. This
+indicates the net operating cash provided or used which is derived as follows; This method
+is common because it establishes relationship between the cash flow statement and the
+income statement as well as balance sheet so as to facilitate comprehension of the effect
+of operating activities of cash flow. That method requires to calculate increase and
+decrease of all of the balance sheet elements to be used as correction to the net income
+to reveal the actual cash inflow and outflow from operation, and also to calculate the
+cash flow from investing activity and financing activity.
+==================================================
+Chunk 15:
+The balance sheet we have is
+already presented comparatively for year 2021 and 2022. Hence, The first step in preparing
+cash flow statement is to calculate the increase decrease in balance sheet items.
+==================================================
+Chunk 16:
+The
+increasing current asset other than cash and equivalent are deduction for the the net
+income as adjustment for non-cash transaction, for example increase in account receivable
+indicate that there are a part of the company’s sales that does not generate cash inflow. On the other hand, an increase in current liabilities indicates that there are expenses
+that have not yet become cash expenditures, so they need to be added to net income.
+==================================================
+Chunk 17:
+To
+make calculations easier, we create a difference column in the balance sheet. The
+difference in liabilities is calculated by subtracting the balance for 2022 from 2021, so
+that the increase will have a positive value and the decrease will have a negative value.
+==================================================
+Chunk 18:
+Meanwhile, assets are calculated in the opposite way. We also mark each changing in
+balance sheet item as operating, investing, and financing activity.
+==================================================
+Chunk 19:
+When prepare the cash
+flow statement you need to remember the basic equation Asset = Liabilities + Equity, also
+for the changes. So, We could calculate changes in cash and equivalent is calculated from
+total changes in liabilities and equity minus total assets except cash and equivalent.
+==================================================
+Chunk 20:
+That columns will be used to help ensure that increases and decreases on the balance sheet
+have been included in the preparation of the cash flow statement. Income statement and
+changes in equity Increase and decrease of equity in the balance sheet are explained more
+detail in the statement of change in equity.
+==================================================
+Chunk 21:
+One of the item that change the equity is net
+income, also check that net income that stated is consistent with the income statement. Put it together into cash flow statement We prepare a cash flow statement by entering each
+of the difference in the balance sheet in sequentially manner from equity to assets, so it
+will be easier to ensure that all of the required items are entered correctly.
+==================================================
+Chunk 22:
+One by one,
+each changes in liabilities and equity have been entered into operating, investing and
+financing activity section in the cashflow statement. It could be check by sum all item
+and comparing the total with the total changes in liabilities and equity.
+==================================================
+Chunk 23:
+It could be seen
+in the Figure 5 below. we need to look at the notes on property, land and equipment
+because they are presented as in net value on the balance sheet, in these notes you can
+get the details and then separate the difference in historical cost of the assets and the
+difference in accumulated depreciation.
+==================================================
+Chunk 24:
+Separating what goes into operating and investment
+activities from the details of changes in assets and accumulated depreciation will
+actually be quite complicated, but in this section we will just simplify it that we enter
+all changes in accumulated depreciation on assets as operating activities in the cash flow
+statement. Another account on the balance sheet that we must look at in detail in the
+notes is assets held for sale, because it includes both current assets and non-current
+assets that are classified as held for sale. After calculating the increase and decrease
+in these details and determining the activity category, then enter it into the cash flow
+report and ensure the total value equal with the change in the assets held for sale
+account on the balance sheet.
+==================================================
+Chunk 25:
+After all changes in the balance sheet accounts other than
+cash and cash equivalents have been entered into the cash flow report, we can easily get
+the value of changes in cash and cash equivalents according to the increase or decrease in
+the balance sheet, this can be checked in the control column that we have added to the
+balance sheet. The preparation of the cash flow statement using the indirect method has
+been completed, checking could be carried out to ensure its consistency with the balance
+sheet.
+==================================================
+Chunk 26:
+As can be seen in Figure 9, the cash balance at the end of the period in the cash
+flow statement has been consistent with the balance sheet. The preparation of cash flow in
+this article does not take into account all the details in the notes of financial report,
+so it is still possible that there may be errors in the categorization of activities.
+==================================================
+Chunk 27:
+Considering that there are many details that must be considered to make the results closer
+to the results of the direct method, and that will be discussed in the next part of this
+article. The excel file that used in this tutorial is available to download from drive,
+please clickhereto get that file.
+==================================================
+Chunk 28:
+Conclusion In conclusion, preparing a cash flow
+statement using the indirect method is easy, the steps are clear and easy to do by
+understanding the increases and decreases in non-cash assets, liabilities and equity on
+the balance sheet and their’s relationship with the cash flow. It offers a summary of a
+company’s operating activities and its effects on cash flow. The indirect method of
+conversion of net income to operating cash flow is simple and effective because it begins
+with net income and incorporates the simplification that was made for non- cash items and
+change in working capital.
+==================================================
+Chunk 29:
+However, this method is very easy to implement and it does not
+allow user to get a clear picture of individual activities that either generate cash or
+consume it. As for those who have a finer detail into the solution, the next article
+continues to identify how to classify the items in the indirect cash flow statement,
+making it even nearer to the direct method of preparing cash flow statement.
+==================================================
+Chunk 30:
+Thank you for
+taking the time to read my article, I hope it is useful and please follow my account to
+get other interesting articles
+==================================================

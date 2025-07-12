@@ -1,0 +1,159 @@
+Chunk Number,Chunk Text
+1,"The payments ecosystem demystified | Medium
+By Ahmed Siddiqui
+Payments Ecosystem Overview This is the introduction of a 4 part series on the Payments
+ecosystem. I plan on releasing one part per week for the next 5 weeks."
+2,"A little bit about
+me: I’ve been working in the payments/fintech space for the last 6 years. I lead product
+for fintech startupBranch, and prior to that I was VP, Product over atMarqeta, a fintech
+unicorn."
+3,"These are my personal opinions and are unrelated to Branch or Marqeta. About a
+year ago, I came to the realization that not many people really understand how card based
+payments actually work."
+4,"It is a complicated space, but my hope is that I can distill it
+down to parts so that entrepreneurs and software developers like you can understand what
+is all happening when a card is swiped. This lead me to publishing a book called“The
+Anatomy of the Swipe: Making Money Move” available on Amazonthat goes into the topic in
+further detail, discussing items such as banks, payment networks such as Visa and
+Mastercard, Issuer Processors, Acquirer Processors, trends in fintech, building a Neo-
+bank, and how understanding these concepts can help unlock the next “Fintech Unicorn”."
+5,"What’s needed to enable a card-based swipe? The payments ecosystem can be complicated;
+however, it can be broken down into easily digestible pieces."
+6,"When we talk about payments,
+we will primarily be referring to card-based payments. Before we get into our example,
+understanding a few key concepts will be helpful."
+7,"Fundamentally, four major things must
+exist for a card payment to work. Note: these same things apply for both credit and debit
+cards: First, you need a card that is issued by a bank: a."
+8,"Sometimes it could be a
+physical piece of plastic with a magnetic stripe at the top and/or a chip. b."
+9,"Sometimes it
+could be a virtual card that is just the card number shown in an app, which can be used
+for online transactions. c. Sometimes the card could be tokenized, meaning that it is a
+card stored in the phone’s wallet like Apple Pay or GPay and then used to “Tap and Pay.”
+Key Term: Issuer An Issuer or Issuing Bank’s function is to underwrite the user by giving
+them a bank account, a debit card, and potentially access to credit facilities and a
+credit card."
+10,"Examples include Citibank, Wells Fargo, US Bank, and Chase. Key Term: Issuer
+Processor The Issuer needs a technology provider that can connect with the payment
+networks."
+11,"Usually, the Issuer Processor will have a piece of hardware in their data
+centers and a fast network connection directly to the payment networks to approve or
+decline a transaction. Sometimes, the Issuer may have built this technology in-house or
+may rely on a third-party Issuer Processor to handle this."
+12,"Examples include Marqeta, Tsys,
+Galileo, i2c. Second, the Merchant, if they have a physical location, needs a machine that
+can read the card that is provided by an Acquirer: Sometimes referred to as a card reader."
+13,Sometimes referred to as a card terminal. Sometimes referred to as a payment terminal.
+14,"Sometimes referred to as a Point of Sale (POS). For online Merchants, this is referred to
+as a payment gateway."
+15,"This isn’t a physical machine in this instance but rather it is
+handled via software. Key Term: Merchant Acquirer The Merchant Acquirer goes out and
+acquires Merchants and provides them the tools and facilities to accept and process card-
+based payments."
+16,"Examples include Citibank, Wells Fargo, US Bank, and Chase. Key Term:
+Acquirer Processor The Merchant Acquirer needs a technology provider that can connect with
+the Payment Networks."
+17,"Usually, the Acquirer Processor will have a piece of hardware in
+their data centers and a fast network connection directly to the Networks to request
+approval of a transaction. Sometimes, the Merchant Acquirer may have built this technology
+in-house or may rely on a third-party Acquirer Processor to handle this."
+18,"Examples include
+Chase Paymentech, Tabapay, and Fiserv. Thirdly, the linkage between the card and the card
+reader is the Payment Network, such as Mastercard or Visa."
+19,"Key Term: Payment Network
+Sometimes referred to as a “Card Scheme” or just as a “Network.” Examples of Payment
+Networks include Visa, Mastercard, American Express, and Discover. These Payment Networks
+provide the rails for card-based transactions to occur."
+20,"They sit in between Acquirers and
+Issuers and pass messages back and forth to make the transaction happen. The Payment
+Networks also set the communications rules and standards that the Acquirers and Issuers
+need to adhere to."
+21,"Lastly, a secure Internet connection for all of these messages to
+transmit back and forth.Now, this is done via Ethernet or even a Wi-Fi connection but in
+the past was done over the phone lines via dial-up connections. To better understand the
+anatomy of the swipe, let’s look at an example: Emmet is a young professional living in
+San Francisco working in the tech scene."
+22,"He starts his morning off by taking a walk down
+the Embarcadero where he goes into San Francisco’s Ferry Building to buy a coffee at Bucks
+of Star Coffee. In his wallet, he has a Mastercard debit card from Moneybin Bank."
+23,"He
+arrives at Bucks of Star Coffee in the morning. The Ferry Building is bustling with people
+getting on and off ferries with people scurrying off to work or getting on another train
+to continue their journey."
+24,"Something is magical about Bucks of Star Coffee’s mocha; the
+perfect temperature, the smoothness of the chocolate, and coffee that is slow dripped to
+make the perfect start to any day. Emmet buys a mocha for $4.75 and swipes his Moneybin
+Bank Mastercard at Bucks of Star Coffee’s payment terminal."
+25,"When that swipe occurs, he
+sees the word “Authorizing” on the payment terminal. This typically stays in this state
+for three seconds or less, but within those three seconds, a lot is happening."
+26,"A message
+goes from the payment terminal to its Acquirer Processor with the amount of the
+transaction, location of the transaction, Merchant type, and the card number. The Acquirer
+Processor then determines that this is a Mastercard and routes it to the Mastercard
+Network."
+27,"Mastercard then sees this transaction and based on the card’s number, it looks
+for the first six digits of the card, also referred to as the card’s Bank Identification
+Number (BIN). Mastercard determines that this BIN belongs to Moneybin Bank. Mastercard
+sends a message to Moneybin Bank with the card number, amount of the transaction, location
+of the transaction, and Merchant type."
+28,"Moneybin Bank’s Issuer Processor then looks at this
+data and makes a decision on whether this transaction should be approved. The key things
+it will ask based off of the information it has received from Mastercard are: Does Emmet
+bank with Moneybin Bank?"
+29,"Is Emmet’s card active? Does Emmet have enough money in his
+account to cover the cost of this transaction? Can Emmet’s card be used at this Merchant?"
+30,"Does this transaction raise any sort of fraud flags based on location, prior activity, or
+type of Merchant? If all of these questions get answered favorably, then Moneybin Bank’s
+Issuer Processor will send back a message to Mastercard that the transaction is approved."
+31,"It will place a hold of $4.75 on Emmet’s account and the transaction will appear as
+“Pending” on Emmet’s statement. Mastercard will then relay this decision from the Issuer
+to the Acquirer."
+32,"The Acquirer Processor will then send a message to the payment terminal
+to approve the transaction. The terminal then flashes the word “Approved,” and typically
+it prompts Emmet to sign for the order, or a paper receipt is printed where he can sign."
+33,"This transaction flow will serve as the basis for a lot of our discussion on the anatomy
+of a swipe. So How Did Emmet Get His Card?"
+34,"Emmet first needed to get a debit card for all
+of this to work. Issuers like Moneybin Bank distribute cards and underwrite the
+transaction on behalf of Payment Networks."
+35,"The Payment Networks rely on Merchant Acquirers
+to get as many card terminals into the hands of as many Merchants as possible. IdentifyingEmmet: KnowYourCustomer (KYC) In this case, since Emmet was using his debit
+card, it is most likely that Emmet walked into the physical location of a Moneybin Bank
+(the Issuer) to open up a checking account."
+36,"When opening up a checking account, Emmet was
+asked a series of questions that helped identify him. This is commonly referred to as the
+KYC process, or “Know Your Customer” process."
+37,"In the US, the key means of performing KYC
+is by getting the following pieces of information from the user: Name Social security
+number Date of birth Physical address Phone number Potentially some other form of
+identification like a driver’s license, a passport, or government-issued ID This is done
+primarily to prevent bad actors from entering the financial system. It checks to make sure
+that Emmet isn’t funding terrorist activity or hasn’t participated in money-laundering
+activities."
+38,"Once Emmet passes the KYC process, Emmet is then asked to deposit some funds
+into the checking account so he can start using his debit card or write checks. Card
+Transactions Are Authorized by an Issuer Processor on Behalf of the Bank or Card Program
+Manager Moneybin Bank uses an Issuer Processor to process transactions."
+39,"In the case of
+Moneybin Bank, they have multiple Issuer Processors, but we’ll discuss at length some more
+modern Issuer Processors likeMarqetato understand how transactions are actually authorized
+and where opportunities lie. Transactions Are Initiated by an Acquirer Processor Via a
+Gateway or Payments Facilitator Bucks of Star Coffee uses Square for its terminal."
+40,"Square
+is not an Acquirer Processor but rather a Payments Facilitator. We’ll talk at length
+aboutSquareand its capabilities as a Payments Facilitator and how it interacts with Chase
+Paymentech, its Acquirer Processor."
+41,"We’ll then talk about what it means to be an Acquirer
+Processor and opportunities in the space by looking at a modern Acquirer
+Processor,Tabapay. We’ll also look at some of the new technologies Acquirer Processors
+like Tabapay are offering to its customers."
+42,"The Card Networks Act as the “Rails” to Make
+All of This Work Finally, we’ll do an in-depth look at Mastercard and where it sees card
+payments going. We’ll also talk about opportunities the Network is opening up for Issuers,
+Acquirers, and its consumers."
+43,"The next part to this series will be published on May 4th,
+please subscribe to my Medium page so you can be alerted when the next part is available. Also, if you would like to learn more about fintech, card based payments, payment
+networks, banks, and opportunities in payments, you may also purchase my book,“The Anatomy
+of the Swipe: Making Money Move” on Amazon."

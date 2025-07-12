@@ -1,0 +1,9 @@
+{
+    "chunks": [
+        "Data Quality Checks (DQCs): A Guide for Data Engineers | by Sai Abhinav Parvathaneni |\nData Science Collective | Medium\nBy Sai Abhinav Parvathaneni\nData Quality Checks (DQCs): A Guide for Data Engineers As a data engineer in financial\nservices, I’ve learned one critical lesson: the quality of your data can make or break\nyour business. Whether you’re reconciling financial transactions or generating regulatory\nreports, bad data can lead to significant consequences, ranging from lost revenue to\nregulatory penalties. This is whereData Quality Checks (DQCs)come in.",
+        "In this article,\nI’ll explain what DQCs are, why they’re essential, and how we implement them at my\ncompany. I’ll also share simple examples of SQL code and describe how we integrate these\nchecks across different layers of our data architecture.",
+        "What Are Data Quality Checks\n(DQCs)? DQCs are automated tests that ensure your data is accurate, complete, and\nconsistent.",
+        "These checks are essential for identifying and preventing issues like\nduplicates, missing data, and incorrect calculations. Think of DQCs as quality inspectors\non an assembly line. Just like an inspector ensures that every product leaving a factory\nmeets the required standards, DQCs ensure that every piece of data in your system is\nreliable. Why Are DQCs Important?",
+        "In financial services, data is at the heart of\neverything we do. Whether it’s processing credit card…"
+    ]
+}

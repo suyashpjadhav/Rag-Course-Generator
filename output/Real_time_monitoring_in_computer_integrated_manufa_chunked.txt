@@ -1,0 +1,297 @@
+Chunk 1:
+Real time monitoring in computer integrated manufacturing | by ASHWINI MOGAL | Medium
+By ASHWINI MOGAL
+Real time monitoring in computer integrated manufacturing Definition of computational
+monitoring in real time · Many structural, mechanical, and geotechnical systems, such as
+bridges, offshore and subsurface structures, power generation systems, rotating machinery,
+buildings, geotechnical foundations, boreholes, and mining excavations and tailings, and
+even cases involving living matter, require continuous information about performance and
+integrity of engineering systems in real time. · The absence of timely, accurate, and
+consistent knowledge on manufacturing things (resources) during manufacturing execution is
+currently one of the most common difficulties that manufacturing firms encounter.
+==================================================
+Chunk 2:
+Decision
+makers may make better-informed shop-floor decisions with real-time information visibility
+and traceability. · The internet of manufacturing things (IoMT) as a real-time information
+capture and integration architecture to create a new paradigm by extending IoT principles
+to the manufacturing area.
+==================================================
+Chunk 3:
+Manufacturing items such as operators, machines, pallets, and
+materials, among others, may be embedded with sensors and communicate with one another
+thanks to this architecture and its core components. · A Real-time Manufacturing
+Information Integration Service (RTMIIS) has been designed to achieve seamless dual-way
+connectivity and interoperability among the enterprise layer, workshop floor layer, and
+machine layer, despite the challenges of processing a large amount of real-time data into
+useful information and exchanging it among heterogeneous application systems.
+==================================================
+Chunk 4:
+Finally, a
+real-world situation was used to demonstrate the suggested IoMT’s proof-of-concept
+application. Motivation for computational monitoring in real time Novel materials are used
+in several engineering systems.
+==================================================
+Chunk 5:
+Its long-term performance has yet to be established
+Continuous monitoring of the performance of the innovative materials and improved service
+time prediction are required for these systems. Transitioning to more cost-effective
+technologies may also need a reduction in safety margins.
+==================================================
+Chunk 6:
+In this instance, safety
+necessitates more precise monitoring. Long-term monitoring observations may be used to
+update knowledge on system behaviour, which can then be incorporated through computational
+modelling to improve operational performance.
+==================================================
+Chunk 7:
+Rapid condition monitoring is necessary in
+extreme events to check the integrity of engineering systems and warn of impending failure
+or even disaster. In this case, computational monitoring allows for speedy response to
+quickly changing situations.
+==================================================
+Chunk 8:
+While the breakdown of an engineering structure or a
+structure in the Earth’s crust is generally an immediate occurrence that creates a
+critical point on the time axis, the processes that lead up to this critical event take
+time. Naturally, the monitoring is focused on these operations, the speed of which
+establishes the concept of’real time.’ We’ll suppose that these processes are defined by
+their characteristic times; the process’s characteristic time is the time it takes for the
+process to complete.
+==================================================
+Chunk 9:
+We also assume that the minimum typical time of the processes that
+lead to the system’s failure is known, and we’ll refer to it as the system’s
+characteristic time. As a result, monitoring in real time refers to a monitoring approach
+whose aggregated reaction time (the time required to acquire, analyse, and present the
+findings in a decision-making format) is less than the characteristic time of the system
+being monitored.
+==================================================
+Chunk 10:
+Many manufacturing organisations still face the following issues 1. To
+develop an overall data capture and integration architecture and solution to sense,
+process, and exchange real-time manufacturing data between the enterprise layer, workshop
+floor layer, and machine layer.
+==================================================
+Chunk 11:
+2. Determining how to quickly and efficiently implement
+IoT technology like RFID sensors for tracking and tracing manufactured items throughout
+the execution stage.
+==================================================
+Chunk 12:
+3. how to handle and integrate real-time production data in order to
+accomplish smooth dual processing enterprise layer, workshop floor layer, and machine
+layer communication and interoperability Components of real-time computational monitoring
+Computational monitoring is an interdisciplinary approach to monitoring. a study field
+that encompasses a variety of fundamental sciences, Mechanics, materials science,
+electronics, and other fields Computer science is the study of computers. The most
+important elements of a real-time system here are computational monitoring systems.
+==================================================
+Chunk 13:
+
+Evaluation and non-destructive  Processing of signal  Monitoring data analysis and
+interpretations  Actuators and sensors  Computing at a high level An overall real-time
+information capturing and integration architecture of the internet of manufacturing things
+(IoMT) is presented to provide a new paradigm by extending the IoT to the manufacturing
+field, taking into account the advantages of IoT and the requirements of real-time data
+driven optimal decision of the manufacturing execution system. Manufacturing objects, such
+as workers, equipment, pallets, and materials, may be integrated with sensors using this
+IoMT architecture.
+==================================================
+Chunk 14:
+They can then engage with one another. As a result, the updated
+information and its state may be tracked and connected with a variety of business
+information systems (EISs).
+==================================================
+Chunk 15:
+The proposed IoMT attempts to bridge the gap between
+enterprise management information systems and representative execution units like
+workstations and trolleys. It will make real-time data-driven optimum control and
+decision-making easier throughout industrial execution.
+==================================================
+Chunk 16:
+The Internet of Things (IoT) and
+its applications in the industrial industry The Auto-ID centre popularised the Internet of
+Things concept. There have been a variety of definitions for the Internet of Things. According to Casagras (http://www.rfidglobal.eu/userfiles/documents/CASAGRAS26022009.pdf),
+the Internet of Things (IoT) is a global network architecture that connects physical and
+virtual items using data capture and communication capabilities.
+==================================================
+Chunk 17:
+Existing and emerging
+Internet and network advancements are included in this infrastructure. IoT is an
+integrated part of the Future Internet, according to CERP-IoT (Antoine de 2009), and can
+be defined as a dynamic global network infrastructure with self-configuring capabilities
+based on standard and interoperable communication protocols, where physical and virtual
+‘things’ have identities, physical attributes, and virtual attributes.
+==================================================
+Chunk 18:
+Processing and
+integration of manufacturing data When information is shared among heterogeneous
+application systems in real-life manufacturing organisations, difficulties in information
+integration may develop due to the many software applications employed in different
+enterprises. As a result, manufacturing information standard models and schemas play a
+significant role in information exchange and integration across diverse corporate systems.
+==================================================
+Chunk 19:
+Siemens Energy & Automation, Inc. (2006) has created an interface that allows enterprise
+resource planning (ERP) and process control systems to communicate seamlessly. The
+challenges, trends, and difficulties for enterprise information interoperability are
+described by Panetto and Molin (2008).
+==================================================
+Chunk 20:
+They claim that enterprise knowledge sharing,
+shared best practises, and open source/web-based applications make it possible to
+accomplish the idea of integrated enterprise, and hence networked enterprise
+implementation and interoperability. The ISA95 standard (ANSI/ISA 2000) was created with
+the goal of lowering the cost, risk, and mistakes involved with integrating enterprise and
+production control systems.
+==================================================
+Chunk 21:
+The World Batch Forum (WBF) produced the business-to-
+manufacturing markup language (B2MML 2003) standard, which provides approved concepts and
+data. forms for exchanging information across management systems Anaya et al.
+==================================================
+Chunk 22:
+(2010)
+present a unified model. UEML (Enterprise Modeling Language) is a language for modelling
+businesses.
+==================================================
+Chunk 23:
+facilitating the usage of corporate information models represented in a
+variety of languages. To execute the information integration of heterogeneous information
+s0ystems, Zhang, Huang, and Qu (2011) use XML (extensible markup language) based schemas.
+==================================================
+Chunk 24:
+For shop-floor work-in-progress (WIP) management, Fang, Huang, and Li (2013) describe an
+event-driven multi-agent ubiquitous manufacturing execution platform. Current industrial
+data integration models and methods, on the other hand, are primarily focused on
+heterogeneous corporate data systems.
+==================================================
+Chunk 25:
+Because the crucial real-time data in IoMT
+originates straight from the basic events of Auto-ID devices, how do you develop a
+manufacturing information processing and integration approach that works across the
+enterprise layer, workshop floor layer, and cloud layer? However, the overall integration
+architecture, real-time manufacturing data processing solution, and exchange standard
+among enterprise layer, workshop floor layer, and machine layer should be further designed
+based on the IoT infrastructure to make real-time production monitoring and control of the
+entire enterprise easy to deploy and use.
+==================================================
+Chunk 26:
+Furthermore, the manufacturing information
+integration described above is already being utilised to deal with information sharing
+among third-party EISs; however, little thought has been given to how to seamlessly
+integrate and share real-time and multisource manufacturing data with third-party EISs. As
+a result, this study proposes and designs an overall real-time information capture and
+integration architecture for IoMT to solve the new problems.
+==================================================
+Chunk 27:
+IoMT’s overall architecture
+With improved planning, scheduling, and control decisions, real-time traceability and
+visibility of manufacturing items plays a crucial role in increasing shop-floor
+performance. The goal of this study is to adapt the IoT idea to the manufacturing area and
+create a referenced real-time data collection and integration architecture for
+manufacturing companies.
+==================================================
+Chunk 28:
+By referring to IoT infrastructure, an overall real-time data
+capturing and analysis. Real-time tracking and tracing of each manufacturing object
+(resource) is possible with this architecture.
+==================================================
+Chunk 29:
+The entire production execution process may
+then be observed in real time. Sensor networks are used to monitor dynamical
+characteristics such as the environment (temperature, pressure, humidity, and so on),
+movement (velocity, acceleration, shock, and so on), and the real-time state of
+manufactured objects.
+==================================================
+Chunk 30:
+It will give supervisors real-time data to execute optimal control
+and decision-making in a production execution system. From the bottom to the top, the
+proposed IoMT consists of four components: configuration of smart manufacturing items,
+primitive event detection and capturing, manufacturing data processing, and application
+services.
+==================================================
+Chunk 31:
+Smart manufacturing object configuration Smart manufacturing item configuration
+is responsible for increasing the sensing capabilities of all types of manufacturing
+objects (resources). The physical manufacturing resources are equipped with Auto-ID
+devices to reach a specific level of intelligence, which makes smart manufacturing things
+“smart.” In this IoMT framework, auto-ID techniques like RFID will be used to
+manufacturing resources like machines and production lines to create smart manufacturing
+objects that can detect the real-time state of manufacturing things including operators,
+materials, locations, and WIP items.
+==================================================
+Chunk 32:
+Sensing and recording of primitive events The real-
+time primitive event of the sensors fitted to the manufacturing resources may be sensed
+and collected throughout the production process based on the setup of the smart
+manufacturing devices. A general technique is shown in Figure 2.
+==================================================
+Chunk 33:
+The basic event can be
+perceived by the registered sensor when a manufactured object approaches a sensing region. The sensor can gather and transfer data from incoming manufacturing objects to the IoMT
+using the communication protocol and relationships in the registry.
+==================================================
+Chunk 34:
+An RFID reader
+situated at a machine, for example, may detect and collect the electronic product code
+(EPC) of an operator wearing an RFID tag. Data processing in manufacturing A large
+quantity of real-time data collected by Auto-ID devices cannot be used directly in higher-
+level EISs.
+==================================================
+Chunk 35:
+The data processing component in manufacturing is utilised to process the
+insignificant data into meaningful manufacturing information. Figure 3 illustrates a
+simple example of data processing.
+==================================================
+Chunk 36:
+Take RFID technologies as an example: in sensing and
+capturing stage, the EPC of each tag attached to the manufacturing things is sensed and
+captured. However, this captured data is of no use for manufacturing system.
+==================================================
+Chunk 37:
+Data
+processing is responsible for establishing the mapping relation and mechanism. Conclusion
+We’ve built the fundamentals for real-time computational monitoring.
+==================================================
+Chunk 38:
+The computational
+monitoring has been defined.as a hybrid monitoring strategy that combines continuous
+measurement with real-time interpretation and forecasting Computational monitoring, in our
+opinion, is the next stage in the creation of intelligent engineering systems that can
+monitor their operating conditions, foresee faults, and govern their performance. We’ve
+shown that standard monitoring approaches in several sectors of engineering share basic
+characteristics and face similar obstacles when it comes to incorporating data from
+various sources measurement.
+==================================================
+Chunk 39:
+We also looked at the measurement methodologies and
+computational models that may be used to monitor diverse engineering systems in real time. The examination is brought to a close with examples from geotechnical engineering.
+==================================================
+Chunk 40:
+We
+anticipate that this study will spark discussion and cross-fertilization between
+monitoring approaches being developed in many fields of engineering, assisting in the
+resolution of computational monitoring difficulties, some of which are listed below. · The
+essential features of the monitored system, such as stiffness, energy dissipation, and so
+on, are altered when damage accumulates.
+==================================================
+Chunk 41:
+The challenge is to guarantee that the
+interpretation models are constantly and often adjusted in real time to adapt to system
+changes. This is especially significant for data collecting based on vibration, acoustic
+emission, and electromagnetic emission with model-based analysis.
+==================================================
+Chunk 42:
+ A key difficulty for
+computational monitoring systems is the design of the needed measurement system and sensor
+networks prior to deployment.The interpretation models must be able to react to changes in
+the measurement system, such as sensor failures at random.  Another problem is the
+creation of correlation models between signal-based and model-based interpretation
+approaches.
+==================================================
+Chunk 43:
+These models are required to guarantee that effective monitoring processes are
+in place.
+==================================================
