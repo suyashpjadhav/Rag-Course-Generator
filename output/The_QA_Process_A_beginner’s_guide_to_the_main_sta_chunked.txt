@@ -53,48 +53,48 @@ effectively together and in doing so the development time will shorten, and thus
 will be lower.
 ==================================================
 Chunk 10:
-Of course, the QA testing process varies slightly in different companies. But in general, its stages are the same. Now you know more about the QA process let’s take
-a look at the main stages within the QA process.
+Of course, the QA testing process varies slightly in different companies. But in general, its stages are the same.
 ==================================================
 Chunk 11:
-What are the main stages in the QA
-process? Review of requirements Nowadays, quality assurance starts very early in the
-software development lifecycle – right in the ‘requirement analysis’ stage.
+Now you know more about the QA process let’s take
+a look at the main stages within the QA process. What are the main stages in the QA
+process?
 ==================================================
 Chunk 12:
-QA
+Review of requirements Nowadays, quality assurance starts very early in the
+software development lifecycle – right in the ‘requirement analysis’ stage. QA
 professionals must review the requirements of the product before starting work, so that
-they can be clear on what needs to be done. Checking the requirements also means that the
-testing will be consistent, complete, executable, and that the project is actually
-testable.
+they can be clear on what needs to be done.
 ==================================================
 Chunk 13:
-Planning phase After testers have understood the requirements, they can start
-developing a test strategy and begin the test planning phase. At this stage, they define
-the scope of the work, the budget, they decide which approach to take at each stage of the
-software’s development, they’ll also decide what types of testing will be needed, and
-finally, which tools will be used during the actual testing.
+Checking the requirements also means that the
+testing will be consistent, complete, executable, and that the project is actually
+testable. Planning phase After testers have understood the requirements, they can start
+developing a test strategy and begin the test planning phase.
 ==================================================
 Chunk 14:
-Developing test cases With a
+At this stage, they define
+the scope of the work, the budget, they decide which approach to take at each stage of the
+software’s development, they’ll also decide what types of testing will be needed, and
+finally, which tools will be used during the actual testing. Developing test cases With a
 plan in hand, it is time to design test cases, create checklists, prepare the environment
-for test execution, and create automated testing scenarios. Test execution At this point,
-everything is prepared for finding bugs and issues.
+for test execution, and create automated testing scenarios.
 ==================================================
 Chunk 15:
-The QA team starts to execute
-different types of tests, and testers start to report any and all of the discovered bugs. Verifying fixes Once the development team fixes an issue, QA professionals retest the
-functionality of the product, and perform regression testing to ensure that the software
-still works correctly after all of the changes have been made.
+Test execution At this point,
+everything is prepared for finding bugs and issues. The QA team starts to execute
+different types of tests, and testers start to report any and all of the discovered bugs.
 ==================================================
 Chunk 16:
-Test cycle closure Once all
+Verifying fixes Once the development team fixes an issue, QA professionals retest the
+functionality of the product, and perform regression testing to ensure that the software
+still works correctly after all of the changes have been made. Test cycle closure Once all
 of the fixes have been changed, and all planned tests have been executed, it is time to
-prepare the test closure document. This document is a summary of all the tests performed
-during the software development life cycle.
+prepare the test closure document.
 ==================================================
 Chunk 17:
-What tests are used in the QA process, and
+This document is a summary of all the tests performed
+during the software development life cycle. What tests are used in the QA process, and
 what approaches are considered? Now that you understand what the QA process looks like,
 let’s now talk about all the different test types that can be used in software testing.
 ==================================================

@@ -76,125 +76,124 @@ Generic Reconciliation The functionality of the Generic Reconciliation Platform 
 broken down into three major components."
 22,"First is the ‘Data Preparation’ phase. In this
 phase, we collect and prepare data from a variety of sources, a crucial step for
-successful reconciliation."
-23,"Next, the ‘Reconciliation’ phase is where we compare and align
-data from the two aforementioned sources. Lastly, we have the ‘Post Reconciliation’ phase,
+successful reconciliation. Next, the ‘Reconciliation’ phase is where we compare and align
+data from the two aforementioned sources."
+23,"Lastly, we have the ‘Post Reconciliation’ phase,
 where data validation occurs, and Key Performance Indicators (KPIs) are developed for
-usage on the dashboard."
-24,"Within each of these components, processes are broken down into
-distinct processors. Let’s take the ‘Data Preparation’ segment as an example."
-25,"It’s
+usage on the dashboard. Within each of these components, processes are broken down into
+distinct processors."
+24,"Let’s take the ‘Data Preparation’ segment as an example. It’s
 segmented into three different processors: the ‘Prepare Processor,’ the ‘Normalize
 Processor,’ and the ‘Exclude Processor.’ Each type of reconciliation requires its own
-unique strategy. These strategies guide the processors on how to execute their tasks
-effectively."
-26,"We have also created an interface that allows each reconciliation process to
-define its own strategies, enabling a tailored reconciliation approach. Data Preparation
+unique strategy."
+25,"These strategies guide the processors on how to execute their tasks
+effectively. We have also created an interface that allows each reconciliation process to
+define its own strategies, enabling a tailored reconciliation approach."
+26,"Data Preparation
 The preparation process is divided into three distinct steps: 1.Fetching Data:This step
 involves collecting new data, recovering previously corrupt data, and fixing corrupted
-data."
-27,"2.Data Deduplication:In this step, we deduplicate the data. To ensure each piece of
+data. 2.Data Deduplication:In this step, we deduplicate the data."
+27,"To ensure each piece of
 data is unique, we use a ‘deduplicate_key.’ This key is created by combining different
-columns."
-28,"3.Data Validation:The final step is about validating the data. We achieve this by
-following a specific set of rules that we have established."
-29,"The normalize process is
+columns. 3.Data Validation:The final step is about validating the data."
+28,"We achieve this by
+following a specific set of rules that we have established. The normalize process is
 divided into two steps: 1.Combining New and Unreconciled Data:This involves merging data
-that was unreconciled from the previous day with new data. 2.Data Transformation:In this
+that was unreconciled from the previous day with new data."
+29,"2.Data Transformation:In this
 step, we transform data into the new format and definereconciliation_amountcolumns based
-on a set of rules."
-30,"The exclude process is divided into two steps: 1.Conditional Exclude:In
-this step, data is excluded based on a set of defined rules. 2.Manual Exclude:In this
+on a set of rules. The exclude process is divided into two steps: 1.Conditional Exclude:In
+this step, data is excluded based on a set of defined rules."
+30,"2.Manual Exclude:In this
 process, users can enter the specific deduplication keys corresponding to the transactions
-they wish to eliminate."
-31,"These keys are then incorporated into the manual exclusion action. This action subsequently correlates these keys with the incoming data, effectively erasing
-the selected transactions from the system."
-32,"Reconciliation The reconciliation phase is the
-core of the entire system. It processes unreconciled transactions and attempts to
-reconcile them over several passes or conditions based on configuration."
-33,"For every pass,
-we can reconcile based on key and reconciliation columns. Following the reconciliation
-procedure, there might still be some transactions left unreconciled."
-34,"In these cases, we
-have the ability to force reconcile them using a specific set of rules or logic. In the
+they wish to eliminate. These keys are then incorporated into the manual exclusion action."
+31,"This action subsequently correlates these keys with the incoming data, effectively erasing
+the selected transactions from the system. Reconciliation The reconciliation phase is the
+core of the entire system."
+32,"It processes unreconciled transactions and attempts to
+reconcile them over several passes or conditions based on configuration. For every pass,
+we can reconcile based on key and reconciliation columns."
+33,"Following the reconciliation
+procedure, there might still be some transactions left unreconciled. In these cases, we
+have the ability to force reconcile them using a specific set of rules or logic."
+34,"In the
 reconciliation process, it’s possible to define the key and the value based on certain
-rules."
-35,"Here’s an example: If we’re dealing with reconciliation with Partner A, we may
-decide to reconcile value solely based on thepartner_amount. However, if the partner is B,
-we might choose to reconcile values using both thepartner_pointandpartner_amountcolumns."
-36,"This is just one insight into how we can specifically tailor configurations for values
-depending on our respective partners. There are more scenarios similar to this that use
-conditions such aspartner_idto configure reconciliation keys."
-37,"In the reconciliation
+rules. Here’s an example: If we’re dealing with reconciliation with Partner A, we may
+decide to reconcile value solely based on thepartner_amount."
+35,"However, if the partner is B,
+we might choose to reconcile values using both thepartner_pointandpartner_amountcolumns. This is just one insight into how we can specifically tailor configurations for values
+depending on our respective partners."
+36,"There are more scenarios similar to this that use
+conditions such aspartner_idto configure reconciliation keys. In the reconciliation
 process, it’s not uncommon for a single transaction to go through multiple rounds of
-reconciliation. Consider a booking with multiple transactions."
-38,"In the first pass, we might
-try to reconcile a transaction using its uniquetransaction_id. If this first attempt fails
-to reconcile the transaction, it then proceeds to a second pass."
-39,"In this next stage,
-thebooking_idis used as the key identifier for reconciliation. This two-step approach
+reconciliation."
+37,"Consider a booking with multiple transactions. In the first pass, we might
+try to reconcile a transaction using its uniquetransaction_id."
+38,"If this first attempt fails
+to reconcile the transaction, it then proceeds to a second pass. In this next stage,
+thebooking_idis used as the key identifier for reconciliation."
+39,"This two-step approach
 ensures that we have an alternative method to reconcile a transaction when the first
-attempt isn’t successful."
-40,"Another part of the process is the force reconciliation part
+attempt isn’t successful. Another part of the process is the force reconciliation part
 where the transactions are moved to reconcile buckets based on these two steps:
 Conditional Force Reconciled:This step forcefully reconciles data based on a set of
-defined rules. 2.Manual Exclude:In this process, users can enter the specific keys,
-likepartner_id, that correspond to the transactions they intend to remove."
-41,"After entering
-these keys, they are integrated into a manual force reconciliation action. This action
+defined rules."
+40,"2.Manual Exclude:In this process, users can enter the specific keys,
+likepartner_id, that correspond to the transactions they intend to remove. After entering
+these keys, they are integrated into a manual force reconciliation action."
+41,"This action
 then aligns these specific keys with incoming data, effectively moving the selected
-transactions to the reconcile bucket."
-42,"CI/CD Pipeline We utilize three types of tests in
-the CI/CD pipeline, namely the unit test, integration test, and shadow test. The purpose
+transactions to the reconcile bucket. CI/CD Pipeline We utilize three types of tests in
+the CI/CD pipeline, namely the unit test, integration test, and shadow test."
+42,"The purpose
 and functions of these tests are as follows: 1.Unit Test:This aims to examine individual
-processors and services, ensuring their independent operability."
-43,"2.Integration Test:It
+processors and services, ensuring their independent operability. 2.Integration Test:It
 focuses on evaluating the comprehensive reconciliation process and validating the outcomes
-from the output tables. 3.Shadow Test:This method involves operating modified code, for
-example, Merge Request (MR) changes, on the production data."
-44,"The goal is to compare
-outcomes and assure both accuracy and validity. There are three steps in running the
-shadow tests."
-45,"Setup Context:This focuses on setting up the context such as branch
-information and process data for shadow test. Run Recon:This focuses on running the
-reconciliation using production data with the modified logic."
-46,"Compare Result:This involves
+from the output tables."
+43,"3.Shadow Test:This method involves operating modified code, for
+example, Merge Request (MR) changes, on the production data. The goal is to compare
+outcomes and assure both accuracy and validity."
+44,"There are three steps in running the
+shadow tests. Setup Context:This focuses on setting up the context such as branch
+information and process data for shadow test."
+45,"Run Recon:This focuses on running the
+reconciliation using production data with the modified logic. Compare Result:This involves
 updating the notes in GitLab by sharing a comparative analysis between the production
-data/schema and the test result data. Some important aspects of shadow testing are: Shadow
-tests are triggered manually."
-47,"This is because we want to ensure that the pull request is
+data/schema and the test result data."
+46,"Some important aspects of shadow testing are: Shadow
+tests are triggered manually. This is because we want to ensure that the pull request is
 ready before the shadow test is triggered since running the shadow test is quite expensive
-since it involves production data. The shadow test outcomes aren’t a mandatory requirement
-for merging the PR."
-48,"For instance, if a logical update is made, it’s perfectly normal to
-expect variations in the output data compared to the production data. Monitoring and
+since it involves production data."
+47,"The shadow test outcomes aren’t a mandatory requirement
+for merging the PR. For instance, if a logical update is made, it’s perfectly normal to
+expect variations in the output data compared to the production data."
+48,"Monitoring and
 Alerting The Generic Reconciliation Platform at Agoda relies on three services for
-monitoring and alerting purposes."
-49,"First, we utilize Metabase to create dashboards that
-track business and product Key Performance Indicators (KPIs). Second, Grafana is employed
-for monitoring job performance and quality."
-50,"Lastly, Slack serves as our notification
-system, alerting us when a job fails or passes. We use Metabase to design numerous graphs,
+monitoring and alerting purposes. First, we utilize Metabase to create dashboards that
+track business and product Key Performance Indicators (KPIs)."
+49,"Second, Grafana is employed
+for monitoring job performance and quality. Lastly, Slack serves as our notification
+system, alerting us when a job fails or passes."
+50,"We use Metabase to design numerous graphs,
 effectively enabling both business and product managers to assess the performance of our
-reconciliation system."
-51,"For instance, by examining the total unreconciled amount in USD as
+reconciliation system. For instance, by examining the total unreconciled amount in USD as
 a percentage, product managers can make informed decisions on whether further data
-investigation is necessary. Once the reconciliation process concludes, we receive a Slack
-alert."
-52,"This alert indicates the success or failure of the reconciliation — a green sidebar
-denotes success, while a red sidebar signifies failure along with failure information. The
+investigation is necessary."
+51,"Once the reconciliation process concludes, we receive a Slack
+alert. This alert indicates the success or failure of the reconciliation — a green sidebar
+denotes success, while a red sidebar signifies failure along with failure information."
+52,"The
 Slack alert doesn’t just carry the state of the job but also links to vital resources like
-KPI, cluster log, and the spark UI link."
-53,"Additionally, we have developed a comprehensive
-Grafana dashboard for the platform. It tracks the volume of input transactions and their
-distribution across different buckets."
-54,"Additionally, we created a second dashboard to
-monitor the status and duration of every reconciliation process. Conclusion Reconciliation
-plays a pivotal role in ensuring the accuracy and validity of our financial system."
-55,"We are
+KPI, cluster log, and the spark UI link. Additionally, we have developed a comprehensive
+Grafana dashboard for the platform."
+53,"It tracks the volume of input transactions and their
+distribution across different buckets. Additionally, we created a second dashboard to
+monitor the status and duration of every reconciliation process."
+54,"Conclusion Reconciliation
+plays a pivotal role in ensuring the accuracy and validity of our financial system. We are
 developing a robust, generic reconciliation system capable of managing millions of daily
-transactions. Our system leverages the Spark data processing framework to enhance its
-efficiency."
-56,"The beauty of this advanced reconciliation setup is its scalability,
+transactions."
+55,"Our system leverages the Spark data processing framework to enhance its
+efficiency. The beauty of this advanced reconciliation setup is its scalability,
 maintainability, and intrinsic monitoring capabilities, all of which are crucial for
 dealing with different types of reconciliation."

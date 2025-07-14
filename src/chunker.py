@@ -8,7 +8,8 @@ nltk.download('punkt', quiet=True)
 nltk.download('punkt_tab', quiet=True)
 
 # Load model once globally
-MODEL = SentenceTransformer("sentence-transformers/all-mpnet-base-v2")
+# MODEL = SentenceTransformer("sentence-transformers/all-mpnet-base-v2")
+MODEL = SentenceTransformer("sentence-transformers/all-MiniLM-L6-v2")\
 
 def split_into_paragraphs(text: str):
     """

@@ -11,7 +11,7 @@ def index_pdf_chunks(file_path: str, doc_id: str):
 
     text = open(file_path, "r", encoding="utf-8").read()
     chunks = chunk_structured_document(text)
-    embeddings = model.encode(chunks)
+    embeddings = model.encode(chunks).tolist()
 
     for i, chunk in enumerate(chunks):
         collection.add(

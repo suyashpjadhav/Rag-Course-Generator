@@ -95,65 +95,66 @@ Processor then determines that this is a Mastercard and routes it to the Masterc
 Network."
 27,"Mastercard then sees this transaction and based on the card’s number, it looks
 for the first six digits of the card, also referred to as the card’s Bank Identification
-Number (BIN). Mastercard determines that this BIN belongs to Moneybin Bank. Mastercard
+Number (BIN). Mastercard determines that this BIN belongs to Moneybin Bank."
+28,"Mastercard
 sends a message to Moneybin Bank with the card number, amount of the transaction, location
-of the transaction, and Merchant type."
-28,"Moneybin Bank’s Issuer Processor then looks at this
-data and makes a decision on whether this transaction should be approved. The key things
+of the transaction, and Merchant type. Moneybin Bank’s Issuer Processor then looks at this
+data and makes a decision on whether this transaction should be approved."
+29,"The key things
 it will ask based off of the information it has received from Mastercard are: Does Emmet
-bank with Moneybin Bank?"
-29,"Is Emmet’s card active? Does Emmet have enough money in his
+bank with Moneybin Bank? Is Emmet’s card active?"
+30,"Does Emmet have enough money in his
 account to cover the cost of this transaction? Can Emmet’s card be used at this Merchant?"
-30,"Does this transaction raise any sort of fraud flags based on location, prior activity, or
+31,"Does this transaction raise any sort of fraud flags based on location, prior activity, or
 type of Merchant? If all of these questions get answered favorably, then Moneybin Bank’s
 Issuer Processor will send back a message to Mastercard that the transaction is approved."
-31,"It will place a hold of $4.75 on Emmet’s account and the transaction will appear as
+32,"It will place a hold of $4.75 on Emmet’s account and the transaction will appear as
 “Pending” on Emmet’s statement. Mastercard will then relay this decision from the Issuer
 to the Acquirer."
-32,"The Acquirer Processor will then send a message to the payment terminal
+33,"The Acquirer Processor will then send a message to the payment terminal
 to approve the transaction. The terminal then flashes the word “Approved,” and typically
 it prompts Emmet to sign for the order, or a paper receipt is printed where he can sign."
-33,"This transaction flow will serve as the basis for a lot of our discussion on the anatomy
+34,"This transaction flow will serve as the basis for a lot of our discussion on the anatomy
 of a swipe. So How Did Emmet Get His Card?"
-34,"Emmet first needed to get a debit card for all
+35,"Emmet first needed to get a debit card for all
 of this to work. Issuers like Moneybin Bank distribute cards and underwrite the
 transaction on behalf of Payment Networks."
-35,"The Payment Networks rely on Merchant Acquirers
+36,"The Payment Networks rely on Merchant Acquirers
 to get as many card terminals into the hands of as many Merchants as possible. IdentifyingEmmet: KnowYourCustomer (KYC) In this case, since Emmet was using his debit
 card, it is most likely that Emmet walked into the physical location of a Moneybin Bank
 (the Issuer) to open up a checking account."
-36,"When opening up a checking account, Emmet was
+37,"When opening up a checking account, Emmet was
 asked a series of questions that helped identify him. This is commonly referred to as the
 KYC process, or “Know Your Customer” process."
-37,"In the US, the key means of performing KYC
+38,"In the US, the key means of performing KYC
 is by getting the following pieces of information from the user: Name Social security
 number Date of birth Physical address Phone number Potentially some other form of
 identification like a driver’s license, a passport, or government-issued ID This is done
 primarily to prevent bad actors from entering the financial system. It checks to make sure
 that Emmet isn’t funding terrorist activity or hasn’t participated in money-laundering
 activities."
-38,"Once Emmet passes the KYC process, Emmet is then asked to deposit some funds
+39,"Once Emmet passes the KYC process, Emmet is then asked to deposit some funds
 into the checking account so he can start using his debit card or write checks. Card
 Transactions Are Authorized by an Issuer Processor on Behalf of the Bank or Card Program
 Manager Moneybin Bank uses an Issuer Processor to process transactions."
-39,"In the case of
+40,"In the case of
 Moneybin Bank, they have multiple Issuer Processors, but we’ll discuss at length some more
 modern Issuer Processors likeMarqetato understand how transactions are actually authorized
 and where opportunities lie. Transactions Are Initiated by an Acquirer Processor Via a
 Gateway or Payments Facilitator Bucks of Star Coffee uses Square for its terminal."
-40,"Square
+41,"Square
 is not an Acquirer Processor but rather a Payments Facilitator. We’ll talk at length
 aboutSquareand its capabilities as a Payments Facilitator and how it interacts with Chase
 Paymentech, its Acquirer Processor."
-41,"We’ll then talk about what it means to be an Acquirer
+42,"We’ll then talk about what it means to be an Acquirer
 Processor and opportunities in the space by looking at a modern Acquirer
 Processor,Tabapay. We’ll also look at some of the new technologies Acquirer Processors
 like Tabapay are offering to its customers."
-42,"The Card Networks Act as the “Rails” to Make
+43,"The Card Networks Act as the “Rails” to Make
 All of This Work Finally, we’ll do an in-depth look at Mastercard and where it sees card
 payments going. We’ll also talk about opportunities the Network is opening up for Issuers,
 Acquirers, and its consumers."
-43,"The next part to this series will be published on May 4th,
+44,"The next part to this series will be published on May 4th,
 please subscribe to my Medium page so you can be alerted when the next part is available. Also, if you would like to learn more about fintech, card based payments, payment
 networks, banks, and opportunities in payments, you may also purchase my book,“The Anatomy
 of the Swipe: Making Money Move” on Amazon."

@@ -58,20 +58,20 @@ Chunk 11:
 On the other hand, a credit note is issued by the
 seller to the buyer that a credit has been made to the buyer account in the seller’s
 books. Debit Note is usually marked in blue ink representing a positive amount, whereas
-the Credit Note is marked in red ink representing a negative amount. Issuing a Debit Note
-will affect the Purchase Return Book whereas the Credit Note will affect the Sales Return
-Book.
+the Credit Note is marked in red ink representing a negative amount.
 ==================================================
 Chunk 12:
-Debit Note will minimize the account receivable, and the Credit Note will reduce the
-account payable. Issuing your Credit and Debit Note on Deskera Books Creating both credit
-and debit notes does not have to be complicated.
+Issuing a Debit Note
+will affect the Purchase Return Book whereas the Credit Note will affect the Sales Return
+Book. Debit Note will minimize the account receivable, and the Credit Note will reduce the
+account payable.
 ==================================================
 Chunk 13:
-Here on Deskera Books, we allow
+Issuing your Credit and Debit Note on Deskera Books Creating both credit
+and debit notes does not have to be complicated. Here on Deskera Books, we allow
 businesses to apply the debit and credit note directly to the Sales and Bill invoices
-conveniently. It’s hassle-free and intuitive!
+conveniently.
 ==================================================
 Chunk 14:
-VisitDeskera Booksto find out more.
+It’s hassle-free and intuitive! VisitDeskera Booksto find out more.
 ==================================================

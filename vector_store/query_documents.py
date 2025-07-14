@@ -4,22 +4,20 @@ from vector_store.chroma_client import get_chroma_client
 def search_similar_chunks(query: str, top_k=3):
     try:
         model = get_embedding_model()
-        embedding = model.encode([query])[0]
+        embedding = model.encode([query])[0].tolist()  # ✅ FIXED HERE
         client = get_chroma_client()
 
-        # Check if the collection exists
         if "pdf_chunks" not in [col.name for col in client.list_collections()]:
             return {"error": "No indexed documents found."}
 
         collection = client.get_collection(name="pdf_chunks")
 
         results = collection.query(
-            query_embeddings=[embedding],
+            query_embeddings=[embedding],  # ✅ this is now a list of floats
             n_results=top_k,
             include=["documents", "metadatas", "distances"]
         )
 
-        # Format response
         formatted = []
         for doc, meta, id_ in zip(results["documents"][0], results["metadatas"][0], results["distances"][0]):
             formatted.append({

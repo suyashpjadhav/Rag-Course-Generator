@@ -167,82 +167,81 @@ respecting this and the benefits expected. This practice will only generate bene
 the team keeps the discipline of respecting the WIP over time."
 40,"Step by step: Just start—
 establish a value of maximum WIP to the whole board. Example: 2 times the amount of people
-in the team."
-41,"If there are 8 people in the team, start with a maximum WIP of 16. Or, the
+in the team. If there are 8 people in the team, start with a maximum WIP of 16. Or, the
 number of people in the team plus 1, if there are 8 people in the team, start with a
 maximum WIP of 9."
-42,"Respect the WIP— put into practice a pull system, in other words, just
+41,"Respect the WIP— put into practice a pull system, in other words, just
 pull a new demand when there is space. Monitor the work system— have bottleneck steps
 emerged?"
-43,Are the blocked items clear? Have the metrics changed?
-44,"Later we will talk about
+42,Are the blocked items clear? Have the metrics changed?
+43,"Later we will talk about
 the CFD chart which assists this monitoring. Create an environment where people
 collaborate— how do we remove these bottlenecks?"
-45,"How do we reduce the blocks? What can we
+44,"How do we reduce the blocks? What can we
 adjust in the work system?"
-46,"In addition to limiting the WIP, there are others actions which
+45,"In addition to limiting the WIP, there are others actions which
 help take the pressure off having so many items in the work system, such as: There is good
 work to be done on the items before they come into the team focus, the manner that just
 well-cut items arrive (refinement) and that will really give value (triage). Work to
 reduce the volume of operational items and problems (bugs) to “leave” more space for items
 that will add value."
-47,"Mentioning this, in a way, is obvious, however we do not always have
+46,"Mentioning this, in a way, is obvious, however we do not always have
 a good idea of the large number of activities which consume space (time and energy) in the
 precious and scarce capacity of the team. Monitoring the WIP On the line of monitoring the
 amount of WIP and the work system over time, I propose to utilize the CFD (cumulative flow
 diagram) chart."
-48,"The CFD shows the cumulative amount of items in each of the stages over
+47,"The CFD shows the cumulative amount of items in each of the stages over
 the weeks. Each “layer” of the chart represents one step."
-49,"In the above example, every step
+48,"In the above example, every step
 of the flow was summarized in a macro step called WIP (red layer), so, we can follow if
 the red layer is more slim or more wide. Keep the layer slim, in other words, keep the WIP
 in a small amount and constant for weeks, depending on the items amounts that entered in
 the process and the number of finished items."
-50,"For example, from week 4 to 5 in the above
+49,"For example, from week 4 to 5 in the above
 chart, one item entered and none exited (done), therefore the WIP increased. Previously we
 mentioned the considerable influence of the WIP in the Cycle Time (the higher the WIP, the
 longer the Cycle Time). The CFD chart makes it very clear, between week 2 and 4, when the
 WIP was very contained, we noticed the average Cycle Time (represented by the horizontal
 arrow) much smaller than the average Cycle Time of weeks 4 and 8, given that in these
 weeks the WIP increased."
-51,"In addition to monitoring the WIP (red layer) and the average
+50,"In addition to monitoring the WIP (red layer) and the average
 Cycle Time, the CFD is very useful to track the amount of items in team backlog, the
 amount of items done and, thereby, can also be used to forecast how many items can be
 finished in the future based on the history of previously done items. Collaboration I have
 finished my activity, which one shall I start now?"
-52,"This is a very common phrase in the
+51,"This is a very common phrase in the
 day-to-day of teams. Once we start respecting the maximum WIP, this question should change
 to something like: I have finished my activity, which other one can I help someone to
 finish before starting a new one?"
-53,"If the team already has the maximum number of activities
+52,"If the team already has the maximum number of activities
 in progress agreed, this is the moment to help other people to finish some activity. When
 I say “finish” in a generic way, I mean any activity."
-54,"In software development teams, for
+53,"In software development teams, for
 example, at a moment like this, the developer “can make himself available” to help with
 the publishing in a production environment. As previously described, while not finished,
 an activity does not deliver value."
-55,"This is one of the triggers for the “stop starting,
+54,"This is one of the triggers for the “stop starting,
 start finishing” transition. Working with limited WIP is an intense dose of stimulation
 for collaboration among the people in the team."
-56,"The whole that the team delivers overlaps
+55,"The whole that the team delivers overlaps
 the individual deliveries. Final The practice of limiting work in process goes far from
 being a stand–alone thing in the workflow management, it’s interlaced with several other
 concepts and practices that have an immense potential to the teams, such as: queues,
 bottlenecks, flow efficiency, work item size, variability, among others."
-57,"However, this is
+56,"However, this is
 a powerful mechanism to bring immediate benefits to the team, also to avoid overload and
 its consequences on the people and work system. It’s necessary to have discipline to say
 “no” to new demands when we already have the maximum WIP."
-58,"This “no” is a negative that
+57,"This “no” is a negative that
 elevates the importance to correct prioritization and refinement of items that will be
 available to enter the workflow. Furthermore, on the line to bring positive discussions
 about the problems in the organization, David Anderson defends that the limited WIP
 generates “positive tension”: The discussion and collaboration invoked for the positive
 tension of limited WIP are healthy."
-59,"It’s a mechanism that enables the emergence of a
+58,"It’s a mechanism that enables the emergence of a
 continuous improvement culture. Without a limit to WIP, the progress on the improvement
 process is slow."
-60,"References Kanban: Successful Evolutionary Change for your Technology
+59,"References Kanban: Successful Evolutionary Change for your Technology
 Business: Successful Evolutionary Change for your Technology — David J. Anderson The
 Principles of Product Development Flow: Second Generation Lean Product Development —
 Donald G. Reinertsen Zen and the Software Management Art (Software Zen) — Alisson Vale"

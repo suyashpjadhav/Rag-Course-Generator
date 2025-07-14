@@ -23,26 +23,29 @@ Chunk 4:
 Bar Chart: Spend by Supplier Pie Chart: Supplier Spend Distribution Step 3:
 Item Model Analysis Understanding item-level spend can highlight areas for optimization. Bar Chart: Spend by Item Model Pie Chart: Top 15 Item Models by Spend Treemap: Spend by
 Item Model Step 4: Buyer Analysis Analyzing buyer behavior helps optimize procurement
-policies and reduce inefficiencies. Bubble Chart: Buyer Analysis Treemap: Supplier Spend
-by Buyer Step 5: Buyer-Supplier Heatmap A heatmap provides an overview of the spending
-relationships between buyers and suppliers.
+policies and reduce inefficiencies.
 ==================================================
 Chunk 5:
-Final Thoughts This analysis demonstrates the
-power of data-driven decision-making in supply chain digitization. By utilizing these
-visualizations, organizations can: Optimize supplier relationships.
+Bubble Chart: Buyer Analysis Treemap: Supplier Spend
+by Buyer Step 5: Buyer-Supplier Heatmap A heatmap provides an overview of the spending
+relationships between buyers and suppliers. Final Thoughts This analysis demonstrates the
+power of data-driven decision-making in supply chain digitization.
 ==================================================
 Chunk 6:
-Streamline buyer
-procurement behavior. Identify opportunities for cost reduction.
+By utilizing these
+visualizations, organizations can: Optimize supplier relationships. Streamline buyer
+procurement behavior.
 ==================================================
 Chunk 7:
-With this Python-based
+Identify opportunities for cost reduction. With this Python-based
 approach, supply chain managers gain a comprehensive view of procurement operations,
-driving more informed and strategic decisions. Ready to unlock actionable insights?
+driving more informed and strategic decisions.
 ==================================================
 Chunk 8:
-Start
-digitizing your procurement analytics today! For any questions or support, please contact
+Ready to unlock actionable insights? Start
+digitizing your procurement analytics today!
+==================================================
+Chunk 9:
+For any questions or support, please contact
 [srekatpure@gmail.com]
 ==================================================

@@ -96,40 +96,40 @@ improving the efficiency of eCommerce transactions.
 ==================================================
 Chunk 19:
 5. Enhanced Security Last but not
-least, GRN provides an additional layer of security to eCommerce transactions. By
-verifying the identity of who is making the purchase and confirming that goods have been
-received in good condition, GRN can help to reduce fraud and ensure that customers’ orders
-are fulfilled safely and securely.
+least, GRN provides an additional layer of security to eCommerce transactions.
 ==================================================
 Chunk 20:
-What are the consequences of losing a Goods Receipt
-Note (GRN) ? The loss of a Goods Receipt Note can have serious consequences for
-businesses, as it may lead to delays in receiving goods and cause financial losses.
+By
+verifying the identity of who is making the purchase and confirming that goods have been
+received in good condition, GRN can help to reduce fraud and ensure that customers’ orders
+are fulfilled safely and securely. What are the consequences of losing a Goods Receipt
+Note (GRN) ?
 ==================================================
 Chunk 21:
-The
+The loss of a Goods Receipt Note can have serious consequences for
+businesses, as it may lead to delays in receiving goods and cause financial losses. The
 GRN is an important document that serves as proof of the receipt of goods from vendors or
-suppliers. Without this documentation, companies are unable to confirm whether they have
-received all the goods requested, leaving them in a vulnerable position.
+suppliers.
 ==================================================
 Chunk 22:
-In addition to
-delays, the loss of a GRN can lead to financial losses. As the document is used to
-validate payments for received goods and services, companies may find themselves paying
-for items they have not actually received.
+Without this documentation, companies are unable to confirm whether they have
+received all the goods requested, leaving them in a vulnerable position. In addition to
+delays, the loss of a GRN can lead to financial losses.
 ==================================================
 Chunk 23:
-Furthermore, if their suppliers cannot provide
+As the document is used to
+validate payments for received goods and services, companies may find themselves paying
+for items they have not actually received. Furthermore, if their suppliers cannot provide
 proof of receipt with an accompanying GRN, the company may not be able to reclaim these
-charges. Conclusion A Goods Receipt Note is a document that proves that goods have been
-received.
+charges.
 ==================================================
 Chunk 24:
-It is used to track deliveries and ensure that the correct products have been
-delivered in the right quantities. A GRN can also be used to check whether products are
-damaged or not.
+Conclusion A Goods Receipt Note is a document that proves that goods have been
+received. It is used to track deliveries and ensure that the correct products have been
+delivered in the right quantities.
 ==================================================
 Chunk 25:
-When you receive a delivery, make sure to ask for a GRN so that you can
+A GRN can also be used to check whether products are
+damaged or not. When you receive a delivery, make sure to ask for a GRN so that you can
 keep track of your inventory.
 ==================================================
