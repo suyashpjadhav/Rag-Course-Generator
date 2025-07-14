@@ -4,79 +4,90 @@ from sentence_transformers import SentenceTransformer
 from sklearn.metrics.pairwise import cosine_similarity
 import logging
 
-nltk.download('punkt', quiet=True)
-nltk.download('punkt_tab', quiet=True)
+nltk.download('punkt')
 
-# Load model once globally
-# MODEL = SentenceTransformer("sentence-transformers/all-mpnet-base-v2")
-MODEL = SentenceTransformer("sentence-transformers/all-MiniLM-L6-v2")\
+def split_into_sentences(text):
+    """
+    Split the input text into sentences using NLTK's sentence tokenizer.
+    """
+    sentences = sent_tokenize(text)
+    return [sentence.strip() for sentence in sentences if sentence.strip()]
 
-def split_into_paragraphs(text: str):
+def create_meaningful_chunks(sentences, model, similarity_threshold=0.75):
     """
-    Split raw text into paragraphs based on double line breaks.
-    """
-    return [p.strip() for p in text.split("\n\n") if len(p.strip()) > 40]
+    Group sentences into meaningful chunks based on semantic similarity.
+    
+    Args:
+    - sentences: List of individual sentences.
+    - model: Pre-trained sentence transformer model.
+    - similarity_threshold: Threshold for cosine similarity to group sentences.
 
-def split_into_sentences(paragraph: str):
-    """
-    Split a paragraph into sentences.
-    """
-    return [s.strip() for s in sent_tokenize(paragraph) if s.strip()]
-
-def is_similar(chunk_text, sentence, model, threshold=0.75):
-    """
-    Compare the semantic similarity between current chunk and next sentence.
-    """
-    embeddings = model.encode([chunk_text, sentence])
-    score = cosine_similarity([embeddings[0]], [embeddings[1]])[0][0]
-    return score >= threshold
-
-def group_sentences(sentences, model, similarity_threshold=0.75, min_chunk_size=2):
-    """
-    Group sentences into meaningful semantic chunks.
+    Returns:
+    - List of chunks where each chunk is a group of related sentences.
     """
     chunks = []
     current_chunk = []
 
     for sentence in sentences:
-        if not current_chunk:
-            current_chunk.append(sentence)
+        # If there is no chunk or the sentence is not similar to the current chunk, create a new chunk
+        if not current_chunk or not is_similar(current_chunk, sentence, model, similarity_threshold):
+            if current_chunk:
+                chunks.append(' '.join(current_chunk))  # Add the current chunk as a group of sentences
+            current_chunk = [sentence]  # Start a new chunk with the current sentence
         else:
-            chunk_text = " ".join(current_chunk)
-            if is_similar(chunk_text, sentence, model, similarity_threshold):
-                current_chunk.append(sentence)
-            else:
-                # If too small, force add next sentence for better context
-                if len(current_chunk) < min_chunk_size:
-                    current_chunk.append(sentence)
-                else:
-                    chunks.append(" ".join(current_chunk))
-                    current_chunk = [sentence]
+            current_chunk.append(sentence)  # If similar, add the sentence to the current chunk
 
+    # Append the last chunk if it exists
     if current_chunk:
-        chunks.append(" ".join(current_chunk))
+        chunks.append(' '.join(current_chunk))
 
     return chunks
 
-def chunk_structured_document(content: str, similarity_threshold=0.75):
+def is_similar(chunk, sentence, model, threshold=0.75):
     """
-    Main function to convert full content into meaningful chunks.
+    Check if the given sentence is semantically similar to the current chunk using cosine similarity.
+
+    Args:
+    - chunk: Current list of sentences in the chunk.
+    - sentence: A new sentence to compare against the chunk.
+    - model: Pre-trained sentence transformer model.
+    - threshold: Cosine similarity threshold for considering the sentence as related.
+
+    Returns:
+    - True if the sentence is similar to the chunk, False otherwise.
+    """
+    chunk_text = ' '.join(chunk)  # Join the chunk into a single string for comparison
+    embeddings = model.encode([chunk_text, sentence])  # Encode the chunk and the sentence
+    similarity_score = cosine_similarity([embeddings[0]], [embeddings[1]])[0][0]  # Calculate similarity
+
+    logging.info(f"Similarity score between chunk and sentence: {similarity_score}")
+    
+    return similarity_score >= threshold  # Return True if similarity is above the threshold
+
+def chunk_structured_document(content, similarity_threshold=0.75):
+    """
+    Main function to chunk a document into meaningful groups of sentences based on semantic similarity.
+
+    Args:
+    - content: Full document text.
+    - similarity_threshold: Threshold for semantic similarity.
+
+    Returns:
+    - List of chunks (grouped sentences).
     """
     try:
-        paragraphs = split_into_paragraphs(content)
-        all_chunks = []
+        # Load the pre-trained sentence transformer model
+        model = SentenceTransformer('sentence-transformers/all-mpnet-base-v2')
 
-        for para in paragraphs:
-            sentences = split_into_sentences(para)
-            if len(sentences) == 1:
-                all_chunks.append(sentences[0])
-            else:
-                para_chunks = group_sentences(sentences, MODEL, similarity_threshold)
-                all_chunks.extend(para_chunks)
+        # Step 1: Split the document into individual sentences
+        sentences = split_into_sentences(content)
+        logging.info(f"Document split into {len(sentences)} sentences.")
 
-        logging.info(f"Chunking complete: {len(all_chunks)} chunks.")
-        return all_chunks
+        # Step 2: Group sentences into meaningful chunks
+        chunks = create_meaningful_chunks(sentences, model, similarity_threshold)
+        logging.info(f"{len(chunks)} chunks created.")
 
+        return chunks
     except Exception as e:
-        logging.error(f"Chunking error: {e}")
-        return []
+        logging.error(f"Error in chunk_structured_document: {e}")
+        return None

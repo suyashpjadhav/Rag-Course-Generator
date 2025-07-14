@@ -2,7 +2,7 @@ from sentence_transformers import SentenceTransformer
 from sklearn.metrics.pairwise import cosine_similarity
 import logging
 
-def load_model(model_name='sentence-transformers/all-MiniLM-L6-v2'):
+def load_model(model_name='sentence-transformers/all-mpnet-base-v2'):
     """
     Load the sentence transformer model.
     Defaults to 'all-mpnet-base-v2' if no model name is provided.
