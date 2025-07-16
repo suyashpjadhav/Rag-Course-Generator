@@ -1,0 +1,77 @@
+Chunk 1:
+What are Debit Notes & Credit Notes | by Vivien | Deskera Engineering | Medium
+By Vivien
+What are Debit Notes & Credit Notes Debit Note and Credit note is quintessential of
+business practices daily. From small to large organizations, businesses transaction does
+not only include buying and selling activities.
+==================================================
+Chunk 2:
+Businesses have to take into consideration
+of sales return and purchase return from their customers. Therefore, it’s crucial to know
+the difference between a debit note and a credit note so businesses can issue the right
+note under the right circumstances.
+==================================================
+Chunk 3:
+What is a Debit Note? So, what is a debit note? A
+debit note can be defined as a commercial instrument issued by the buyer to the seller to
+request for refunds.
+==================================================
+Chunk 4:
+If you’re the customer or a supplier buying from another supplier,
+you can issue a debit note if you would like to claims back the credits by returning the
+goods to the seller. There are various scenarios to apply a debit note, such as: The goods
+received are broken/faulty/damaged.
+==================================================
+Chunk 5:
+The buyer wants to cancel the purchase order. The
+buyer is overcharged.
+==================================================
+Chunk 6:
+Incorrect invoice value (Additional goods being delivered, but
+charged at lesser value) Once the seller has received the debit note from the buyer, the
+seller will issue a credit note to the buyer to acknowledge the Debit Note received. What
+is a Credit Note?
+==================================================
+Chunk 7:
+A credit note can also be known as a credit memorandum. A credit
+memorandum is a commercial instrument issued by the seller to the buyer to notify the
+buyer that a credit has been applied to the buyer for various reasons.
+==================================================
+Chunk 8:
+A credit note is
+commonly used for scenarios, such as: Buyer return goods if they received faulty, damaged,
+or incorrect goods. You are performing a refund for the customer who is not satisfied with
+your service.
+==================================================
+Chunk 9:
+Buyer overpaid for the goods they’ve purchased. Seller overcharged the
+customers.
+==================================================
+Chunk 10:
+The key differences between Debit Note and Credit Note Although Credit Note and
+Debit Note might sound similar to you, they are not the same. Here are some distinct
+differences between a credit note and debit note that you can note of: Debit Note is
+issued by the buyer to the seller to inform the seller that a debit has been made to the
+seller account in the buyer’s books.
+==================================================
+Chunk 11:
+On the other hand, a credit note is issued by the
+seller to the buyer that a credit has been made to the buyer account in the seller’s
+books. Debit Note is usually marked in blue ink representing a positive amount, whereas
+the Credit Note is marked in red ink representing a negative amount.
+==================================================
+Chunk 12:
+Issuing a Debit Note
+will affect the Purchase Return Book whereas the Credit Note will affect the Sales Return
+Book. Debit Note will minimize the account receivable, and the Credit Note will reduce the
+account payable.
+==================================================
+Chunk 13:
+Issuing your Credit and Debit Note on Deskera Books Creating both credit
+and debit notes does not have to be complicated. Here on Deskera Books, we allow
+businesses to apply the debit and credit note directly to the Sales and Bill invoices
+conveniently.
+==================================================
+Chunk 14:
+It’s hassle-free and intuitive! VisitDeskera Booksto find out more.
+==================================================

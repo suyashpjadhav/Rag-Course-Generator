@@ -1,0 +1,247 @@
+Chunk Number,Chunk Text
+1,"The benefits of working with few items at a time | Agile Insider
+By Vinícius Couto
+The Benefits of Working with Few Items at a Time The Benefits of Working with Few Items at
+a Time What the effects of high WIP (work in process) can cause on the work system and how
+to manage it to avoid the negative effects. The objective of this text is to present a
+more accurate view of the management of the amount of activities that we have in the
+teams."
+2,"Considering this, the following paragraphs explore how the teams are impacted and
+consequently the impact on the organizations when there is not good management of the
+amount of activities. The content approached here is pertinent to any area of work,
+especially where there is constant use of cognitive abilities and creative skills."
+3,"Thus,
+accounting, administrative, marketing, technology among other areas, can apply the
+proposed concepts. Main topics What WIP (Work in Process) is What the effects of high WIP
+can cause on the work system How to manage the WIP to avoid the negative effects How to
+deliver a work item faster?"
+4,"How to avoid the team overload? How to improve the quality of
+the team output?"
+5,"And even, how to deliver more?These are some examples of very common
+challenges in teams that are in constant evolution, be this for opportunity or for
+necessity. There are innumerous strategies, tools, actions of different natures to respond
+to those challenges."
+6,"Some measures could be to hire new professionals to the team,
+organize workshops, implant new tools, work on big projects etc. However, all of these
+items have high costs and long duration of time, depending on many sponsors, and can
+unfold good results in the long term or can unfold no results."
+7,"I propose something
+simpler. Let’s look at a no cost strategy to implement which depends almost exclusively on
+you and your team — I refer to work in progress management, or also known asWIP (Work in
+Process)."
+8,"When quantified,WIP is the amount of work items that started and not are
+finished yet, in other words, the amount of items that are in the workflow. In the case of
+a software development team, for example, the features that are being worked on at a
+certain moment."
+9,"In the case of an accounting team, these items could be the accounting
+reports. We can also consider that the work items can be projects which are being worked
+on by several teams."
+10,"In this context, the management of the amount of projects in progress
+in a department or even in the whole company, has a bigger importance. If done in a
+correct way, the company can considerably decrease the time-to-market, among others
+benefits approached later on."
+11,"Comparing with the retailer Before exploring the ways of
+having better WIP management, let’s make an analogy, imagine each activity in your work
+system is like a product in the inventory. A goodinventory turnoveris one of the most
+important factors for a retailer."
+12,"Imagine the commercial area in a retail company made a
+considerable mistake in the strategy and bought a much bigger quantity than the ideal from
+suppliers. Over several days, a lot of truck drivers arrived at the distribution center of
+this retailer with all of these products."
+13,"You can imagine that this company would start to
+have many problems such as: Big quantity of immobilized capital in stock — this extra
+expense that was used to buy products could have been used for other emergencies of the
+company (less capacity to react to changes); It becoming harder to handle the product in
+the distribution center, resulting in an increased number of damaged products (wastage);
+After some months, the customers would lose the interest in these products, they desire
+new models, so the part of stock which is stagnant would have to be sold below the cost
+price (obsolescence); With the full storage capacity, the retailer would delay to get
+reserve space for new launches awaited by the market (lower capacity of reacting to
+changes); The difficulty in handling the products would delay the shipment of part of the
+products to the customers (slowness); With so many trucks arriving, the distribution
+center entrance could become the bottleneck, in a short time a long line of trucks formed. In addition, the average download time leaped, this would cause great stress on employees
+and truck drivers (slowness and overload)."
+14,"The effects Despite not handling stocks, such
+workers in other areas as previously mentioned, can suffer even worse effects than this
+retailer, ifworking with too many items simultaneously. Again, let’s take the example of a
+team that creates software and verify what these effects are: Focus switching— with
+multiple items in progress, it’s common for team members to constantly switch the focus
+activity."
+15,"This context switch consumes a lot of mental energy, especially in activities
+that demand high concentration, such as software development. The focus recovery is not
+immediate, it takes a long time and many of the problems (bugs) are generated unnoticed at
+these moments."
+16,"Coordination cost— when a team is working on multiple projects at the same
+time, there is a huge amount of communication and information that needs to flow
+everywhere. This demands more meetings, more status reports, more presentations etc."
+17,"In
+these situations, it’s common to see managers with extremely busy schedules. This implies
+another problem, the manager’s lack of time for issues related to the team and people’s
+development."
+18,"Capability of reacting to change— teams that are working with high WIP have a
+slower capability to change the direction. For example, if there are many projects running
+in parallel and a sudden change in the company’s strategies has emerged (due to market
+factors or diverse factors, such as a pandemic) it will take a long time to finish the
+projects that are in progress and start new ones, those that represent the company’s
+reaction to the change."
+19,"Risk of wastage— a team that is working with high WIP and is faced
+with the need to discard these items to start another objective, will throw all this work
+(partially completed) in the trash. The greater the number of items in progress, the
+greater the risk of wastage."
+20,"This is also correlated with how long these items remain in
+the workflow, we will address this time factor later. Just as the stuck product that in
+the stock has not yet fulfilled its mission (to be sold), partially completed work is an
+investment that has not yet paid off."
+21,"In the case of software development teams, for
+instance, the new features being built will only deliver value when the clients can take
+advantage of them. So if these items are discarded before reaching the proposed value, the
+time dedicated by the individuals is wasted."
+22,"Instead of having 10 items in progress and
+none completed, it is preferable to have 4 finished items that have delivered value and
+another 4 in progress. Quality— there are some cases that indicate the correlation between
+the high amount of work in progress and the bad quality of team output."
+23,"Teams that start
+to work with less WIP demonstrate improvement in the quality output. My hypothesis is this
+negative effect on quality is due to switching activities mentioned above and the workload
+that high WIP generates."
+24,"The effects mentioned above would be enough to decrease your
+team’s WIP. However, the most relevant negative effect by high WIP, is inthe period of
+time that an item takes to go through the workflow, this period is known as Cycle Time.The
+higher the WIP, the longer time it will take for an item to go through the flow."
+25,"There are
+other factors besides high WIP that also impact the Cycle Time. We won’t go into these
+details, because the factors and effects generated in the work system give a good
+reflection by itself."
+26,"What do we need to start working on WIP? Well, I imagine you’ve
+already noticed that we need to work with a smaller amount of items at a time."
+27,"But before
+that, it is necessary to create some conditions so that we can work on WIP: Visual
+management— different from the retailer where the stock is totally visible (number of
+boxes in the distribution center), the work done by teams based on cognitive abilities,
+are not palpable and visible. What is not seen is not managed and therefore it is not
+possible to make any kind of improvement."
+28,"For that reason, whether on the company wall or
+in any activities management tool (inLuizalabswe use theSwiftKanban) it is necessary to
+bring up all the items the team is working on. Just by taking a look, the image below
+already demonstrates the WIP amount in the whole system and how these items are
+distributed in the work steps."
+29,"Structured flow— it is also necessary to understand with
+the team what are the steps of the workflow. This sequence of steps already exists in any
+work process, just make them visible to everyone."
+30,"To facilitate this exercise, I recommend
+the use ofSTATIK, a technique based on systemic view that facilitates the understanding of
+the flow of producing valuable work. In this flow, it is necessary to make the stages that
+the items are not being worked on visible, they will be waiting for a considerable amount
+of time before someone takes action — these steps are calledqueues."
+31,"Some examples of
+queues steps are shown in the below image: (Wait) To review, Waiting for Homologation and
+Waiting for Deploy. Working the WIP Ok, now that we’ve prepared the ground with visual
+management and structured flow, we can discuss the mechanism tolimit WIP, this is
+torestrict the maximum number of items at a time in the workflow, avoiding the effects
+explained above."
+32,"Almost always, this involves decreasing the number of items in the flow
+that the team is used to dealing with. Normally, people have the first negative feeling
+when we propose working with only a few items at a time."
+33,"Due to habit, we have the
+impression that we are more productive when we are doing “a thousand things at the same
+time”. We always hear someone say things like: “I’m up to my ears with things to do”."
+34,"Really, it’s something different from what we are used to, it’scounter intuitive. The
+movement to limit the WIP should be very well explained and in accordance not only with
+the team, but also with the stakeholders."
+35,"It’s important to clarify the whys of this
+practice and its benefits; something this text attempts to do. There’s not an exact recipe
+to limit the WIP."
+36,"It depends on the various factors which compose the context of each
+team. However, there are some practices that we learn in the literature and combined with
+experience in dozens of teams in the last years."
+37,"Considerations: Do not impose the WIP
+limit in an individual decision, together with all members of the team, agree on the
+number. The number of WIP should be calibrated over time, in other words, the team can
+decrease or increase this number according to the learnings."
+38,"An abrupt change to a very
+low WIP can cause excessive stress in the process and generate resistance. Leave it clear
+to all stakeholders (product owners, key users, among others) that the team is working
+with limited WIP, how much is this WIP (ex."
+39,": 6 features at a time), the importance of
+respecting this and the benefits expected. This practice will only generate benefits if
+the team keeps the discipline of respecting the WIP over time."
+40,"Step by step: Just start—
+establish a value of maximum WIP to the whole board. Example: 2 times the amount of people
+in the team. If there are 8 people in the team, start with a maximum WIP of 16. Or, the
+number of people in the team plus 1, if there are 8 people in the team, start with a
+maximum WIP of 9."
+41,"Respect the WIP— put into practice a pull system, in other words, just
+pull a new demand when there is space. Monitor the work system— have bottleneck steps
+emerged?"
+42,Are the blocked items clear? Have the metrics changed?
+43,"Later we will talk about
+the CFD chart which assists this monitoring. Create an environment where people
+collaborate— how do we remove these bottlenecks?"
+44,"How do we reduce the blocks? What can we
+adjust in the work system?"
+45,"In addition to limiting the WIP, there are others actions which
+help take the pressure off having so many items in the work system, such as: There is good
+work to be done on the items before they come into the team focus, the manner that just
+well-cut items arrive (refinement) and that will really give value (triage). Work to
+reduce the volume of operational items and problems (bugs) to “leave” more space for items
+that will add value."
+46,"Mentioning this, in a way, is obvious, however we do not always have
+a good idea of the large number of activities which consume space (time and energy) in the
+precious and scarce capacity of the team. Monitoring the WIP On the line of monitoring the
+amount of WIP and the work system over time, I propose to utilize the CFD (cumulative flow
+diagram) chart."
+47,"The CFD shows the cumulative amount of items in each of the stages over
+the weeks. Each “layer” of the chart represents one step."
+48,"In the above example, every step
+of the flow was summarized in a macro step called WIP (red layer), so, we can follow if
+the red layer is more slim or more wide. Keep the layer slim, in other words, keep the WIP
+in a small amount and constant for weeks, depending on the items amounts that entered in
+the process and the number of finished items."
+49,"For example, from week 4 to 5 in the above
+chart, one item entered and none exited (done), therefore the WIP increased. Previously we
+mentioned the considerable influence of the WIP in the Cycle Time (the higher the WIP, the
+longer the Cycle Time). The CFD chart makes it very clear, between week 2 and 4, when the
+WIP was very contained, we noticed the average Cycle Time (represented by the horizontal
+arrow) much smaller than the average Cycle Time of weeks 4 and 8, given that in these
+weeks the WIP increased."
+50,"In addition to monitoring the WIP (red layer) and the average
+Cycle Time, the CFD is very useful to track the amount of items in team backlog, the
+amount of items done and, thereby, can also be used to forecast how many items can be
+finished in the future based on the history of previously done items. Collaboration I have
+finished my activity, which one shall I start now?"
+51,"This is a very common phrase in the
+day-to-day of teams. Once we start respecting the maximum WIP, this question should change
+to something like: I have finished my activity, which other one can I help someone to
+finish before starting a new one?"
+52,"If the team already has the maximum number of activities
+in progress agreed, this is the moment to help other people to finish some activity. When
+I say “finish” in a generic way, I mean any activity."
+53,"In software development teams, for
+example, at a moment like this, the developer “can make himself available” to help with
+the publishing in a production environment. As previously described, while not finished,
+an activity does not deliver value."
+54,"This is one of the triggers for the “stop starting,
+start finishing” transition. Working with limited WIP is an intense dose of stimulation
+for collaboration among the people in the team."
+55,"The whole that the team delivers overlaps
+the individual deliveries. Final The practice of limiting work in process goes far from
+being a stand–alone thing in the workflow management, it’s interlaced with several other
+concepts and practices that have an immense potential to the teams, such as: queues,
+bottlenecks, flow efficiency, work item size, variability, among others."
+56,"However, this is
+a powerful mechanism to bring immediate benefits to the team, also to avoid overload and
+its consequences on the people and work system. It’s necessary to have discipline to say
+“no” to new demands when we already have the maximum WIP."
+57,"This “no” is a negative that
+elevates the importance to correct prioritization and refinement of items that will be
+available to enter the workflow. Furthermore, on the line to bring positive discussions
+about the problems in the organization, David Anderson defends that the limited WIP
+generates “positive tension”: The discussion and collaboration invoked for the positive
+tension of limited WIP are healthy."
+58,"It’s a mechanism that enables the emergence of a
+continuous improvement culture. Without a limit to WIP, the progress on the improvement
+process is slow."
+59,"References Kanban: Successful Evolutionary Change for your Technology
+Business: Successful Evolutionary Change for your Technology — David J. Anderson The
+Principles of Product Development Flow: Second Generation Lean Product Development —
+Donald G. Reinertsen Zen and the Software Management Art (Software Zen) — Alisson Vale"

@@ -1,0 +1,146 @@
+Chunk Number,Chunk Text
+1,"The QA Process: A beginner’s guide to the main stages, steps and tools of Quality
+Assurance | by Careerist | Medium
+By Careerist
+The QA Process: A beginner’s guide to the main stages, steps and tools of Quality
+Assurance When you’re thinking about becoming a tester, and you’re reading about the
+topic, you can quickly become overwhelmed with all the concepts and terms associated with
+QA. There are so many terms in the QA process that don’t mean anything to you, like ‘black
+box’, ‘white box’, ‘unit tests’, ‘regression tests’, ‘manual’ and ‘automated’ testing,
+‘BrowserStack’, and ‘Jira’… It all sounds so complicated!"
+2,"Plus, you probably think that
+it’ll take you years to learn all of this stuff and to become a successful QA engineer! Well, we won’t lie to you and say that becoming a QA engineer is simple and quick, because
+becoming a tester is going to require effort. But believe us when we say, it is not that
+hard to actually become a QA engineer."
+3,"With adequate guidance and training you can learn
+pretty fast. You just need to know where to start."
+4,"This article will help you to
+understand the QA process, including, the testing steps, and what tools are generally used
+by engineers. After reading this article you will know: What is the difference between
+quality assurance and quality control?"
+5,"What are the main stages in the QA process? What is
+the difference between manual and automated testing?"
+6,"What do the different ‘test types’
+mean? Which tools help to optimize the entire QA process?"
+7,"What is the QA process and how
+is it different from quality control? QA, or quality assurance, in software development is
+a process that checks and prevents any issues occurring across the whole project."
+8,"This
+also includes project management, as various individuals need to be managed when
+performing QA tests. And finally, QA also guarantees that a company delivers a product or
+software to market that has the best possible user experience."
+9,"Quality control (QC), on
+the other hand, focuses on testing the final product and identifying issues and
+eliminating them, before the product goes on the market. Having a functioning QA process
+ensures that all of the team members, who are working on a particular project, work more
+effectively together and in doing so the development time will shorten, and thus costs
+will be lower."
+10,"Of course, the QA testing process varies slightly in different companies. But in general, its stages are the same."
+11,"Now you know more about the QA process let’s take
+a look at the main stages within the QA process. What are the main stages in the QA
+process?"
+12,"Review of requirements Nowadays, quality assurance starts very early in the
+software development lifecycle – right in the ‘requirement analysis’ stage. QA
+professionals must review the requirements of the product before starting work, so that
+they can be clear on what needs to be done."
+13,"Checking the requirements also means that the
+testing will be consistent, complete, executable, and that the project is actually
+testable. Planning phase After testers have understood the requirements, they can start
+developing a test strategy and begin the test planning phase."
+14,"At this stage, they define
+the scope of the work, the budget, they decide which approach to take at each stage of the
+software’s development, they’ll also decide what types of testing will be needed, and
+finally, which tools will be used during the actual testing. Developing test cases With a
+plan in hand, it is time to design test cases, create checklists, prepare the environment
+for test execution, and create automated testing scenarios."
+15,"Test execution At this point,
+everything is prepared for finding bugs and issues. The QA team starts to execute
+different types of tests, and testers start to report any and all of the discovered bugs."
+16,"Verifying fixes Once the development team fixes an issue, QA professionals retest the
+functionality of the product, and perform regression testing to ensure that the software
+still works correctly after all of the changes have been made. Test cycle closure Once all
+of the fixes have been changed, and all planned tests have been executed, it is time to
+prepare the test closure document."
+17,"This document is a summary of all the tests performed
+during the software development life cycle. What tests are used in the QA process, and
+what approaches are considered? Now that you understand what the QA process looks like,
+let’s now talk about all the different test types that can be used in software testing."
+18,"Yes, there are a lot of them, but don’t worry, you’ll soon be able to navigate between
+them. Functional and non-functional tests There are two main tests categories, these are,
+functional and non-functional tests."
+19,"In functional testing, QA engineers check to see
+whether the product behaves as required. In other words, they verify if the actual output
+is matching the expected result. In non-functional testing, the QA engineer checks how the
+product performs in different conditions."
+20,"They will change the environments to see what
+happens, for example, load, security, stress, and usability tests. Knowledge of the source
+code If testers know the source code before testing begins, then QA engineers use the
+‘white box’ testing type."
+21,"On the other hand, if QA engineers do not know the source code
+they are dealing with, the ‘black box’ testing type is used. This is when testers only
+evaluate input and output in an application."
+22,"On a different note, ‘grey box’ testing is a
+combination of both of these approaches, and testers use this type of testing when they
+have limited information about the internal structure of the system. A phase of software
+development This is when tests are divided up into; unit testing, module testing,
+integration testing, system testing, and user acceptance testing, based on where
+developers are in the software development cycle."
+23,"Here are a couple more testing types
+that you may come across: Smoke tests are designed to check the basic functionality of an
+application. They are quick to perform, and with their help, testers can ensure that the
+main features of the system are working correctly."
+24,"Regression tests help to check if an
+application is working as it is supposed to be working after some changes, such as bug
+fixes, are done. Load tests are needed to determine an application’s behavior both under
+average and peak load conditions."
+25,"Cross-browser/cross-platform testing helps to analyze
+the application’s behavior in different browser/platform environments. Of course, these
+are not all of the testing types used in the QA test process."
+26,"But knowing the basic
+categories will help you to understand the topic better. Approaches to executing tests
+Some tests are performed by humans and this is known as manual testing."
+27,"In manual testing,
+testers actually execute test cases and generate test reports themselves. On the other
+hand, you have tests that are performed by computers, this is more commonly known as
+automation."
+28,"Test automation engineers are responsible for creating and writing test codes
+that simulate user experiences, that can be repeated over and over again, to check the
+software in question for bugs. Both of these approaches have pros and cons, and when used
+together they yield good results."
+29,"Here are some things about manual testing to consider. Manual testing is more suited for small test projects, and manual tests typically pick up
+issues that would be missed in an automated test."
+30,"And finally, manual testing doesn’t
+require advanced knowledge of scripting languages and is reasonably easy to learn. On the
+flip side, manual testing is time-consuming if testers are working on a big project, and
+you can never exclude the possibility of human error."
+31,"Similarly, automation has many
+positives, it can be used repeatedly, time and time again. Plus, it’s good for large
+projects."
+32,"But, on the downside, it doesn’t quite have the human touch and can miss errors
+that are beyond the scope of its code. QA professionals have to decide between manual and
+automated testing for each project."
+33,"Tools Now that we know what the QA process is and what
+types of tests and approaches exist, let’s talk about what tools testers use when they’re
+completing their work. A testing tool is anything that supports test activities."
+34,"There are
+plenty of tools on the market, and nobody expects a beginner to know them all. But it’s a
+good idea to be familiar with the most popular tools, like ‘Selenium’, ‘Jira’, and
+‘BrowserStack’."
+35,"‘Selenium’ is the most popular testing tool. It does not need advanced
+scripting knowledge and is user friendly for beginners."
+36,"‘Jira’ is a bug and issue tracking
+tool. It is also used for project management."
+37,"‘BrowserStack’ enables developers to test
+their applications across different browsers, devices, and operating systems. Conclusion
+No matter which approach or method a company uses, the final goal is always the same – to
+deliver the best possible product to customers."
+38,"Well established QA processes help to
+reduce costs, improve the overall quality of software, and bring about a better user
+experience. You can become part of this process right now by signing up to one of our
+online courses."
+39,"Our short courses are designed to help people just like you to overcome
+their fears and start a new career as a QA professional. With our experienced tutors
+guiding you along the way, you’ll have learnt the basics of QA in just a few weeks – then
+you’ll be on course to get yourself a high-paying salary."
+40,"Check out our website for more
+information, and to learn about our courses and curriculums right now."

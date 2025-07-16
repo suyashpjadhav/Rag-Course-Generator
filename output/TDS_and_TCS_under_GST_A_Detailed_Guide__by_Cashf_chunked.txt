@@ -1,0 +1,273 @@
+Chunk 1:
+TDS and TCS under GST: A Detailed Guide | by Cashflo | Medium
+By Cashflo
+TDS and TCS under GST: A Detailed Guide Tax Deducted at Source (TDS) and Tax Collected at
+Source (TCS) are essential components of theGoods and Services Tax (GST) frameworkin
+India. These provisions were introduced to streamline tax collections and prevent tax
+evasion.
+==================================================
+Chunk 2:
+In this blog, we will explore the intricacies of TDS and TCS under GST, shedding
+light on their significance, applicability, and procedures. ■■■ ■■■■■ ■■■ ■.
+==================================================
+Chunk 3:
+■■■■ ■■ ■■■? Tax Deducted at Source (TDS) is a mechanism where the person making a payment deducts a
+certain percentage of the payment as tax and deposits it with the government.
+==================================================
+Chunk 4:
+TDS
+provisions under GST are primarily aimed at ensuring tax compliance and tracking high-
+value transactions. ■. ■■■■■■■■■■■■■: TDS under GST is applicable to specific entities
+such as government agencies, local authorities, and certain categories of taxpayers.
+==================================================
+Chunk 5:
+They
+are required to deduct TDS when making payments to suppliers or vendors. ■.
+==================================================
+Chunk 6:
+■■■■ ■■ ■■■:
+The rate of TDS under GST varies based on the nature of the transaction. It is typically a
+small percentage of the total payment.
+==================================================
+Chunk 7:
+■. ■■■■■■■■■■: Those who are required to deduct TDS
+must obtain GST registration as TDS deductor even if he is a separately registered
+taxpayer and file periodic returns, providing details of TDS deducted and deposited.
+==================================================
+Chunk 8:
+Tax
+Deducted at Source (TDS) is a mechanism where a specified percentage of the total amount
+payable is deducted by the recipient of goods or services while making payments to the
+supplier. The deducted amount is then remitted to the government.
+==================================================
+Chunk 9:
+TDS under GST is
+governed by Section 51 of the CGST Act, 2017. ■■■■■■■■■■■■■ ■■ ■■■: TDS under GST is
+applicable to the following entities: - Government agencies or specified persons.
+==================================================
+Chunk 10:
+- Local
+Authorities - Such category of persons notified by the Government - Public sector
+undertaking, etc ■■■ ■■■■■■ ■■■■■ ■■■: - TDS is deducted at a prescribed rate, which
+should not exceed 2% (1% each for CGST and SGST/UTGST) of the total value of the supply. -
+The deducted TDS amount must be remitted to the government within a specified timeframe.
+==================================================
+Chunk 11:
+-
+The deductor must furnish a TDS certificate to the deductee. ■■■ ■■■■■ ■■■ ■.
+==================================================
+Chunk 12:
+■■■■ ■■ ■■■? Tax Collected at Source (TCS) is another mechanism where the seller collects tax from the
+buyer at the time of sale and deposits it with the government.
+==================================================
+Chunk 13:
+TCS provisions are intended
+to track high-value transactions and promote tax transparency. ■.
+==================================================
+Chunk 14:
+■■■■■■■■■■■■■: TCS under
+GST is applicable to e-commerce operators who facilitate the sale of goods or services
+through their platforms. They are required to collect TCS from the sellers on their
+platforms.
+==================================================
+Chunk 15:
+■. ■■■■ ■■ ■■■: The rate of TCS under GST is a small percentage of the total
+transaction value.
+==================================================
+Chunk 16:
+It varies based on the type of goods or services sold. ■.
+==================================================
+Chunk 17:
+■■■■■■■■■■:
+E-commerce operators must register under GST, collect TCS from sellers, and file regular
+returns with details of TCS collected and deposited. Tax Collected at Source (TCS) is the
+flip side of TDS.
+==================================================
+Chunk 18:
+It places the responsibility of collecting tax on the supplier rather
+than the recipient. Under TCS, the supplier collects tax from the recipient and deposits
+it with the government.
+==================================================
+Chunk 19:
+TCS under GST is governed by Section 52 of the CGST Act, 2017. ■■■■■■■■■■■■■ ■■ ■■■: TCS under GST applies to the following entities: - E-commerce
+operators who facilitate supplies made by other suppliers.
+==================================================
+Chunk 20:
+■■■ ■■■■■■ ■■■■■ ■■■: - TCS is
+collected by the e-commerce operator at a specified rate. - The collected TCS must be
+deposited to the government within the stipulated timeline.
+==================================================
+Chunk 21:
+- The e-commerce operator must
+furnish a TCS certificate to the supplier. ■■■ ■■■■■■■■■: - TDS and TCS are mechanisms
+introduced under GST to ensure tax compliance and transparency.
+==================================================
+Chunk 22:
+- TDS is applicable to
+specific entities making payments to suppliers, while TCS is applicable to e-commerce
+operators. - Both TDS and TCS involve deducting or collecting a small percentage of the
+transaction value as tax.
+==================================================
+Chunk 23:
+- Compliance with TDS and TCS provisions includes obtaining
+certificates, filing returns, and depositing tax with the government. ■■■■-■ ■■■ ■■■■-■:
+■■■■■■■■■■■■ ■■■ ■■■ ■■■ ■■■■■■■■■■ ■■■■■■■■■■ ■■ ■■■ ■■■ ■■■ TDS and TCS serve several
+critical purposes under GST: 1.
+==================================================
+Chunk 24:
+Revenue Collection:These provisions ensure a continuous
+inflow of tax revenue to the government by preventing tax evasion. 2.
+==================================================
+Chunk 25:
+Tracking
+Transactions:TDS and TCS facilitate the tracking of high-value transactions, enhancing
+transparency in the tax system. 3.
+==================================================
+Chunk 26:
+Compliance:They encourage compliance among suppliers
+and e-commerce operators, as non-compliance can lead to penalties and legal consequences. 4.
+==================================================
+Chunk 27:
+Reduced Tax Evasion:TDS and TCS mechanisms act as deterrents against tax evasion,
+benefiting both the government and honest taxpayers. Entities responsible for deducting
+Tax Deducted at Source (TDS) and Tax Collected at Source (TCS) also have obligations under
+the GST regime.
+==================================================
+Chunk 28:
+To facilitate this, the government has introduced two crucial return
+forms: GSTR-7 and GSTR-8. ■■■■-■: ■■■ ■■■■■■ ■■■■ GSTR-7 is the GST return form designed
+for entities that are required to deduct TDS under GST.
+==================================================
+Chunk 29:
+It is an important compliance
+document that helps in the reporting and payment of TDS amounts. Here’s a closer look at
+GSTR-7: ■.
+==================================================
+Chunk 30:
+■■■ ■■■■■■ ■■■■ ■■■■-■? : Any person or organization that deducts TDS under GST
+is obligated to file GSTR-7.
+==================================================
+Chunk 31:
+It is a GST return form filed by tax deductors, usually
+government entities and certain individuals, who deduct TDS under GST. It contains details
+of TDS deducted, TDS liability, and TDS refunds.
+==================================================
+Chunk 32:
+■. ■■■■■■■■■: GSTR-7 must be filed on a
+monthly basis, irrespective of the amount of TDS deducted.
+==================================================
+Chunk 33:
+■. ■■■■■■■ ■■ ■■■■-■ ■■■■:
+GSTIN Legal name of the deductor Details of the tax deducted at source Changes to details
+of TDS for any earlier tax period Tax deduction at source and paid Interest, late fee
+payable, and paid Refund claimed from electronic cash ledger Debit entries in electronic
+cash ledger for TDS/interest payment ■.
+==================================================
+Chunk 34:
+■■■ ■■■■: The due date for filing GSTR-7 is
+typically on or before the 10th of the following month. ■. ■■■■■■■ ■■■ ■■■ ■■■■■■ ■■■■-■
+(■■■ ■■■■■■ ■■■■) Failing to file GSTR-7, the TDS return form, within the stipulated due
+date can result in penalties and consequences for the deductor.
+==================================================
+Chunk 35:
+Here are the penalties
+associated with non-filing or delayed filing of GSTR-7: ■. ■■■■ ■■■: If a deductor does
+not file GSTR-7 by the due date, they may be liable to pay a late fee.
+==================================================
+Chunk 36:
+Rs. 100 per day
+under CGST and Rs.100 under SGST shall be levied, and the total will be Rs.200 per day of
+delay during which the return remains unfiled.
+==================================================
+Chunk 37:
+The maximum late fee is Rs. 5,000.
+==================================================
+Chunk 38:
+■. ■■■■■■■■: In addition to the late fee, interest may be applicable on the TDS amount not
+paid within the due date.
+==================================================
+Chunk 39:
+The interest rate is usually set at 18% per annum, calculated
+from the day after the due date. ■.
+==================================================
+Chunk 40:
+■■■■■■■■ ■■ ■-■■■ ■■■■: Non-compliance with GSTR-7
+filing can result in the blocking of the deductor’s e-way bill generation facility. This
+can disrupt the movement of goods and impact business operations.
+==================================================
+Chunk 41:
+■■■■-■: ■■■ ■■■■■■ ■■■■
+GSTR-8 is the counterpart to GSTR-7, designed for individuals or entities that collect TCS
+under GST. It is a GST return form filed by e-commerce operators who collect TCS on
+supplies made through their platforms.
+==================================================
+Chunk 42:
+It includes information about supplies, TCS
+collected, and liability. Here’s what you need to know about GSTR-8: ■.
+==================================================
+Chunk 43:
+■■■ ■■■■■■ ■■■■
+■■■■-■? : Any person or organization that collects TCS under GST, such as e-commerce
+operators, must file GSTR-8. Any e-commerce operator registered under GST, which manages a
+digital platform for e-commerce (like Amazon), must file GSTR-8.
+==================================================
+Chunk 44:
+They are required to
+obtainGST registrationand register for TCS as well. ■.
+==================================================
+Chunk 45:
+■■■■■■■■■: GSTR-8 must be filed on
+a monthly basis, regardless of the quantum of TCS collected. 3.
+==================================================
+Chunk 46:
+■■■■■■■ ■■ ■■■■-■ ■■■■:
+GSTIN of the E-commerce Operator. Legal name of the registered person.
+==================================================
+Chunk 47:
+Details of supplies
+made through e-commerce operator. Amendments to details of supplies in respect of any
+earlier statement Details of interest Tax payable and paid Interest payable and paid
+Refund claimed from electronic cash ledger Debit entries in cash ledger for TCS/interest
+payment ■.
+==================================================
+Chunk 48:
+■■■ ■■■■: The due date for filing GSTR-8 is usually on or before the 10th of
+the subsequent month. ■.
+==================================================
+Chunk 49:
+■■■■■■■ ■■■ ■■■ ■■■■■■ ■■■■-■ (■■■ ■■■■■■ ■■■■) ■. ■■■■ ■■■: If
+an e-commerce operator fails to file GSTR-8 within the prescribed due date, they may be
+liable to pay a late fee.
+==================================================
+Chunk 50:
+Rs. 100 per day under CGST and Rs.100 under SGST shall be
+levied, and the total will be Rs.200 per day of delay during which the return remains
+unfiled.
+==================================================
+Chunk 51:
+The maximum late fee is Rs. 5,000.
+==================================================
+Chunk 52:
+■. ■■■■■■■■: In addition to the late fee,
+interest may be applicable on the TCS amount not paid within the due date.
+==================================================
+Chunk 53:
+The interest
+rate is typically set at 18% per annum, calculated from the day after the due date. ■.
+==================================================
+Chunk 54:
+■■■■■■■■ ■■ ■-■■■ ■■■■: Similar to GSTR-7, non-compliance with GSTR-8 filing can lead to
+the blocking of the e-commerce operator’s e-way bill generation facility. ■■■■■■■■■■ TDS
+and TCS provisions under GST play a crucial role in ensuring tax compliance and revenue
+collection.
+==================================================
+Chunk 55:
+It’s essential for businesses and e-commerce operators to understand these
+provisions, adhere to the prescribed rates, and meet the compliance requirements to avoid
+penalties and legal consequences. Snippet- Unveil the world of GST’s Tax Deducted at
+Source (TDS) and Tax Collected at Source (TCS) in India.
+==================================================
+Chunk 56:
+Learn their significance,
+compliance, and implications. Stay GST-compliant with LogiTax!
+==================================================

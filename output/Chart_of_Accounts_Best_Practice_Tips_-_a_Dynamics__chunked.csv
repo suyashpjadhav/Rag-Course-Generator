@@ -1,0 +1,85 @@
+Chunk Number,Chunk Text
+1,"Chart of Accounts Best Practice Tips - a Dynamics Consultant’s Perspective | by Cherub
+Robertson | Hitachi Solutions Braintrust | Medium
+By Cherub Robertson
+Chart of Accounts Best Practice Tips — a Dynamics Consultant’s Perspective At the heart of
+ERP, a chart of accounts (COA) can be found branching out through the business. As part of
+an ERP implementation, the COA needs to be cleaned up and made extensible, preparing it
+for ease of use and growth with the business post new ERP implementation."
+2,"COAs can be
+global in Dynamics or vary by legal entity, depending on the organization’s needs. It
+takes time and effort to come up with a well-thought out, well-designed COA."
+3,"A new COA
+requires mapping of old data from the legacy system to the new COA for data migration. Data validation after a new COA implementation can be quite cumbersome."
+4,"In testing after
+COA modification, you may find changes or additions must be made for best fit to the
+business or for Dynamics-required setups. The COA has to be made to work for the business
+and the new ERP and, as the client becomes better versed in the new ERP, additional tweaks
+to the COA will likely be necessary."
+5,"Here are some best practice tips that can be used to
+facilitate the COA revision process: 1. Don’t wait!It is critical that the conversation
+with the client around COA revision start early."
+6,"The COA revision should be as complete as
+it can be prior to the first load for initial Dynamics configuration. An overhaul of the
+COA post-ERP setup can be very time-consuming, requiring not only an update of the COA
+itself, but of Main Account-referencing Posting Profiles and other Dynamics
+configurations."
+7,2. Get everyone involved.
+8,"Encourage the finance contact(s) responsible for
+the COA overhaul on the client side to work closely with contacts from other parts of the
+business to make sure everyone’s needs are being heard and met. Consider the
+organizational structure/hierarchy."
+9,"Do the financial dimensions (segments) capture all
+that is needed for separation of activity, or should the detail be captured in additional
+main accounts that are, perhaps, unique to various parts of the business? 3."
+10,"How many
+digits?How many characters would the client like used for main account numbers in
+Dynamics? Between four and six are common lengths."
+11,"Prior to import, verify all main
+accounts meet the decided-on length. Main account masking on the COA can be configured as
+a control to ensure newly created or changed main account numbers in Dynamics meet the
+necessary length and all characters are numeric."
+12,"Alpha characters can be used in main
+account numbering and included in masking, too, but is not seen very often. 4."
+13,"Account
+numbering. Overall COA numbering follows balance sheet and income statement presentation."
+14,"The first digit of main accounts enables grouping of like, high-level sets of accounts and
+typically follows the below standard: The second digit in a main account number is used to
+classify subsets of the primary groupings defined by the main account first digit. Here is
+an example of how you might see second digits employed in the assets grouping: A digit
+might be selected to identify accounts possessing similar properties."
+15,"For example, contra
+accounts might all end in the number “9” to make them stand out: Remaining digits can be
+used to classify other traits or subsets of accounts if needed, along with at least one
+unique identifier to specifically pinpoint the subject account. 5."
+16,"Extensibility. Main
+account numbering should allow for easy growth of the COA with the business while
+maintaining the order of accounts."
+17,"Gaps between main account numbers should be part of
+planning the COA revision. Gap size appropriate for the business depends on the frequency
+of the addition of new accounts and COA changes. In the example below, a gap of 10 numbers
+has been left between main accounts to allow for the creation of future new accounts that
+may need to be inserted to retain the planned structure of the COA."
+18,"In this example, an
+“in transit” bank account for a bank that already exists is being set up for use as a
+bridging account: 6. Beware of special characters."
+19,"Main account names can usually be
+whatever the client needs them to be in Dynamics. When you get into the financial report
+builds however, you may encounter errors in the Report Designer due to disallowed special
+characters."
+20,"7. Legal entity override.You can take advantage of the option to prohibit use
+of main accounts in specified Dynamics legal entities without having to implement
+additional COA."
+21,Configuration can be done at the main account or via entity load. 8.
+22,"Spell
+check. Prior to import, it is a good idea to perform one last check."
+23,"Summary Overhaul of
+the COA is quite a task to take on, especially under the pressure and demands of a new ERP
+implementation. Helpful hints are good to have but a second set of eyes is invaluable."
+24,"As
+the consultant and expert, perform a careful review of the COA presented by the client for
+use in Dynamics and meet/discuss until all looks good. You, of course, want the client to
+be pleased with the finished product so don’t be afraid to provide feedback and
+constructive criticism when needed."
+25,"Little things, like spell check, are easily overlooked
+with tasks this big and the client will appreciate your help."

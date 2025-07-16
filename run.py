@@ -3,7 +3,17 @@ import logging
 from src.chunker import chunk_structured_document
 from src.utils import save_chunks_as_txt, save_chunks_as_json, save_chunks_as_csv
 from PyPDF2 import PdfReader
+import nltk
+from dotenv import load_dotenv
 
+load_dotenv()
+
+from huggingface_hub import login
+login(os.getenv("HUGGINGFACE_API_KEY"))
+debug = os.getenv("DEBUG", "false").lower() == "true"
+
+nltk.download('punkt')
+nltk.download('punkt_tab')
 # Set up logging
 logging.basicConfig(
     filename='logs/chunking.log', 

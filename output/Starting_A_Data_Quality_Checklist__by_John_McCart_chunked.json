@@ -1,0 +1,13 @@
+{
+    "chunks": [
+        "Starting A Data Quality Checklist | by John McCarthy | Medium\nBy John McCarthy\nI have some bad news for you. Something in the data you used in your last project is\nwrong.",
+        "You just don’t know it yet. “But, no!",
+        "I got that data from the UI team. They said\nit was reviewed!” Congratulations.",
+        "You can tell that to everyone while you are being\nwalked respectfully out of the building because your new marketing model caused $200,000\nin lost revenue. Don’t blame Google because you thought Coffeyville, Kansas was a\nmeaningful predictor when it was just the default geocentric center of the United States.",
+        "No, it is not another team’s fault. It is not the rushed timeline’s fault.",
+        "It is not some\ngreat universal struggle that is impossible to overcome. The quality of the product you\ncreate is YOUR responsibility.",
+        "The inputs and the outputs belong to YOU. Welcome to the\nthankless world of data quality.",
+        "There are different levels of investment and effort that\nyou can put into quality control. At the very least, you should keep a series of lists,\naround each data source, for errors that you have run into so that you can prevent the\nsame error from happening twice.",
+        "If you don’t already have something like that in place, I\ncan give you a jump start."
+    ]
+}
