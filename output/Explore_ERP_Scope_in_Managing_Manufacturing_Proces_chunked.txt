@@ -1,0 +1,192 @@
+Chunk 1:
+Explore ERP Scope in Managing Manufacturing Processes In Manufacturing Industry | by ACG
+IL | Medium
+By ACG IL
+Explore ERP Scope in Managing Manufacturing Processes In Manufacturing Industry
+Manufacturing is a process of converting raw materials, components or parts into finished
+goods that meet a customer’s expectations or specifications.
+==================================================
+Chunk 2:
+Manufacturing process begins
+with the product design and material specifications from which the product is made.
+==================================================
+Chunk 3:
+Manufacturing sector is closely connected with engineering and Industrial design.It is
+required to consistently produce high quality products that can fulfill & meet the
+commitments and deliver the best products or services to the customers.
+==================================================
+Chunk 4:
+To manage all the
+components of the manufacturing system, every manufacturing unit requires a centralized
+software which can handle all the components & simultaneously offer the best production
+system.
+==================================================
+Chunk 5:
+This can be done with use of Enterprise Resource Planning (ERP) software, which
+can controll and manage different areas of the productions along with inventory and other
+system.
+==================================================
+Chunk 6:
+ACGIL, one of the expert and accompliehd ERP developer in India offers Mx-ERP. Mx-
+ERP, is a versatile and effective ERP system that streamlines all the business processes,
+providing real-time information.
+==================================================
+Chunk 7:
+It enhances the productivity by helping users understand
+the complex operations and improving functions such as production, Order completion and
+delivery.
+==================================================
+Chunk 8:
+Some Modules of Mx-ERP CRM (Customer Relationship Management) Cost & Estimation
+Sales Management Import/Export Management Project Management Purchase Inventory Warehouse
+Production Job Work Quality Control Distribution Management Service Management Asset
+Management Finance & Accounting HR & Payroll Key features of our Mx-ERP Solutions: Demand
+Forecasting & Planning Powerful Inventory Management Promising users for connecting their
+departments, suppliers and customers Adopted to support multiple operational activities.
+==================================================
+Chunk 9:
+Offers fine integration of procurement, material management, planning, manufacturing and
+accounting.
+==================================================
+Chunk 10:
+Major Components of Manufacturing Process covered by Mx-ERP in Manufacturing
+Industries There are some important components in the field of manufacturing that play key
+a role in delivering best products or services.
+==================================================
+Chunk 11:
+1.
+==================================================
+Chunk 12:
+Manufacturing Engineering:It is that
+discipline of engineering that deals with various manufacturing sciences and practices
+including the research, design and development of the systems, process, machines, tools
+and equipment.
+==================================================
+Chunk 13:
+Here the primary focus is to turn materials into new or updated product in
+the most economic, efficient and effective way.
+==================================================
+Chunk 14:
+Mx-ERP handles the entire process of
+manufacturing.
+==================================================
+Chunk 15:
+2, Factory System:It a system which indicates a method of manufacturing
+using machinery and division of labour.
+==================================================
+Chunk 16:
+Here production of good and products is carried
+out with the application of machines & equipment.
+==================================================
+Chunk 17:
+Mx-ERP draws all information about
+factory system and save them in one system.
+==================================================
+Chunk 18:
+3.
+==================================================
+Chunk 19:
+Guild or Craft System:It is a system in
+which association of artisans and craftsman make their creations and develop fantastic
+products before supplying for the customers.IT covers details and the relevant contract
+information under Guild system.
+==================================================
+Chunk 20:
+4.
+==================================================
+Chunk 21:
+Metal Fabrication:It is building of metal structures by
+cutting, bending & assembly processes.
+==================================================
+Chunk 22:
+Basically, It involves creation of machines, parts
+and structures from various raw materials.
+==================================================
+Chunk 23:
+The details of raw metal materials and their
+moulding data management.
+==================================================
+Chunk 24:
+5.
+==================================================
+Chunk 25:
+Just-In-Time Manufacturing:Just-In-Time Production is a
+methodology used to reduce flow times within the production system as well as response
+time from suppliers and customers both.
+==================================================
+Chunk 26:
+It assists to control the production and
+manufacturing process.
+==================================================
+Chunk 27:
+6.
+==================================================
+Chunk 28:
+Flexible Manufacturing:That type of manufacturing system where
+there is some amount of flexibility that allows the system to react in case of changes
+whether predictable or unpredictable.
+==================================================
+Chunk 29:
+Flexibility can be two types 1.Machine Flexibility &
+2.Routing Flexibility.
+==================================================
+Chunk 30:
+7.
+==================================================
+Chunk 31:
+Mass Customization:It is the customization in the marketing,
+manufacturing and business management processes.Here the aim is to produce goods and
+services to meet the individual customer’s need.
+==================================================
+Chunk 32:
+8.
+==================================================
+Chunk 33:
+Lean manufacturing:It is a systematic
+method for the waste minimization within a manufacturing system without sacrificing
+productivity.
+==================================================
+Chunk 34:
+9.
+==================================================
+Chunk 35:
+Mass Production:It refers to production of large amounts of standardized
+products, including & especially on assembly lines together with job production and batch
+production.
+==================================================
+Chunk 36:
+10.
+==================================================
+Chunk 37:
+Ownership:Determining the ownership of the products or services or any
+thing else .It tells about the certain rights and duties over the property.
+==================================================
+Chunk 38:
+11.
+==================================================
+Chunk 39:
+Packaging
+and Labeling:It is the process of enclosing or protecting products for distribution,
+storage,sale and use.
+==================================================
+Chunk 40:
+It involves process of designing, evaluating and producing
+packages.It is meants for preparing goods for transport, warehousing, logistic , sale and
+end use.
+==================================================
+Chunk 41:
+Mx-ERP stores the all information about warehousing and packaging system within
+one software system which assists in final delivery of the finished goods to customers.
+==================================================
+Chunk 42:
+12.
+==================================================
+Chunk 43:
+Putting-Out System:It is that system where work is contracted by a central agent to
+subcontrator who completes the work in off-site facilities, either in their own homes or
+in workshop with multiple craftsman.
+==================================================
+Chunk 44:
+Originally published aterp-for-
+manufacturing.blogspot.comon August 11, 2017.
+==================================================

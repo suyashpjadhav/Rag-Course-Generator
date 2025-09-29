@@ -1,10 +1,16 @@
 {
     "chunks": [
-        "Project Quality Management. PM Series - 10 | by Vivek Tiwari | Medium\nBy Vivek Tiwari\nQuality Management — Executing Phase Manage Quality The main focus of this process is to\nexecute the plan that the project manager and team have created to meet the quality\nstandards for the product or service.",
-        "The criticaloutputsof this process are Quality\nReports— that include information about quality issues with the project, and\nrecommendation on the improvement of the current process Test and Evaluation Documents— A\nchecklist used by Quality Assurance teams to measure the quality standards of a product. How do we achieve the desired output?",
-        "First, consider analyzing the Quality Management\nPlan (QMP) which provides information about the quality standards, objectives, control,\nand assurance procedures. In addition to the QMP, project documents such as the Lessons\nLearned Register, Quality Metrics, and Risk Report should also be reviewed.",
-        "These\ndocuments provide information on recommended methods for improving quality, metrics used\nto measure quality, and risks that should be taken into consideration. In addition to the\ncommonITTOs, consider the below tools as critical to be applied to the above-mentioned\ninputs Under the data-gathering process, checklists play a critical role in helping QA\nteam members review the essential components of the product and ensure that the quality\nstandards specified in the checklists are met.",
-        "Under the data-representation process, the\ncause-and-effect diagram is vital which helps the team to identify the cause of the\ndefect. Quality audits are essential as they ensure that best practices are being followed\nand enable the sharing of important audit metrics with stakeholders, keeping them informed\nabout the end product.",
-        "Design for X — that developers use to design a specific part of the\nproduct. By utilizing the above-mentioned processes, standardized quality can be achieved\nthrough effective actions."
+        "Project Quality Management.",
+        "PM Series - 10 | by Vivek Tiwari | Medium\nBy Vivek Tiwari\nQuality Management — Executing Phase Manage Quality The main focus of this process is to\nexecute the plan that the project manager and team have created to meet the quality\nstandards for the product or service.",
+        "The criticaloutputsof this process are Quality\nReports— that include information about quality issues with the project, and\nrecommendation on the improvement of the current process Test and Evaluation Documents— A\nchecklist used by Quality Assurance teams to measure the quality standards of a product.",
+        "How do we achieve the desired output?",
+        "First, consider analyzing the Quality Management\nPlan (QMP) which provides information about the quality standards, objectives, control,\nand assurance procedures.",
+        "In addition to the QMP, project documents such as the Lessons\nLearned Register, Quality Metrics, and Risk Report should also be reviewed.",
+        "These\ndocuments provide information on recommended methods for improving quality, metrics used\nto measure quality, and risks that should be taken into consideration.",
+        "In addition to the\ncommonITTOs, consider the below tools as critical to be applied to the above-mentioned\ninputs Under the data-gathering process, checklists play a critical role in helping QA\nteam members review the essential components of the product and ensure that the quality\nstandards specified in the checklists are met.",
+        "Under the data-representation process, the\ncause-and-effect diagram is vital which helps the team to identify the cause of the\ndefect.",
+        "Quality audits are essential as they ensure that best practices are being followed\nand enable the sharing of important audit metrics with stakeholders, keeping them informed\nabout the end product.",
+        "Design for X — that developers use to design a specific part of the\nproduct.",
+        "By utilizing the above-mentioned processes, standardized quality can be achieved\nthrough effective actions."
     ]
 }

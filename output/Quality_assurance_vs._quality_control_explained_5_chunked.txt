@@ -4,160 +4,244 @@ By Qualio
 Quality assurance vs. quality control explained: 5 key differences In the healthcare and
 life science industries, quality processes like quality assurance (QA) and quality control
 (QC) are required by the FDA and the International Organization for Standardization’s ISO
-9000. If QA and QC aren’t followed, you could end up distributing an end product that not
-only doesn’t meet standards, but could also have life-threatening consequences. Both QA
+9000.
+==================================================
+Chunk 2:
+If QA and QC aren’t followed, you could end up distributing an end product that not
+only doesn’t meet standards, but could also have life-threatening consequences.
+==================================================
+Chunk 3:
+Both QA
 and QC processes are important to quality standards, but so is knowing the difference
 between quality assurance and quality control.
 ==================================================
-Chunk 2:
+Chunk 4:
 They’re often used interchangeably, but
-they are two different processes taking place at different times. Quality assurance and
+they are two different processes taking place at different times.
+==================================================
+Chunk 5:
+Quality assurance and
 quality control both play vital and distinct roles in the health of life sciences
 companies and are big parts of quality management.
 ==================================================
-Chunk 3:
+Chunk 6:
 Understanding those roles can help your
-organization master each to deliver the best products possible. What is quality assurance?
+organization master each to deliver the best products possible.
 ==================================================
-Chunk 4:
-Quality assurance is a part of your quality management plan. QA encompasses all of the
+Chunk 7:
+What is quality assurance?
+==================================================
+Chunk 8:
+Quality assurance is a part of your quality management plan.
+==================================================
+Chunk 9:
+QA encompasses all of the
 activities within your plan that ensure your product is ready to go through the
 manufacturing process (or software development process if you’re creating software).
 ==================================================
-Chunk 5:
+Chunk 10:
 In
 other words, you’re verifying that the quality requirements you planned for will be
-fulfilled as the products are made. Quality control is the inspection phase of quality
+fulfilled as the products are made.
+==================================================
+Chunk 11:
+Quality control is the inspection phase of quality
 assurance.
 ==================================================
-Chunk 6:
+Chunk 12:
 It’s a series of test procedures used to verify that a product is safe and
-effective after mass production. Both QA and QC are necessary.
+effective after mass production.
 ==================================================
-Chunk 7:
+Chunk 13:
+Both QA and QC are necessary.
+==================================================
+Chunk 14:
 You can’t “test quality
-into” a product by relying on QC alone. There are different methodologies for both QA and
+into” a product by relying on QC alone.
+==================================================
+Chunk 15:
+There are different methodologies for both QA and
 QC, like Agile, Six Sigma, and other project management or process improvement strategies.
 ==================================================
-Chunk 8:
-They’re designed to save time while managing your quality and project development. Using
+Chunk 16:
+They’re designed to save time while managing your quality and project development.
+==================================================
+Chunk 17:
+Using
 these can help, but you’ll likely need aquality management systemthat follows ISO
 9001:2015 regulations to effectively manage the entire quality planning process.
 ==================================================
-Chunk 9:
+Chunk 18:
 Quality
 assurance vs. quality control: 5 differences To further understand the differences between
 quality assurance and quality control, you need to get a picture of how the two processes
 work together to boost your organization’s quality improvement and help reduce corrective
-actions. 1.
+actions.
 ==================================================
-Chunk 10:
-Proactive (QA) vs. reactive (QC) Effective quality assuranceis proactive. It
+Chunk 19:
+1.
+==================================================
+Chunk 20:
+Proactive (QA) vs. reactive (QC) Effective quality assuranceis proactive.
+==================================================
+Chunk 21:
+It
 aims to prevent defects before they occur through process design.
 ==================================================
-Chunk 11:
+Chunk 22:
 QC is reactive and
-exists to identify defects in the quality of products after they have happened. QA
+exists to identify defects in the quality of products after they have happened.
+==================================================
+Chunk 23:
+QA
 involves the design of processes, such as documenting standard operating procedures (SOPs)
 according to ISO 9000 standards.
 ==================================================
-Chunk 12:
+Chunk 24:
 A safe, effective product should be the result every time
-processes are followed. QC involves the testing of products to ensure they meet standards
+processes are followed.
+==================================================
+Chunk 25:
+QC involves the testing of products to ensure they meet standards
 for safety and efficacy. If QC testing uncovers quality issues, it should result in
 reactive steps to prevent an unsafe product from being shipped and distributed.
 ==================================================
-Chunk 13:
+Chunk 26:
 Ideally,
-QC issues should also spark a QA review. Non-conforming test results should result in
+QC issues should also spark a QA review.
+==================================================
+Chunk 27:
+Non-conforming test results should result in
 corrective and preventive action (CAPA) investigation to determine the root cause of
 quality issues and update processes to prevent the problem from happening in the future.
 ==================================================
-Chunk 14:
+Chunk 28:
 RELATED READING:How to achieve effective quality assurance even in the most complex
-circumstances 2. Process (QA) vs. product (QC) QA is process-oriented, and it focuses on
+circumstances 2.
+==================================================
+Chunk 29:
+Process (QA) vs. product (QC) QA is process-oriented, and it focuses on
 preventing quality issues.
 ==================================================
-Chunk 15:
+Chunk 30:
 QC is product-oriented and focused on identifying quality
-issues in manufactured products that could affect customer satisfaction. Another way to
+issues in manufactured products that could affect customer satisfaction.
+==================================================
+Chunk 31:
+Another way to
 understand this distinction is actions vs. results.
 ==================================================
-Chunk 16:
+Chunk 32:
 QA involves the actions which create
-the product, while QC is focused on the resulting product. Several examples of each type
+the product, while QC is focused on the resulting product.
+==================================================
+Chunk 33:
+Several examples of each type
 of activity are detailed below.
 ==================================================
-Chunk 17:
+Chunk 34:
 QA processes: Documentation Audits Supplier management
 Personnel training Change control Investigation procedures QC procedures: Batch inspection
-Product sampling Validation testing Laboratory testing Software testing 3. System (QA) vs.
+Product sampling Validation testing Laboratory testing Software testing 3.
+==================================================
+Chunk 35:
+System (QA) vs.
 parts (QC) Quality assurance control systems are the methods and procedures which are used
 to safeguard quality standards.
 ==================================================
-Chunk 18:
+Chunk 36:
 Quality control systems measure parts, including the
-outputs of the system. QC efforts may also be focused on parts used to create the final
+outputs of the system.
+==================================================
+Chunk 37:
+QC efforts may also be focused on parts used to create the final
 product, such as raw materials from a supplier.
 ==================================================
-Chunk 19:
+Chunk 38:
 The QA system for quality management may
 dictate various activities to make sure inputs are consistently safe and effective, such
-as auditing suppliers and batch sampling raw materials. RELATED READING:The 5 Best Medical
+as auditing suppliers and batch sampling raw materials.
+==================================================
+Chunk 39:
+RELATED READING:The 5 Best Medical
 Device Quality Assurance Training Options 4.
 ==================================================
-Chunk 20:
+Chunk 40:
 Creation (QA) vs. verification (QC) The
-result of QA activities is a roadmap for creating high-quality products. It involves
+result of QA activities is a roadmap for creating high-quality products.
+==================================================
+Chunk 41:
+It involves
 defining standards for product design, manufacture, packaging, distribution, marketing,
 and sales.
 ==================================================
-Chunk 21:
+Chunk 42:
 QC involves verification of products post-manufacture and before distribution,
-or confirming safety and efficacy. 5.
+or confirming safety and efficacy.
 ==================================================
-Chunk 22:
+Chunk 43:
+5.
+==================================================
+Chunk 44:
 Entire team (QA) vs. dedicated personnel (QC)
-Quality assurance activities involve the entire team. Every member of a life sciences
+Quality assurance activities involve the entire team.
+==================================================
+Chunk 45:
+Every member of a life sciences
 organization is responsible for QA activities by following SOPs.
 ==================================================
-Chunk 23:
+Chunk 46:
 While the quality
 management system (QMS) is generally the responsibility of the quality unit and the
 leadership team, QA activities involve standards for training, documentation, and review
-across the workforce. QC is generally the responsibility of certain personnel within the
-organization whose duties include following SOPs for product testing.
+across the workforce.
 ==================================================
-Chunk 24:
-QC staff follow SOPs
+Chunk 47:
+QC is generally the responsibility of certain personnel within the
+organization whose duties include following SOPs for product testing. QC staff follow SOPs
 for quality control and document their findings based on standardized procedures for
-product testing and process validation. The role of an eQMS in quality assurance and
+product testing and process validation.
+==================================================
+Chunk 48:
+The role of an eQMS in quality assurance and
 quality control Neither QA or QC are optional.
 ==================================================
-Chunk 25:
+Chunk 49:
 Similarly, it’s impossible to say whether
-QA or QC is more valuable. QA involves creating standards and processes to create a safe,
+QA or QC is more valuable.
+==================================================
+Chunk 50:
+QA involves creating standards and processes to create a safe,
 effective process.
 ==================================================
-Chunk 26:
-QC activities validate the product. Life sciences organizations should
+Chunk 51:
+QC activities validate the product.
+==================================================
+Chunk 52:
+Life sciences organizations should
 “close the loop” on quality management processes by using QC to inform QA.
 ==================================================
-Chunk 27:
+Chunk 53:
 When non-
 conformances are discovered, it’s important to launch an investigation to determine where
-the breakdown occurred in QA processes and create stronger standards. QC and QA are better
+the breakdown occurred in QA processes and create stronger standards.
+==================================================
+Chunk 54:
+QC and QA are better
 together, and they’re best when both are incorporated into anenterprise quality management
 system (eQMS) for end-to-end quality processes.
 ==================================================
-Chunk 28:
+Chunk 55:
 A single, cloud-based QMS for life
 sciences can integrate processes for assuring and controlling quality through document
 control and training, CAPA management and complaint handling throughout the product life
-cycle. Qualio’s eQMSis built specifically for start-up and scale-up life science
+cycle.
+==================================================
+Chunk 56:
+Qualio’s eQMSis built specifically for start-up and scale-up life science
 companies.
 ==================================================
-Chunk 29:
+Chunk 57:
 If your company needs a scalable, simple QMS platform, we’d love to show you
 what Qualio can do for your quality assurance and quality control witha personalized demo.
 ==================================================

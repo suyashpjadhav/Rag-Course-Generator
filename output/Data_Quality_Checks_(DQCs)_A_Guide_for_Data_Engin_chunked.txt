@@ -4,32 +4,50 @@ Data Science Collective | Medium
 By Sai Abhinav Parvathaneni
 Data Quality Checks (DQCs): A Guide for Data Engineers As a data engineer in financial
 services, I’ve learned one critical lesson: the quality of your data can make or break
-your business. Whether you’re reconciling financial transactions or generating regulatory
-reports, bad data can lead to significant consequences, ranging from lost revenue to
-regulatory penalties. This is whereData Quality Checks (DQCs)come in.
+your business.
 ==================================================
 Chunk 2:
-In this article,
-I’ll explain what DQCs are, why they’re essential, and how we implement them at my
-company. I’ll also share simple examples of SQL code and describe how we integrate these
-checks across different layers of our data architecture.
+Whether you’re reconciling financial transactions or generating regulatory
+reports, bad data can lead to significant consequences, ranging from lost revenue to
+regulatory penalties.
 ==================================================
 Chunk 3:
+This is whereData Quality Checks (DQCs)come in.
+==================================================
+Chunk 4:
+In this article,
+I’ll explain what DQCs are, why they’re essential, and how we implement them at my
+company.
+==================================================
+Chunk 5:
+I’ll also share simple examples of SQL code and describe how we integrate these
+checks across different layers of our data architecture.
+==================================================
+Chunk 6:
 What Are Data Quality Checks
 (DQCs)? DQCs are automated tests that ensure your data is accurate, complete, and
 consistent.
 ==================================================
-Chunk 4:
+Chunk 7:
 These checks are essential for identifying and preventing issues like
-duplicates, missing data, and incorrect calculations. Think of DQCs as quality inspectors
-on an assembly line. Just like an inspector ensures that every product leaving a factory
+duplicates, missing data, and incorrect calculations.
+==================================================
+Chunk 8:
+Think of DQCs as quality inspectors
+on an assembly line.
+==================================================
+Chunk 9:
+Just like an inspector ensures that every product leaving a factory
 meets the required standards, DQCs ensure that every piece of data in your system is
 reliable.
 ==================================================
-Chunk 5:
-Why Are DQCs Important? In financial services, data is at the heart of
+Chunk 10:
+Why Are DQCs Important?
+==================================================
+Chunk 11:
+In financial services, data is at the heart of
 everything we do.
 ==================================================
-Chunk 6:
+Chunk 12:
 Whether it’s processing credit card…
 ==================================================
