@@ -4,305 +4,467 @@ Engineering & Design | Medium
 By Agoda Engineering
 A Deep Dive into Agoda's Generic Reconciliation Platform bySongkun Viriyavaree
 Introduction At Agoda, managing intricate financial transactions is a critical part of our
-operations. These transactions involve a diverse group of participants, ranging from
-customers and hotels to banks, credit card companies, and other online travel agencies.
+operations.
 ==================================================
 Chunk 2:
-To
-maintain the highest level of precision and integrity in these transactions, Agoda has a
-specific system. The main goal of this system is to find and resolve any discrepancies or
-anomalies in our transactions.
+These transactions involve a diverse group of participants, ranging from
+customers and hotels to banks, credit card companies, and other online travel agencies.
 ==================================================
 Chunk 3:
-This article will explore how we approach the creation of a
-reconciliation system. Our goal is to build a system that is both scalable and reliable.
+To
+maintain the highest level of precision and integrity in these transactions, Agoda has a
+specific system.
 ==================================================
 Chunk 4:
-We plan to achieve this by effectively utilizing Spark. Why is a Generic Reconciliation
-Platform Essential for Finance?
+The main goal of this system is to find and resolve any discrepancies or
+anomalies in our transactions.
 ==================================================
 Chunk 5:
-Currently, Agoda’s finance team uses various
-reconciliation systems. These systems are built with different frameworks and programming
-languages.
+This article will explore how we approach the creation of a
+reconciliation system.
 ==================================================
 Chunk 6:
-This variety leads to a lack of standardization in reconciliation processes,
-complicating system maintenance. Moreover, developing a new reconciliation system for each
-new business case is time-consuming.
+Our goal is to build a system that is both scalable and reliable.
 ==================================================
 Chunk 7:
+We plan to achieve this by effectively utilizing Spark.
+==================================================
+Chunk 8:
+Why is a Generic Reconciliation
+Platform Essential for Finance?
+==================================================
+Chunk 9:
+Currently, Agoda’s finance team uses various
+reconciliation systems.
+==================================================
+Chunk 10:
+These systems are built with different frameworks and programming
+languages.
+==================================================
+Chunk 11:
+This variety leads to a lack of standardization in reconciliation processes,
+complicating system maintenance.
+==================================================
+Chunk 12:
+Moreover, developing a new reconciliation system for each
+new business case is time-consuming.
+==================================================
+Chunk 13:
 It can take several weeks, mainly because there isn’t
-an existing platform to build upon. What Generic Reconciliation Offers Simplifying
+an existing platform to build upon.
+==================================================
+Chunk 14:
+What Generic Reconciliation Offers Simplifying
 Maintenance:Our new reconciliation platform keeps all reconciliation systems in a single
 spot.
 ==================================================
-Chunk 8:
-This centralization simplifies maintenance, reducing both workload and costs. It
+Chunk 15:
+This centralization simplifies maintenance, reducing both workload and costs.
+==================================================
+Chunk 16:
+It
 also fosters resource sharing among developers and encourages consistent terminology.
 ==================================================
-Chunk 9:
+Chunk 17:
 For
-example, updating a library can now be done in one place. Scalability Through Spark:Our
-platform uses Spark as its data processing engine.
+example, updating a library can now be done in one place.
 ==================================================
-Chunk 10:
-This allows for efficient handling of
-large data volumes, enhancing scalability. Updates Made Easy:Changes to the system are
+Chunk 18:
+Scalability Through Spark:Our
+platform uses Spark as its data processing engine.This allows for efficient handling of
+large data volumes, enhancing scalability.
+==================================================
+Chunk 19:
+Updates Made Easy:Changes to the system are
 implemented in this central repository.
 ==================================================
-Chunk 11:
+Chunk 20:
 This simplifies updates and eliminates the need
-for multiple repositories. Robust Monitoring System:Our platform diligently watches over
+for multiple repositories.
+==================================================
+Chunk 21:
+Robust Monitoring System:Our platform diligently watches over
 system health and product health.
 ==================================================
-Chunk 12:
+Chunk 22:
 For system health, we use Slack alerts for real-time
-monitoring of the reconciliation process. This ensures immediate identification of issues.
+monitoring of the reconciliation process.
 ==================================================
-Chunk 13:
+Chunk 23:
+This ensures immediate identification of issues.
+==================================================
+Chunk 24:
 We also track input and output transaction data on our Grafana dashboard for anomaly
-detection and reporting. Product health monitoring allows users to set key performance
+detection and reporting.
+==================================================
+Chunk 25:
+Product health monitoring allows users to set key performance
 indicators (KPIs) like unreconciled percentages and reconciled amounts.
 ==================================================
-Chunk 14:
+Chunk 26:
 These are stored
 in a big data table, enabling easy dashboard creation for intelligent decision-making by
-business teams. Integration with Finance System The Generic Reconciliation Platform
+business teams.
+==================================================
+Chunk 27:
+Integration with Finance System The Generic Reconciliation Platform
 integrates with the finance system to reconcile data from two distinct sources and to
 generate reports to be recorded on big data tables.
 ==================================================
-Chunk 15:
+Chunk 28:
 This multifunctional platform supports
-several types of reconciliation, including account receivable and partner reconciliation. In the diagram above, we illustrate an example of partner reconciliation.
+several types of reconciliation, including account receivable and partner reconciliation.
 ==================================================
-Chunk 16:
+Chunk 29:
+In the diagram above, we illustrate an example of partner reconciliation.
+==================================================
+Chunk 30:
 On the left, it
-shows data gathered from various partners. This data is downloaded using a Spark
+shows data gathered from various partners.
+==================================================
+Chunk 31:
+This data is downloaded using a Spark
 application, called‘Downloader’.The Downloader fetches files from multiple sources, like
 SFTP, and stores them in big data tables.
 ==================================================
-Chunk 17:
+Chunk 32:
 After the data lands in these big data tables,
 another program,‘Normalizer’, transforms this data, assimilating information into a
-standardized table, thereby making it accessible to the reconciliation platform. On the
+standardized table, thereby making it accessible to the reconciliation platform.
+==================================================
+Chunk 33:
+On the
 right side of the diagram, we see Agoda data, which has been regularized from various
 internal data sources.
 ==================================================
-Chunk 18:
+Chunk 34:
 Once both sets of data are prepared and normalized, we proceed to
 reconcile and categorize the data into different classifications — categorizing buckets
-for each data set, making it easily accessible for various applications. This
+for each data set, making it easily accessible for various applications.
+==================================================
+Chunk 35:
+This
 reconciliation result is then utilized by different applications, like Metabase, for
 dashboard and report generation; finance reporter generator for building enterprise
 planning reports; and file uploader for transferring data back to the partner via email or
 SFTP.
 ==================================================
-Chunk 19:
+Chunk 36:
 Reconciliation Ideology The core of reconciliation is identifying a ‘key’ and a
-corresponding ‘value.’ The ‘key’ determines if two entities are comparable. In partner
+corresponding ‘value.’ The ‘key’ determines if two entities are comparable.
+==================================================
+Chunk 37:
+In partner
 reconciliation, for instance, thepartner_idfrom both Agoda and the partner must align for
 any comparison to proceed.
 ==================================================
-Chunk 20:
+Chunk 38:
 If the ‘keys’ of corresponding transactions match, we then
-specify the ‘value’ to be compared. In the case of partner reconciliation, the ‘value’ is
+specify the ‘value’ to be compared.
+==================================================
+Chunk 39:
+In the case of partner reconciliation, the ‘value’ is
 a field termedpartner_amount, which represents the amount payable to the partner.
 ==================================================
-Chunk 21:
+Chunk 40:
 Only
-after comparison can the data be confirmed and moved to the reconciled bucket. Introducing
+after comparison can the data be confirmed and moved to the reconciled bucket.
+==================================================
+Chunk 41:
+Introducing
 Generic Reconciliation The functionality of the Generic Reconciliation Platform can be
 broken down into three major components.
 ==================================================
-Chunk 22:
-First is the ‘Data Preparation’ phase. In this
+Chunk 42:
+First is the ‘Data Preparation’ phase.
+==================================================
+Chunk 43:
+In this
 phase, we collect and prepare data from a variety of sources, a crucial step for
 successful reconciliation. Next, the ‘Reconciliation’ phase is where we compare and align
 data from the two aforementioned sources.
 ==================================================
-Chunk 23:
+Chunk 44:
 Lastly, we have the ‘Post Reconciliation’ phase,
 where data validation occurs, and Key Performance Indicators (KPIs) are developed for
-usage on the dashboard. Within each of these components, processes are broken down into
+usage on the dashboard.
+==================================================
+Chunk 45:
+Within each of these components, processes are broken down into
 distinct processors.
 ==================================================
-Chunk 24:
-Let’s take the ‘Data Preparation’ segment as an example. It’s
+Chunk 46:
+Let’s take the ‘Data Preparation’ segment as an example.
+==================================================
+Chunk 47:
+It’s
 segmented into three different processors: the ‘Prepare Processor,’ the ‘Normalize
 Processor,’ and the ‘Exclude Processor.’ Each type of reconciliation requires its own
 unique strategy.
 ==================================================
-Chunk 25:
+Chunk 48:
 These strategies guide the processors on how to execute their tasks
-effectively. We have also created an interface that allows each reconciliation process to
+effectively.
+==================================================
+Chunk 49:
+We have also created an interface that allows each reconciliation process to
 define its own strategies, enabling a tailored reconciliation approach.
 ==================================================
-Chunk 26:
+Chunk 50:
 Data Preparation
 The preparation process is divided into three distinct steps: 1.Fetching Data:This step
 involves collecting new data, recovering previously corrupt data, and fixing corrupted
-data. 2.Data Deduplication:In this step, we deduplicate the data.
+data.
 ==================================================
-Chunk 27:
+Chunk 51:
+2.Data Deduplication:In this step, we deduplicate the data.
+==================================================
+Chunk 52:
 To ensure each piece of
 data is unique, we use a ‘deduplicate_key.’ This key is created by combining different
-columns. 3.Data Validation:The final step is about validating the data.
+columns.
 ==================================================
-Chunk 28:
+Chunk 53:
+3.Data Validation:The final step is about validating the data.
+==================================================
+Chunk 54:
 We achieve this by
-following a specific set of rules that we have established. The normalize process is
+following a specific set of rules that we have established.
+==================================================
+Chunk 55:
+The normalize process is
 divided into two steps: 1.Combining New and Unreconciled Data:This involves merging data
 that was unreconciled from the previous day with new data.
 ==================================================
-Chunk 29:
+Chunk 56:
 2.Data Transformation:In this
 step, we transform data into the new format and definereconciliation_amountcolumns based
-on a set of rules. The exclude process is divided into two steps: 1.Conditional Exclude:In
+on a set of rules.
+==================================================
+Chunk 57:
+The exclude process is divided into two steps: 1.Conditional Exclude:In
 this step, data is excluded based on a set of defined rules.
 ==================================================
-Chunk 30:
+Chunk 58:
 2.Manual Exclude:In this
 process, users can enter the specific deduplication keys corresponding to the transactions
-they wish to eliminate. These keys are then incorporated into the manual exclusion action.
+they wish to eliminate.
 ==================================================
-Chunk 31:
+Chunk 59:
+These keys are then incorporated into the manual exclusion action.
+==================================================
+Chunk 60:
 This action subsequently correlates these keys with the incoming data, effectively erasing
-the selected transactions from the system. Reconciliation The reconciliation phase is the
+the selected transactions from the system.
+==================================================
+Chunk 61:
+Reconciliation The reconciliation phase is the
 core of the entire system.
 ==================================================
-Chunk 32:
+Chunk 62:
 It processes unreconciled transactions and attempts to
-reconcile them over several passes or conditions based on configuration. For every pass,
+reconcile them over several passes or conditions based on configuration.
+==================================================
+Chunk 63:
+For every pass,
 we can reconcile based on key and reconciliation columns.
 ==================================================
-Chunk 33:
+Chunk 64:
 Following the reconciliation
-procedure, there might still be some transactions left unreconciled. In these cases, we
+procedure, there might still be some transactions left unreconciled.
+==================================================
+Chunk 65:
+In these cases, we
 have the ability to force reconcile them using a specific set of rules or logic.
 ==================================================
-Chunk 34:
+Chunk 66:
 In the
 reconciliation process, it’s possible to define the key and the value based on certain
-rules. Here’s an example: If we’re dealing with reconciliation with Partner A, we may
+rules.
+==================================================
+Chunk 67:
+Here’s an example: If we’re dealing with reconciliation with Partner A, we may
 decide to reconcile value solely based on thepartner_amount.
 ==================================================
-Chunk 35:
+Chunk 68:
 However, if the partner is B,
-we might choose to reconcile values using both thepartner_pointandpartner_amountcolumns. This is just one insight into how we can specifically tailor configurations for values
+we might choose to reconcile values using both thepartner_pointandpartner_amountcolumns.
+==================================================
+Chunk 69:
+This is just one insight into how we can specifically tailor configurations for values
 depending on our respective partners.
 ==================================================
-Chunk 36:
+Chunk 70:
 There are more scenarios similar to this that use
-conditions such aspartner_idto configure reconciliation keys. In the reconciliation
+conditions such aspartner_idto configure reconciliation keys.
+==================================================
+Chunk 71:
+In the reconciliation
 process, it’s not uncommon for a single transaction to go through multiple rounds of
 reconciliation.
 ==================================================
-Chunk 37:
-Consider a booking with multiple transactions. In the first pass, we might
+Chunk 72:
+Consider a booking with multiple transactions.
+==================================================
+Chunk 73:
+In the first pass, we might
 try to reconcile a transaction using its uniquetransaction_id.
 ==================================================
-Chunk 38:
+Chunk 74:
 If this first attempt fails
-to reconcile the transaction, it then proceeds to a second pass. In this next stage,
+to reconcile the transaction, it then proceeds to a second pass.
+==================================================
+Chunk 75:
+In this next stage,
 thebooking_idis used as the key identifier for reconciliation.
 ==================================================
-Chunk 39:
+Chunk 76:
 This two-step approach
 ensures that we have an alternative method to reconcile a transaction when the first
-attempt isn’t successful. Another part of the process is the force reconciliation part
+attempt isn’t successful.
+==================================================
+Chunk 77:
+Another part of the process is the force reconciliation part
 where the transactions are moved to reconcile buckets based on these two steps:
 Conditional Force Reconciled:This step forcefully reconciles data based on a set of
 defined rules.
 ==================================================
-Chunk 40:
+Chunk 78:
 2.Manual Exclude:In this process, users can enter the specific keys,
-likepartner_id, that correspond to the transactions they intend to remove. After entering
+likepartner_id, that correspond to the transactions they intend to remove.
+==================================================
+Chunk 79:
+After entering
 these keys, they are integrated into a manual force reconciliation action.
 ==================================================
-Chunk 41:
+Chunk 80:
 This action
 then aligns these specific keys with incoming data, effectively moving the selected
-transactions to the reconcile bucket. CI/CD Pipeline We utilize three types of tests in
+transactions to the reconcile bucket.
+==================================================
+Chunk 81:
+CI/CD Pipeline We utilize three types of tests in
 the CI/CD pipeline, namely the unit test, integration test, and shadow test.
 ==================================================
-Chunk 42:
+Chunk 82:
 The purpose
 and functions of these tests are as follows: 1.Unit Test:This aims to examine individual
-processors and services, ensuring their independent operability. 2.Integration Test:It
+processors and services, ensuring their independent operability.
+==================================================
+Chunk 83:
+2.Integration Test:It
 focuses on evaluating the comprehensive reconciliation process and validating the outcomes
 from the output tables.
 ==================================================
-Chunk 43:
+Chunk 84:
 3.Shadow Test:This method involves operating modified code, for
-example, Merge Request (MR) changes, on the production data. The goal is to compare
+example, Merge Request (MR) changes, on the production data.
+==================================================
+Chunk 85:
+The goal is to compare
 outcomes and assure both accuracy and validity.
 ==================================================
-Chunk 44:
+Chunk 86:
 There are three steps in running the
-shadow tests. Setup Context:This focuses on setting up the context such as branch
+shadow tests.
+==================================================
+Chunk 87:
+Setup Context:This focuses on setting up the context such as branch
 information and process data for shadow test.
 ==================================================
-Chunk 45:
+Chunk 88:
 Run Recon:This focuses on running the
-reconciliation using production data with the modified logic. Compare Result:This involves
+reconciliation using production data with the modified logic.
+==================================================
+Chunk 89:
+Compare Result:This involves
 updating the notes in GitLab by sharing a comparative analysis between the production
 data/schema and the test result data.
 ==================================================
-Chunk 46:
+Chunk 90:
 Some important aspects of shadow testing are: Shadow
-tests are triggered manually. This is because we want to ensure that the pull request is
+tests are triggered manually.
+==================================================
+Chunk 91:
+This is because we want to ensure that the pull request is
 ready before the shadow test is triggered since running the shadow test is quite expensive
 since it involves production data.
 ==================================================
-Chunk 47:
+Chunk 92:
 The shadow test outcomes aren’t a mandatory requirement
-for merging the PR. For instance, if a logical update is made, it’s perfectly normal to
+for merging the PR.
+==================================================
+Chunk 93:
+For instance, if a logical update is made, it’s perfectly normal to
 expect variations in the output data compared to the production data.
 ==================================================
-Chunk 48:
+Chunk 94:
 Monitoring and
 Alerting The Generic Reconciliation Platform at Agoda relies on three services for
-monitoring and alerting purposes. First, we utilize Metabase to create dashboards that
+monitoring and alerting purposes.
+==================================================
+Chunk 95:
+First, we utilize Metabase to create dashboards that
 track business and product Key Performance Indicators (KPIs).
 ==================================================
-Chunk 49:
+Chunk 96:
 Second, Grafana is employed
-for monitoring job performance and quality. Lastly, Slack serves as our notification
+for monitoring job performance and quality.
+==================================================
+Chunk 97:
+Lastly, Slack serves as our notification
 system, alerting us when a job fails or passes.
 ==================================================
-Chunk 50:
+Chunk 98:
 We use Metabase to design numerous graphs,
 effectively enabling both business and product managers to assess the performance of our
-reconciliation system. For instance, by examining the total unreconciled amount in USD as
+reconciliation system.
+==================================================
+Chunk 99:
+For instance, by examining the total unreconciled amount in USD as
 a percentage, product managers can make informed decisions on whether further data
 investigation is necessary.
 ==================================================
-Chunk 51:
+Chunk 100:
 Once the reconciliation process concludes, we receive a Slack
-alert. This alert indicates the success or failure of the reconciliation — a green sidebar
+alert.
+==================================================
+Chunk 101:
+This alert indicates the success or failure of the reconciliation — a green sidebar
 denotes success, while a red sidebar signifies failure along with failure information.
 ==================================================
-Chunk 52:
+Chunk 102:
 The
 Slack alert doesn’t just carry the state of the job but also links to vital resources like
-KPI, cluster log, and the spark UI link. Additionally, we have developed a comprehensive
+KPI, cluster log, and the spark UI link.
+==================================================
+Chunk 103:
+Additionally, we have developed a comprehensive
 Grafana dashboard for the platform.
 ==================================================
-Chunk 53:
+Chunk 104:
 It tracks the volume of input transactions and their
-distribution across different buckets. Additionally, we created a second dashboard to
+distribution across different buckets.
+==================================================
+Chunk 105:
+Additionally, we created a second dashboard to
 monitor the status and duration of every reconciliation process.
 ==================================================
-Chunk 54:
+Chunk 106:
 Conclusion Reconciliation
-plays a pivotal role in ensuring the accuracy and validity of our financial system. We are
+plays a pivotal role in ensuring the accuracy and validity of our financial system.
+==================================================
+Chunk 107:
+We are
 developing a robust, generic reconciliation system capable of managing millions of daily
 transactions.
 ==================================================
-Chunk 55:
+Chunk 108:
 Our system leverages the Spark data processing framework to enhance its
-efficiency. The beauty of this advanced reconciliation setup is its scalability,
+efficiency.
+==================================================
+Chunk 109:
+The beauty of this advanced reconciliation setup is its scalability,
 maintainability, and intrinsic monitoring capabilities, all of which are crucial for
 dealing with different types of reconciliation.
 ==================================================

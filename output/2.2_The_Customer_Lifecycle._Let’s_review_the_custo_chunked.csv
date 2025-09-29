@@ -3,298 +3,374 @@ Chunk Number,Chunk Text
 Growthzilla | Medium
 By Sergio Paluch
 2.2 The Customer Lifecycle Let’s review the customer lifecycle before we dive too deeply
-into strategy since it will serve as the basis for a lot of the concepts in this book."
-2,"A
+into strategy since it will serve as the basis for a lot of the concepts in this book.A
 typical customer lifecycle consists of five parts: awareness, acquisition, engagement,
-activation, and retention. The journey through the conversion funnel is not always linear
+activation, and retention."
+2,"The journey through the conversion funnel is not always linear
 and could jump stages."
 3,"For example, an individual might use a product (acquisition), get
 tired of the product and contemplate abandoning it (retention), and fall back in love with
-the product (engagement). Notwithstanding what journey an individual might take, we need
-to have a game plan for each stage."
-4,"2.2.1 Customer Awareness It all starts with awareness. One study performed by McKinsey & Company indicated thatit can take five to eight
+the product (engagement).Notwithstanding what journey an individual might take, we need to
+have a game plan for each stage."
+4,2.2.1 Customer Awareness It all starts with awareness.
+5,"One study performed by McKinsey & Company indicated thatit can take five to eight
 exposures to an advertisement for it to make people truly aware of a product."
-5,"People can
+6,"People can
 learn about your product in many different ways such as through traditional marketing,
-through friends and acquaintances, and through organic news stories. What might be less
+through friends and acquaintances, and through organic news stories."
+7,"What might be less
 obvious to the reader is that the product itself can help spread awareness."
-6,"For example, a
-social sharing feature can help current customers recommend your product to your friends. Your operations can affect awareness too."
-7,"For example, your customers can learn about new
-products that your company is offering when they call customer support. 2.2.2 Customer
+8,"For example, a
+social sharing feature can help current customers recommend your product to your friends."
+9,Your operations can affect awareness too.
+10,"For example, your customers can learn about new
+products that your company is offering when they call customer support."
+11,"2.2.2 Customer
 Acquisition After a person learns about your product, they might decide that they want to
 try or buy it."
-8,"This begins the acquisition period. It might seem that acquisition should
+12,This begins the acquisition period.
+13,"It might seem that acquisition should
 not be a phase but rather a short point in time, but that is rarely how people become
 customers."
-9,"For mobile apps, a new user might have to sign up. That can be a long and
+14,"For mobile apps, a new user might have to sign up."
+15,"That can be a long and
 complex process involving filling out a registration form, validating their email, and
 completing their profile."
-10,"Potential customers can leave the acquisition cycle in any of
+16,"Potential customers can leave the acquisition cycle in any of
 those steps, and it is not until they get through the whole process before they become
-active customers. For other products such as enterprise software, the acquisition process
+active customers."
+17,"For other products such as enterprise software, the acquisition process
 can be extremely drawn out and can involve a sales team that pitches the product, a
 technical implementation team that helps to answer technical questions and sets up the
 product, a training team, and so on."
-11,"The acquisition phase starts with the intent to try
+18,"The acquisition phase starts with the intent to try
 or buy a product and ends when the customer actually buys the product or uses the product
-for the first time. 2.2.3 Customer Engagement Just because a person has used or bought
+for the first time."
+19,"2.2.3 Customer Engagement Just because a person has used or bought
 your product does not mean that they are a valuable customer."
-12,"Even popular apps like
-Twitter have scores of users that post a few things and then never use it again. Those are
+20,"Even popular apps like
+Twitter have scores of users that post a few things and then never use it again."
+21,"Those are
 not engaged users, and having unengaged users is bad for business."
-13,"Usually customers fail
+22,"Usually customers fail
 to become engaged because they either can’t overcome the learning curve or the product
-fails to meet their expectations. Luckily, it’s possible to systematically and predictably
+fails to meet their expectations."
+23,"Luckily, it’s possible to systematically and predictably
 fix both."
-14,"Some products have much more compressed engagement cycles. For example, if you
+24,Some products have much more compressed engagement cycles.
+25,"For example, if you
 are in the market for a luxury yacht, you probably won’t be making a bunch of repeat
 purchases."
-15,"However, that does not mean that all yacht owners are equally engaged. Some
+26,"However, that does not mean that all yacht owners are equally engaged."
+27,"Some
 owners love their luxury yachts, and it shows as they merrily sail around the
 Mediterranean and extol their yacht’s virtues to their friends."
-16,"Those are the kinds of
-customers that you want! 2.2.4 Customer Activation Activation is a big jump in the
+28,"Those are the kinds of
+customers that you want!"
+29,"2.2.4 Customer Activation Activation is a big jump in the
 customer’s level of engagement."
-17,"The anecdote that I like to tell is my relationship with
-Amazon. I became an Amazon customer in 2001, when I was a college student."
-18,"I realized that
+30,"The anecdote that I like to tell is my relationship with
+Amazon."
+31,"I became an Amazon customer in 2001, when I was a college student."
+32,"I realized that
 buying textbooks on Amazon could save me a ton of money, so every term I bought a bunch of
-books on Amazon. I was a pretty engaged customer."
-19,"I liked that I could save money, which
-was tight during my college years, and I was generally happy with the service. Fast
+books on Amazon."
+33,I was a pretty engaged customer.
+34,"I liked that I could save money, which
+was tight during my college years, and I was generally happy with the service."
+35,"Fast
 forward a few more years, and Amazon’s offerings broadened."
-20,"At that point, I was a young
-professional, and I would occasionally buy a DVD or a book. Once again, I was a solid
+36,"At that point, I was a young
+professional, and I would occasionally buy a DVD or a book."
+37,"Once again, I was a solid
 repeat customer, but I would only buy things that were difficult to track down in a
 physical store and for which I could wait a week to be delivered."
-21,"I still preferred to run
+38,"I still preferred to run
 down to my local BestBuy to buy electronics, DVDs and videogames since I could get it
-right away. Fast forward again to 2009 when I went back to graduate school, and Amazon
+right away."
+39,"Fast forward again to 2009 when I went back to graduate school, and Amazon
 gave me a free Amazon Prime membership since I was a student."
-22,"That year I bought my
-textbooks on Amazon, but my purchase behavior started to change radically. Suddenly, I was
+40,"That year I bought my
+textbooks on Amazon, but my purchase behavior started to change radically."
+41,"Suddenly, I was
 buying everything on Amazon: DVDs, video games, electronics, clothes, household items, you
 name it."
-23,"On reflection, my Amazon Prime subscription annihilated a huge deterrent: having
-to wait a week for my orders. I didn’t realize at the time what a big roadblock the
+42,"On reflection, my Amazon Prime subscription annihilated a huge deterrent: having
+to wait a week for my orders."
+43,"I didn’t realize at the time what a big roadblock the
 shipping time was, but now that I had free two-day shipping the floodgates were open."
-24,"In
+44,"In
 fact, there was a time when my sons were still babies, when I’d get Amazon shipments
-multiple times a week filled with diapers, baby clothes, household items. That is what I
+multiple times a week filled with diapers, baby clothes, household items."
+45,"That is what I
 call Activation!"
-25,"Activation is a phase in a customer’s lifetime when they become super
-engaged. Many customers never get to that stage, but that is where the biggest growth can
+46,"Activation is a phase in a customer’s lifetime when they become super
+engaged."
+47,"Many customers never get to that stage, but that is where the biggest growth can
 happen."
-26,"2.2.5 Customer Retention Unfortunately, all good things must come to an end. Even
+48,"2.2.5 Customer Retention Unfortunately, all good things must come to an end."
+49,"Even
 your most activated customers may get frustrated with your product or company and will
 choose to leave at some point."
-27,"More likely, those customers that never got very engaged
-will abandon your product. The good news is that abandonment does not usually happen
+50,"More likely, those customers that never got very engaged
+will abandon your product."
+51,"The good news is that abandonment does not usually happen
 instantaneously."
-28,"There are often signs that a customer is unhappy, and you will likely
-have ample opportunities to make your customers happy. Even better, you can take steps
+52,"There are often signs that a customer is unhappy, and you will likely
+have ample opportunities to make your customers happy."
+53,"Even better, you can take steps
 during customer acquisition and engagement that will prevent your customers from becoming
 unhappy with your product once they convert to active customers."
-29,"I was recently trying a
-new online project management app. The app and the company behind it did many things right
+54,"I was recently trying a
+new online project management app."
+55,"The app and the company behind it did many things right
 to make sure that I would not get frustrated or disappointed as I became an active user."
-30,"First, when I signed up for the app, they sent me a personalized email from an individual
+56,"First, when I signed up for the app, they sent me a personalized email from an individual
 on their team thanking me for registering and letting me know that I can contact her at
-any point if I have any questions or issues. Second, when I logged onto the app for the
+any point if I have any questions or issues."
+57,"Second, when I logged onto the app for the
 first time, they had a great video tutorial giving me an overview of the features and best
 practices."
-31,"On top of that, they had little contextual tutorial messages as I explored the
-app for the first time. I set up a simple project to test out the software and invited one
+58,"On top of that, they had little contextual tutorial messages as I explored the
+app for the first time."
+59,"I set up a simple project to test out the software and invited one
 of my teammates."
-32,"It was a pretty solid project management app, but there were a few little
-things that irked me, and I stopped using it with time. The company saw that I hadn’t used
+60,"It was a pretty solid project management app, but there were a few little
+things that irked me, and I stopped using it with time."
+61,"The company saw that I hadn’t used
 it in a while and they sent me a couple emails (automated, I’m sure, but signed by my
 customer service representative) asking me if there is anything that they can do to help
 me with the app."
-33,"I finally relented and replied to the email and set up a call with my
-dedicated customer service representative that addressed each of my complaints in turn. She couldn’t solve all of them, but she did help me find other ways to get things done."
-34,"The company not only did its best to avoid abandonment, but they also successfully
-retained me when I was not totally happy. I’m still a loyal customer."
-35,"2.2.6 Engagement
+62,"I finally relented and replied to the email and set up a call with my
+dedicated customer service representative that addressed each of my complaints in turn."
+63,"She couldn’t solve all of them, but she did help me find other ways to get things done."
+64,"The company not only did its best to avoid abandonment, but they also successfully
+retained me when I was not totally happy."
+65,I’m still a loyal customer.
+66,"2.2.6 Engagement
 Versus Retention Not everyone will agree with defining retention as simply a measure of
 keeping customers. To some retention means the act of keeping customers coming back, while
 engagement is a measure of how intensely they use your product at any one time."
-36,"For
+67,"For
 example, they would consider Google Search to be a product with low engagement and high
-retention given that users use Google Search briefly, but then keep coming back. Consider
+retention given that users use Google Search briefly, but then keep coming back."
+68,"Consider
 a student that is writing a term paper, who uses Google to help them find resources and
 information, and then never uses Google again."
-37,"Because they were doing a ton of queries
+69,"Because they were doing a ton of queries
 while writing the term paper, we would say that their engagement was high but their
-retention was low because they never used Google again. I think the majority of people
+retention was low because they never used Google again."
+70,"I think the majority of people
 would not consider this person to be highly engaged even if they did submit dozens of
 searches in a day."
-38,"Wikipedia users are similar. They use the online encyclopedia
+71,Wikipedia users are similar.
+72,"They use the online encyclopedia
 intensively but infrequently."
-39,"I find it more useful to think of engagement as a measure of
+73,"I find it more useful to think of engagement as a measure of
 how much a customer is using a product, which is a function of intensity and frequency,
-whereas retention indicates if I am still an active customer. For example, which user is
+whereas retention indicates if I am still an active customer."
+74,"For example, which user is
 most engaged, one that uses your product once every day or another that uses your product
 ten times a day every ten days?"
-40,"What about a customer that uses your product twenty times
-over the span of two days but never touches it again? I would say that the user that used
+75,"What about a customer that uses your product twenty times
+over the span of two days but never touches it again?"
+76,"I would say that the user that used
 it twenty times and never again is not engaged because he is not an active customer while
 the other two are roughly equally engaged."
-41,"It’s often very ambiguous whether to consider
+77,"It’s often very ambiguous whether to consider
 some customers as being active or having abandoned your product, and every company has
-it’s own cutoff point depending on the nature of your product. For example, many years
+it’s own cutoff point depending on the nature of your product."
+78,"For example, many years
 ago, I signed up for Flickr to share my photos with friends and family but stopped using
 it after a while and have not logged on for over four years."
-42,"I still have an account, so
-am I still an active Flickr customer? It depends on Flickr’s definition of what they
+79,"I still have an account, so
+am I still an active Flickr customer?"
+80,"It depends on Flickr’s definition of what they
 consider to be an “active customer.” 2.2.7 How Acquisition, Engagement, Retention Work
 Together In 2007, a recent Yale graduate, Justin Kan, came up with an idea to stream every
 minute of his life over the internet."
-43,"With the help of Emmett Shear, Michael Seibel and
+81,"With the help of Emmett Shear, Michael Seibel and
 Kyle Vogt, he created Justin.tv, which would become the world’s first prominent
-livecasting service. The team grew Justin.tv to be a fairly solid business employing about
+livecasting service."
+82,"The team grew Justin.tv to be a fairly solid business employing about
 twenty-five people, but at some point thefounders realized that their idea had hit a
 ceiling."
-44,"There were only so many things that it made sense to livecast, and they had
-tapped out all of them. Justin.tv rose to about 30 million unique visitors per month, but
+83,"There were only so many things that it made sense to livecast, and they had
+tapped out all of them."
+84,"Justin.tv rose to about 30 million unique visitors per month, but
 the majority of their users weren’t super engaged, except for one tiny segment."
-45,"Emmett
+85,"Emmett
 Shear made the realization that video gamers, which made up just 3% of their user base,
-were fanatical users. They would sometimes spend hours streaming themselves playing video
+were fanatical users."
+86,"They would sometimes spend hours streaming themselves playing video
 games and others would watch them playing for long stretches of time."
-46,"The four founders
+87,"The four founders
 decided to focus on addressing just the video game market and created a new version of
 Justin.tv called Twitch, which became one of the hottest startups in Silicon Valley and
-sold to Amazon for $970 million. Justin.tv had the perfect product all along, but they
+sold to Amazon for $970 million."
+88,"Justin.tv had the perfect product all along, but they
 were distributing it to the wrong customer base."
-47,"Not too many people were super engaged by
+89,"Not too many people were super engaged by
 watching Justin sleep or others sit around in front of the computer, but the video gamers
-were completely hooked. Once they focused on acquiring the video gamers their product
+were completely hooked."
+90,"Once they focused on acquiring the video gamers their product
 growth exploded."
-48,"This is one of the best examples of how acquisition, engagement, and
-retention are related. Many people forget that the concept of product-market fit is
+91,"This is one of the best examples of how acquisition, engagement, and
+retention are related."
+92,"Many people forget that the concept of product-market fit is
 composed of two parts and focus, instead, on just the product."
-49,"However, it’s not just
-about building the perfect product. Finding the right customer whose needs your product
+93,"However, it’s not just
+about building the perfect product."
+94,"Finding the right customer whose needs your product
 meets most adeptly is just as important."
-50,"If you target the wrong customer, it does not
+95,"If you target the wrong customer, it does not
 matter how good your product is, you will always have problems engaging those customers
-because they won’t really have the problem that your product is trying to solve. It’s like
+because they won’t really have the problem that your product is trying to solve."
+96,"It’s like
 selling goose down parkas in Miami Beach."
-51,"You might have the most stylish, warmest goose
+97,"You might have the most stylish, warmest goose
 down parka in the world, but if you sell it to folks in a place that is constantly hot,
 your customers won’t love your product and will eventually shove it in their closet or
 give it away to Goodwill. On the other hand, if you sold that same amazing down parka in
 St. Paul, Minnesota, your customers would wear it all winter long and would love it for
 years to come."
-52,"Their engagement and retention would be off the charts. To put it simply,
+98,Their engagement and retention would be off the charts.
+99,"To put it simply,
 if you are effectively targeting and acquiring the right customers for your product, they
-will appreciate it and will be highly engaged."
-53,"Customers that are highly engaged, are very
-unlikely to abandon your product. How much do you like Google?"
-54,"I bet you’re a highly
-engaged Google user. Are you very likely to stop using Google."
-55,"Probably not unless another
-even more amazing search engine comes along. 2.2.8 Key Points in the Customer Lifecycle At
+will appreciate it and will be highly engaged. Customers that are highly engaged, are very
+unlikely to abandon your product."
+100,How much do you like Google?
+101,"I bet you’re a highly
+engaged Google user."
+102,Are you very likely to stop using Google.
+103,"Probably not unless another
+even more amazing search engine comes along."
+104,"2.2.8 Key Points in the Customer Lifecycle At
 the beginning and end of each phase of the conversion funnel are key events that demarcate
 the end of one and the beginning of another."
-56,"These points are hugely important because you
-can influence these events to supercharge your growth. The First Time Someone Hears About
+105,"These points are hugely important because you
+can influence these events to supercharge your growth."
+106,"The First Time Someone Hears About
 or Sees Your Product A good first impression is trickier than you might think, and it will
 set the stage for the rest of your relationship with you customer."
-57,"First, you want to make
+107,"First, you want to make
 sure that you’re reaching the right people — those that have the problem that your product
-is solving. You also want to make sure to communicate how your product is better at
+is solving."
+108,"You also want to make sure to communicate how your product is better at
 meeting their needs or solving their problems."
-58,"Finally, you should tell them how to get
-your product or what to do next. Without meeting these three fundamental awareness goals,
+109,"Finally, you should tell them how to get
+your product or what to do next."
+110,"Without meeting these three fundamental awareness goals,
 acquisition becomes an uphill battle."
-59,"Even engagement, activation and retention can be
-adversely affected by a poor first impression. The First Time Someone Uses or Buys Your
+111,"Even engagement, activation and retention can be
+adversely affected by a poor first impression."
+112,"The First Time Someone Uses or Buys Your
 Product Usability and customer onboarding make the biggest difference when it comes to
 creating a great first experience."
-60,"There is not much that you can do if your product
-doesn’t have the right features to meet the needs of a customer. Certainly, you can add
+113,"There is not much that you can do if your product
+doesn’t have the right features to meet the needs of a customer."
+114,"Certainly, you can add
 important missing features with time, but by that time many of the dissatisfied customers
-will be long gone."
-61,"Not only that, as soon as you add a new feature, customers will want
-others, and you will be constantly playing catchup. However, I have found that for a
+will be long gone. Not only that, as soon as you add a new feature, customers will want
+others, and you will be constantly playing catchup."
+115,"However, I have found that for a
 significant set of the customers the right features do exist, but they are hard to find or
 understand how to use."
-62,"Moreover, bad usability often forces customers to abandon products
-long before they learn their full utility. Both of these problems are preventable, and
+116,"Moreover, bad usability often forces customers to abandon products
+long before they learn their full utility."
+117,"Both of these problems are preventable, and
 addressing them will go an extremely long way to improving your engagement and retention."
-63,"The Customer Uses Your Product More or Buys More A user will very rarely discover how
-great your product is in their first use. It often takes many interactions to find out if
+118,"The Customer Uses Your Product More or Buys More A user will very rarely discover how
+great your product is in their first use."
+119,"It often takes many interactions to find out if
 and how well it will work for the customer."
-64,"Using or buying a new product is an awful lot
-like moving to a new city. It takes a while to learn where the good restaurants, parks,
+120,"Using or buying a new product is an awful lot
+like moving to a new city."
+121,"It takes a while to learn where the good restaurants, parks,
 and hangout spots are."
-65,"Often times we are pleasantly surprised about what the city has to
-offer. Other times we are disappointed to find that there is not much more to the new
+122,"Often times we are pleasantly surprised about what the city has to
+offer."
+123,"Other times we are disappointed to find that there is not much more to the new
 place than initially meets the eye."
-66,"It’s not that the place has changed in the time since
-you moved; you just have learned it more deeply. Often people discover new things with the
+124,"It’s not that the place has changed in the time since
+you moved; you just have learned it more deeply."
+125,"Often people discover new things with the
 help of their friends or colleagues."
-67,"With your product, you want to be that friend that
-guides their discovery. Your marketing, product, and operations should be aimed at helping
+126,"With your product, you want to be that friend that
+guides their discovery."
+127,"Your marketing, product, and operations should be aimed at helping
 the user discover and learn your product as quickly as possible, so they appreciate it for
 what it really is."
-68,"Customer Becomes a Habitual User or Buyer The holy grail of growth is
-the point at which an individual becomes a habitual user or buyer. This is when they enter
+128,"Customer Becomes a Habitual User or Buyer The holy grail of growth is
+the point at which an individual becomes a habitual user or buyer."
+129,"This is when they enter
 the activated phase of their customer lifetime."
-69,"We all are very familiar with this
-concept. Earlier, I told my story about how Amazon was able to activate me, though free
+130,"We all are very familiar with this
+concept."
+131,"Earlier, I told my story about how Amazon was able to activate me, though free
 two-day shipping, to become a weekly shopper."
-70,"If you are on Facebook, you are very likely
-a habitual user, checking your account at least a few times per week. On the other hand,
+132,"If you are on Facebook, you are very likely
+a habitual user, checking your account at least a few times per week."
+133,"On the other hand,
 there are also many products that I use sporadically."
-71,"For example, there is a personal
+134,"For example, there is a personal
 finance software that I have been using for the past five years, but I only log onto it
-when my spending really gets out of hand. According to many reports, there are a great
+when my spending really gets out of hand."
+135,"According to many reports, there are a great
 number of Twitter users that are like that."
-72,"Folks sign up, write a few tweets, follow a
-few users and then hardly do anything else. On the other hand, there are many Twitter
+136,"Folks sign up, write a few tweets, follow a
+few users and then hardly do anything else."
+137,"On the other hand, there are many Twitter
 users that post seemingly every minute."
-73,"The latter are the kinds of customers you want to
-cultivate with great product experiences, effective marketing, and world-class operations. Customer Becomes Unhappy with Your Product Even the best products in the world have
+138,"The latter are the kinds of customers you want to
+cultivate with great product experiences, effective marketing, and world-class operations."
+139,"Customer Becomes Unhappy with Your Product Even the best products in the world have
 unhappy customers."
-74,"For example, theaverage customer satisfaction score in the United
-States is 87%. That means that about 13% of customers are unhappy at any one time."
-75,"If your
-product is a social media app, your customer satisfaction score is likely around 78%. Disappointment and frustration can be factor of both product experience as well as
+140,"For example, theaverage customer satisfaction score in the United
+States is 87%."
+141,That means that about 13% of customers are unhappy at any one time.
+142,"If your
+product is a social media app, your customer satisfaction score is likely around 78%."
+143,"Disappointment and frustration can be factor of both product experience as well as
 marketing."
-76,"You can have the best financial management tool in the world for middle income
+144,"You can have the best financial management tool in the world for middle income
 customers, but if you have high net worth or very poor customers, they will likely become
-unhappy with your product. On the other hand, you could be reaching the perfect audience,
+unhappy with your product."
+145,"On the other hand, you could be reaching the perfect audience,
 but perhaps your product is difficult to use."
-77,"This will also not work in your favor. There
+146,This will also not work in your favor.
+147,"There
 are also times when customers simply haven’t been able to figure out how to use your
 product to truly meet their needs."
-78,"Luckily, that’s something that you can fix by
+148,"Luckily, that’s something that you can fix by
 systematically listening to your customers, experimenting with better ways to help them
 get the best of your product, measuring the impact that those changes have, and keeping
-only those that move the needle in the right direction. Individual Stops Using the Product
+only those that move the needle in the right direction."
+149,"Individual Stops Using the Product
 Social scientists believe that the last impression is more important than the first."
-79,"That
-is why you should make sure to end on a good note as much as you can. If you can do a good
+150,"That
+is why you should make sure to end on a good note as much as you can."
+151,"If you can do a good
 job saying goodbye to a customer, you might still get them back in the future."
-80,"Perhaps
+152,"Perhaps
 they stopped using your product because it was missing a key feature, and when you finally
-build that feature you want them to try it again! Just as importantly, ending on a good
+build that feature you want them to try it again!"
+153,"Just as importantly, ending on a good
 note might mean that they will refer your product to their friends and colleagues."
-81,"The
+154,"The
 might say, “It didn’t have this one thing that I really wanted, but it’s still a great
 product and a caring company!” 2.2.9 Marketing, Product, Operations through the Customer
 Lifecycle Marketing, product design, and operations can each affect all stages of the
-customer lifecycle. It’s obvious that marketing can drive awareness, but we also saw with
+customer lifecycle."
+155,"It’s obvious that marketing can drive awareness, but we also saw with
 the above examples that product features and even customer support can drive awareness as
 well as acquisition."
-82,"Conversely, how good a business is at turning interested folks into
-customers depends greatly on their ability to market to and draw the right customer. It is
+156,"Conversely, how good a business is at turning interested folks into
+customers depends greatly on their ability to market to and draw the right customer."
+157,"It is
 important to remember that marketing, product implementation, and operations could
 potentially affect all parts of the customer lifecycle as we consider how to engineer
 growth."
-83,"Be sure to check back tomorrow to learn about strategizing and prioritizing
-experiments. New sections of Growthzilla are published every weekday."
+158,"Be sure to check back tomorrow to learn about strategizing and prioritizing
+experiments."
+159,New sections of Growthzilla are published every weekday.

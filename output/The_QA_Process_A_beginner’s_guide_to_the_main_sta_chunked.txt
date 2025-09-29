@@ -17,209 +17,317 @@ hard to actually become a QA engineer.
 ==================================================
 Chunk 3:
 With adequate guidance and training you can learn
-pretty fast. You just need to know where to start.
+pretty fast.
 ==================================================
 Chunk 4:
-This article will help you to
-understand the QA process, including, the testing steps, and what tools are generally used
-by engineers. After reading this article you will know: What is the difference between
-quality assurance and quality control?
+You just need to know where to start.
 ==================================================
 Chunk 5:
-What are the main stages in the QA process? What is
-the difference between manual and automated testing?
+This article will help you to
+understand the QA process, including, the testing steps, and what tools are generally used
+by engineers.
 ==================================================
 Chunk 6:
-What do the different ‘test types’
-mean? Which tools help to optimize the entire QA process?
+After reading this article you will know: What is the difference between
+quality assurance and quality control?
 ==================================================
 Chunk 7:
+What are the main stages in the QA process?
+==================================================
+Chunk 8:
+What is
+the difference between manual and automated testing?
+==================================================
+Chunk 9:
+What do the different ‘test types’
+mean?
+==================================================
+Chunk 10:
+Which tools help to optimize the entire QA process?
+==================================================
+Chunk 11:
 What is the QA process and how
 is it different from quality control? QA, or quality assurance, in software development is
 a process that checks and prevents any issues occurring across the whole project.
 ==================================================
-Chunk 8:
+Chunk 12:
 This
 also includes project management, as various individuals need to be managed when
-performing QA tests. And finally, QA also guarantees that a company delivers a product or
+performing QA tests.
+==================================================
+Chunk 13:
+And finally, QA also guarantees that a company delivers a product or
 software to market that has the best possible user experience.
 ==================================================
-Chunk 9:
+Chunk 14:
 Quality control (QC), on
 the other hand, focuses on testing the final product and identifying issues and
-eliminating them, before the product goes on the market. Having a functioning QA process
+eliminating them, before the product goes on the market.
+==================================================
+Chunk 15:
+Having a functioning QA process
 ensures that all of the team members, who are working on a particular project, work more
 effectively together and in doing so the development time will shorten, and thus costs
 will be lower.
 ==================================================
-Chunk 10:
-Of course, the QA testing process varies slightly in different companies. But in general, its stages are the same.
+Chunk 16:
+Of course, the QA testing process varies slightly in different companies.
 ==================================================
-Chunk 11:
+Chunk 17:
+But in general, its stages are the same.
+==================================================
+Chunk 18:
 Now you know more about the QA process let’s take
 a look at the main stages within the QA process. What are the main stages in the QA
 process?
 ==================================================
-Chunk 12:
+Chunk 19:
 Review of requirements Nowadays, quality assurance starts very early in the
-software development lifecycle – right in the ‘requirement analysis’ stage. QA
+software development lifecycle – right in the ‘requirement analysis’ stage.
+==================================================
+Chunk 20:
+QA
 professionals must review the requirements of the product before starting work, so that
 they can be clear on what needs to be done.
 ==================================================
-Chunk 13:
+Chunk 21:
 Checking the requirements also means that the
 testing will be consistent, complete, executable, and that the project is actually
-testable. Planning phase After testers have understood the requirements, they can start
+testable.
+==================================================
+Chunk 22:
+Planning phase After testers have understood the requirements, they can start
 developing a test strategy and begin the test planning phase.
 ==================================================
-Chunk 14:
+Chunk 23:
 At this stage, they define
 the scope of the work, the budget, they decide which approach to take at each stage of the
 software’s development, they’ll also decide what types of testing will be needed, and
-finally, which tools will be used during the actual testing. Developing test cases With a
+finally, which tools will be used during the actual testing.
+==================================================
+Chunk 24:
+Developing test cases With a
 plan in hand, it is time to design test cases, create checklists, prepare the environment
 for test execution, and create automated testing scenarios.
 ==================================================
-Chunk 15:
+Chunk 25:
 Test execution At this point,
-everything is prepared for finding bugs and issues. The QA team starts to execute
+everything is prepared for finding bugs and issues.
+==================================================
+Chunk 26:
+The QA team starts to execute
 different types of tests, and testers start to report any and all of the discovered bugs.
 ==================================================
-Chunk 16:
+Chunk 27:
 Verifying fixes Once the development team fixes an issue, QA professionals retest the
 functionality of the product, and perform regression testing to ensure that the software
-still works correctly after all of the changes have been made. Test cycle closure Once all
+still works correctly after all of the changes have been made.
+==================================================
+Chunk 28:
+Test cycle closure Once all
 of the fixes have been changed, and all planned tests have been executed, it is time to
 prepare the test closure document.
 ==================================================
-Chunk 17:
+Chunk 29:
 This document is a summary of all the tests performed
-during the software development life cycle. What tests are used in the QA process, and
-what approaches are considered? Now that you understand what the QA process looks like,
+during the software development life cycle.
+==================================================
+Chunk 30:
+What tests are used in the QA process, and
+what approaches are considered?
+==================================================
+Chunk 31:
+Now that you understand what the QA process looks like,
 let’s now talk about all the different test types that can be used in software testing.
 ==================================================
-Chunk 18:
+Chunk 32:
 Yes, there are a lot of them, but don’t worry, you’ll soon be able to navigate between
-them. Functional and non-functional tests There are two main tests categories, these are,
+them.
+==================================================
+Chunk 33:
+Functional and non-functional tests There are two main tests categories, these are,
 functional and non-functional tests.
 ==================================================
-Chunk 19:
+Chunk 34:
 In functional testing, QA engineers check to see
-whether the product behaves as required. In other words, they verify if the actual output
-is matching the expected result. In non-functional testing, the QA engineer checks how the
+whether the product behaves as required.
+==================================================
+Chunk 35:
+In other words, they verify if the actual output
+is matching the expected result.
+==================================================
+Chunk 36:
+In non-functional testing, the QA engineer checks how the
 product performs in different conditions.
 ==================================================
-Chunk 20:
+Chunk 37:
 They will change the environments to see what
-happens, for example, load, security, stress, and usability tests. Knowledge of the source
-code If testers know the source code before testing begins, then QA engineers use the
-‘white box’ testing type.
+happens, for example, load, security, stress, and usability tests.
 ==================================================
-Chunk 21:
-On the other hand, if QA engineers do not know the source code
-they are dealing with, the ‘black box’ testing type is used. This is when testers only
+Chunk 38:
+Knowledge of the source
+code If testers know the source code before testing begins, then QA engineers use the
+‘white box’ testing type. On the other hand, if QA engineers do not know the source code
+they are dealing with, the ‘black box’ testing type is used.
+==================================================
+Chunk 39:
+This is when testers only
 evaluate input and output in an application.
 ==================================================
-Chunk 22:
+Chunk 40:
 On a different note, ‘grey box’ testing is a
 combination of both of these approaches, and testers use this type of testing when they
-have limited information about the internal structure of the system. A phase of software
+have limited information about the internal structure of the system.
+==================================================
+Chunk 41:
+A phase of software
 development This is when tests are divided up into; unit testing, module testing,
 integration testing, system testing, and user acceptance testing, based on where
 developers are in the software development cycle.
 ==================================================
-Chunk 23:
+Chunk 42:
 Here are a couple more testing types
 that you may come across: Smoke tests are designed to check the basic functionality of an
-application. They are quick to perform, and with their help, testers can ensure that the
+application.
+==================================================
+Chunk 43:
+They are quick to perform, and with their help, testers can ensure that the
 main features of the system are working correctly.
 ==================================================
-Chunk 24:
+Chunk 44:
 Regression tests help to check if an
 application is working as it is supposed to be working after some changes, such as bug
-fixes, are done. Load tests are needed to determine an application’s behavior both under
+fixes, are done.
+==================================================
+Chunk 45:
+Load tests are needed to determine an application’s behavior both under
 average and peak load conditions.
 ==================================================
-Chunk 25:
+Chunk 46:
 Cross-browser/cross-platform testing helps to analyze
-the application’s behavior in different browser/platform environments. Of course, these
+the application’s behavior in different browser/platform environments.
+==================================================
+Chunk 47:
+Of course, these
 are not all of the testing types used in the QA test process.
 ==================================================
-Chunk 26:
+Chunk 48:
 But knowing the basic
-categories will help you to understand the topic better. Approaches to executing tests
+categories will help you to understand the topic better.
+==================================================
+Chunk 49:
+Approaches to executing tests
 Some tests are performed by humans and this is known as manual testing.
 ==================================================
-Chunk 27:
+Chunk 50:
 In manual testing,
-testers actually execute test cases and generate test reports themselves. On the other
+testers actually execute test cases and generate test reports themselves.
+==================================================
+Chunk 51:
+On the other
 hand, you have tests that are performed by computers, this is more commonly known as
 automation.
 ==================================================
-Chunk 28:
+Chunk 52:
 Test automation engineers are responsible for creating and writing test codes
 that simulate user experiences, that can be repeated over and over again, to check the
-software in question for bugs. Both of these approaches have pros and cons, and when used
+software in question for bugs.
+==================================================
+Chunk 53:
+Both of these approaches have pros and cons, and when used
 together they yield good results.
 ==================================================
-Chunk 29:
-Here are some things about manual testing to consider. Manual testing is more suited for small test projects, and manual tests typically pick up
+Chunk 54:
+Here are some things about manual testing to consider.
+==================================================
+Chunk 55:
+Manual testing is more suited for small test projects, and manual tests typically pick up
 issues that would be missed in an automated test.
 ==================================================
-Chunk 30:
+Chunk 56:
 And finally, manual testing doesn’t
-require advanced knowledge of scripting languages and is reasonably easy to learn. On the
+require advanced knowledge of scripting languages and is reasonably easy to learn.
+==================================================
+Chunk 57:
+On the
 flip side, manual testing is time-consuming if testers are working on a big project, and
 you can never exclude the possibility of human error.
 ==================================================
-Chunk 31:
+Chunk 58:
 Similarly, automation has many
-positives, it can be used repeatedly, time and time again. Plus, it’s good for large
+positives, it can be used repeatedly, time and time again.
+==================================================
+Chunk 59:
+Plus, it’s good for large
 projects.
 ==================================================
-Chunk 32:
+Chunk 60:
 But, on the downside, it doesn’t quite have the human touch and can miss errors
-that are beyond the scope of its code. QA professionals have to decide between manual and
+that are beyond the scope of its code.
+==================================================
+Chunk 61:
+QA professionals have to decide between manual and
 automated testing for each project.
 ==================================================
-Chunk 33:
+Chunk 62:
 Tools Now that we know what the QA process is and what
 types of tests and approaches exist, let’s talk about what tools testers use when they’re
-completing their work. A testing tool is anything that supports test activities.
+completing their work.
 ==================================================
-Chunk 34:
+Chunk 63:
+A testing tool is anything that supports test activities.
+==================================================
+Chunk 64:
 There are
-plenty of tools on the market, and nobody expects a beginner to know them all. But it’s a
+plenty of tools on the market, and nobody expects a beginner to know them all.
+==================================================
+Chunk 65:
+But it’s a
 good idea to be familiar with the most popular tools, like ‘Selenium’, ‘Jira’, and
 ‘BrowserStack’.
 ==================================================
-Chunk 35:
-‘Selenium’ is the most popular testing tool. It does not need advanced
+Chunk 66:
+‘Selenium’ is the most popular testing tool.
+==================================================
+Chunk 67:
+It does not need advanced
 scripting knowledge and is user friendly for beginners.
 ==================================================
-Chunk 36:
+Chunk 68:
 ‘Jira’ is a bug and issue tracking
-tool. It is also used for project management.
+tool.
 ==================================================
-Chunk 37:
+Chunk 69:
+It is also used for project management.
+==================================================
+Chunk 70:
 ‘BrowserStack’ enables developers to test
-their applications across different browsers, devices, and operating systems. Conclusion
+their applications across different browsers, devices, and operating systems.
+==================================================
+Chunk 71:
+Conclusion
 No matter which approach or method a company uses, the final goal is always the same – to
 deliver the best possible product to customers.
 ==================================================
-Chunk 38:
+Chunk 72:
 Well established QA processes help to
 reduce costs, improve the overall quality of software, and bring about a better user
-experience. You can become part of this process right now by signing up to one of our
+experience.
+==================================================
+Chunk 73:
+You can become part of this process right now by signing up to one of our
 online courses.
 ==================================================
-Chunk 39:
+Chunk 74:
 Our short courses are designed to help people just like you to overcome
-their fears and start a new career as a QA professional. With our experienced tutors
+their fears and start a new career as a QA professional.
+==================================================
+Chunk 75:
+With our experienced tutors
 guiding you along the way, you’ll have learnt the basics of QA in just a few weeks – then
 you’ll be on course to get yourself a high-paying salary.
 ==================================================
-Chunk 40:
+Chunk 76:
 Check out our website for more
 information, and to learn about our courses and curriculums right now.
 ==================================================

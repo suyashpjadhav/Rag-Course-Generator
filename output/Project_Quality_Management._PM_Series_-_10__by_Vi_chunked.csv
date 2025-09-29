@@ -1,29 +1,35 @@
 Chunk Number,Chunk Text
-1,"Project Quality Management. PM Series - 10 | by Vivek Tiwari | Medium
+1,Project Quality Management.
+2,"PM Series - 10 | by Vivek Tiwari | Medium
 By Vivek Tiwari
 Quality Management — Executing Phase Manage Quality The main focus of this process is to
 execute the plan that the project manager and team have created to meet the quality
 standards for the product or service."
-2,"The criticaloutputsof this process are Quality
+3,"The criticaloutputsof this process are Quality
 Reports— that include information about quality issues with the project, and
 recommendation on the improvement of the current process Test and Evaluation Documents— A
-checklist used by Quality Assurance teams to measure the quality standards of a product. How do we achieve the desired output?"
-3,"First, consider analyzing the Quality Management
+checklist used by Quality Assurance teams to measure the quality standards of a product."
+4,How do we achieve the desired output?
+5,"First, consider analyzing the Quality Management
 Plan (QMP) which provides information about the quality standards, objectives, control,
-and assurance procedures. In addition to the QMP, project documents such as the Lessons
+and assurance procedures."
+6,"In addition to the QMP, project documents such as the Lessons
 Learned Register, Quality Metrics, and Risk Report should also be reviewed."
-4,"These
+7,"These
 documents provide information on recommended methods for improving quality, metrics used
-to measure quality, and risks that should be taken into consideration. In addition to the
+to measure quality, and risks that should be taken into consideration."
+8,"In addition to the
 commonITTOs, consider the below tools as critical to be applied to the above-mentioned
 inputs Under the data-gathering process, checklists play a critical role in helping QA
 team members review the essential components of the product and ensure that the quality
 standards specified in the checklists are met."
-5,"Under the data-representation process, the
+9,"Under the data-representation process, the
 cause-and-effect diagram is vital which helps the team to identify the cause of the
-defect. Quality audits are essential as they ensure that best practices are being followed
+defect."
+10,"Quality audits are essential as they ensure that best practices are being followed
 and enable the sharing of important audit metrics with stakeholders, keeping them informed
 about the end product."
-6,"Design for X — that developers use to design a specific part of the
-product. By utilizing the above-mentioned processes, standardized quality can be achieved
+11,"Design for X — that developers use to design a specific part of the
+product."
+12,"By utilizing the above-mentioned processes, standardized quality can be achieved
 through effective actions."

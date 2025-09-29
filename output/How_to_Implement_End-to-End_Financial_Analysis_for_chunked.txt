@@ -3,18 +3,27 @@ How to Implement End-to-End Financial Analysis for a Firm using Large Language M
 (LLMs) and Gen AI | by Nayan Paul | Medium
 By Nayan Paul
 How to Implement End-to-End Financial Analysis for a Firm using Large Language Models
-(LLMs) and Gen AI Problem Statement Financial analysis is complex . Financial analysis is
-complicated .
+(LLMs) and Gen AI Problem Statement Financial analysis is complex .
 ==================================================
 Chunk 2:
+Financial analysis is
+complicated .
+==================================================
+Chunk 3:
 Financial analysis charters into the world of multi dimensional analysis and
-evaluation of an entire organization through series of complex KPIs. Unlike other
+evaluation of an entire organization through series of complex KPIs.
+==================================================
+Chunk 4:
+Unlike other
 processes where we try to solve a single unit of work — financial analysis can have
 multiple dimensions and each needs a special process and procedure to quantify outcomes.
 ==================================================
-Chunk 3:
+Chunk 5:
 In this blog- let us focus on and try to understand the complexity of designing an end to
-end financial analysis solution. Financial analysis at the minimum needs to solve for :
+end financial analysis solution.
+==================================================
+Chunk 6:
+Financial analysis at the minimum needs to solve for :
 balance sheet reviews income statement reviews cashflow analysis comparison with industry
 benchmarks trend analysis working capital analysis liquidity analysis profitability
 analysis solvency analysis efficiency analysis break even analysis cashflow analysis

@@ -5,31 +5,43 @@ Recursive BOM with Routing in Manufacturing Recursive BOM with Routing in Manufa
 The■■Manufacturing is Coming Back, but… What are the Real Bottlenecks for Manufacturing
 Enterprise Resource Planning (ERP) systems are at the heart of modern manufacturing — yet
 one of their most critical features often becomes their greatest bottleneck:the Bill of
-Materials (BOM). In manufacturing, aBOMis a hierarchical list of components and
-subcomponents required to build a finished product.
+Materials (BOM).
 ==================================================
 Chunk 2:
+In manufacturing, aBOMis a hierarchical list of components and
+subcomponents required to build a finished product.
+==================================================
+Chunk 3:
 It’s essentially a blueprint of how
-things are put together — from nuts and bolts, all the way to final assemblies. Equally
+things are put together — from nuts and bolts, all the way to final assemblies.
+==================================================
+Chunk 4:
+Equally
 important is therouting: the sequence of operations required to transform raw materials
 into a finished good.
 ==================================================
-Chunk 3:
+Chunk 5:
 Each routing step — likecutting,drilling,welding, orpolishing— adds
-time, cost, and complexity to production. Take the metal hardware manufacturing as an
+time, cost, and complexity to production.
+==================================================
+Chunk 6:
+Take the metal hardware manufacturing as an
 example… Ever wonder what causes themostproduct complaints at Louis Vuitton repair
 centers?
 ==================================================
-Chunk 4:
+Chunk 7:
 Surprisingly, it’s thesnap hookof the boutique bags— a small part that breaks
-more often than you’d think. Routings can be particularly tricky: Weldingoperations may
+more often than you’d think.
+==================================================
+Chunk 8:
+Routings can be particularly tricky: Weldingoperations may
 have lower yield rates due to precision challenges Polishingmight require repeated passes
 for quality assurance Heat treatmentcan cause dimensional changes, requiring rework or
 scrap These realities aren’t always captured cleanly in ERP systems, especially in
 platforms likeSAP Business One (SAP B1)which offer basic BOM support but lack deep
 recursive analytics or built-in routing cost calculations.
 ==================================================
-Chunk 5:
+Chunk 9:
 That’s where integration comes
 in: by combiningBOM hierarchywithrouting details, we can compute: Total raw material
 quantities needed (including nested levels) Labor and machine time per component Process-
@@ -38,26 +50,38 @@ operational pain points: Prevents over-ordering of raw materials Identifies high
 operations in the process chain Improves quotation accuracy Enables predictive scheduling
 and resource allocation During my time at a global metal manufacturing subsidiary, I
 tackled this exact challenge — building a recursive BOM + routing analysis engine from the
-ground up. I believe the approach would help those companies with limited resources and
+ground up.
+==================================================
+Chunk 10:
+I believe the approach would help those companies with limited resources and
 budget.
 ==================================================
-Chunk 6:
+Chunk 11:
 The First Challenge: BOM Expansion in SAP Unlike flat BOMs used in simple
-manufacturing,SAP stores Bills of Materials (BOMs) as hierarchical trees. Each finished
+manufacturing,SAP stores Bills of Materials (BOMs) as hierarchical trees.
+==================================================
+Chunk 12:
+Each finished
 good (FG) may consist of subassemblies (SFGs), which in turn have multiple raw materials,
 each with its own quantities.
 ==================================================
-Chunk 7:
+Chunk 13:
 Consider this example: To compute thetotal required material
 quantity, you need a recursive traversal of this tree: This isnot natively supportedin SAP
-(B1) or most ETL tools out of the box. Recursive Structures and Mathematical Thinking
+(B1) or most ETL tools out of the box.
+==================================================
+Chunk 14:
+Recursive Structures and Mathematical Thinking
 Before jumping into tools, I first asked:What kind of problem is this, structurally?
 ==================================================
-Chunk 8:
+Chunk 15:
 At
 its core, this recursive BOM expansion is atree traversal problem— every finished product
 (FG) is the root of a tree, and each semi-finished product (SFG) or material is a node,
-linked by “parent-child” relationships with quantity multipliers. Conceptual Model: Each
+linked by “parent-child” relationships with quantity multipliers.
+==================================================
+Chunk 16:
+Conceptual Model: Each
 node in the tree represents a component, and the total quantity needed at the leaf node
 (raw material) is: Repeated through recursion, this is equivalent to: This structure is
 mathematically similar to: Graph Theory:Specifically, adirected acyclic graph (DAG)where
@@ -68,36 +92,51 @@ but: Ensuring that shared components (used by multiple FGs) didn’t double-coun
 cyclic dependencies (rare but possible in poorly maintained BOMs) Handling deep trees (up
 to 11 layers!)
 ==================================================
-Chunk 9:
-within time limits in ETL runs This was not just a data problem. It was
+Chunk 17:
+within time limits in ETL runs This was not just a data problem.
+==================================================
+Chunk 18:
+It was
 agraph problem under business constraints.
 ==================================================
-Chunk 10:
+Chunk 19:
 Sample SQL Recursive BOM Expansion with Routing
 Costs My Solution Using a combination ofSQL recursive queriesandPentaho ETL workflows, I
 created a system that: Pulled each top-level finished good (OITMtable,ItemCodestarts with
 'B') Wrote it into a staging table (MySQL_FG_List) with aCheckFlag = 'N' Used a looped
-process to:1. Query each BOM level from SAP B12.
+process to:1.
 ==================================================
-Chunk 11:
+Chunk 20:
+Query each BOM level from SAP B12.
+==================================================
+Chunk 21:
 Multiply material quantities
-recursively3. Aggregate results into aTotalQTYcolumn4.
+recursively3.
 ==================================================
-Chunk 12:
+Chunk 22:
+Aggregate results into aTotalQTYcolumn4.
+==================================================
+Chunk 23:
 Mark entries asCheckFlag = 'Y'to
 prevent reprocessing Triggered email alerts on query failures for data integrity The
 workflow chart for ETL tasks: Output: Multi-level material breakdowns rendered in
-reporting with drill-down summaries. Why Pentaho Was Limiting — And How I’d Rebuild It +
+reporting with drill-down summaries.
+==================================================
+Chunk 24:
+Why Pentaho Was Limiting — And How I’d Rebuild It +
 Routing Synergy While Pentaho served well as an introductory ETL tool, it fell short when
 scaling to complexmulti-tier integrations between BOM and Routing structures.
 ==================================================
-Chunk 13:
+Chunk 25:
 In a robust
 manufacturing intelligence system, understandingwhat materials are needed (BOM)is only
-half the equation. You also need to knowhow they are processed (Routing)— each routing
+half the equation.
+==================================================
+Chunk 26:
+You also need to knowhow they are processed (Routing)— each routing
 step adds cost, labor, and time.
 ==================================================
-Chunk 14:
+Chunk 27:
 The Integrated BOM-Routing Model In SAP B1 and similar
 ERP systems, two key tables underpin production planning: BOM Table (OITT + ITT1): defines
 which components go into a parent item, including quantities Routing Table (OITT joined
@@ -118,22 +157,28 @@ with its routing- Compute cost/time/material metrics inpandas- Write output to a
 Warehousetable (e.g.,ProductionCost_Fact) How the ETL Logic Works Recursive Expansion with
 Cost Calculation (Pseudocode): What it actually does: Lessons from Refactoring Rebuilding
 this solution in Python has revealed a powerful truth:the right tools don’t just make
-systems faster — they make teams stronger. When we first implemented this usingPentaho, it
+systems faster — they make teams stronger.
+==================================================
+Chunk 28:
+When we first implemented this usingPentaho, it
 gave us a quick win with its visual ETL workflow.
 ==================================================
-Chunk 15:
+Chunk 29:
 But over time, we faced growing
 limitations: Complex recursive logic was visually fragmented across multiple jobs Query
 time ballooned as BOM depth increased Version control was weak; debugging a pipeline often
 meant opening 5+ transformation files Rapid BOM changes created constant update fatigue
-■Switching to Python changed everything. Recursion was handled naturally via code logic —
+■Switching to Python changed everything.
+==================================================
+Chunk 30:
+Recursion was handled naturally via code logic —
 no more “8-level loops” The entire ETL was now a single, readable script, trackable in Git
 Adding new data columns or altering cost formulas was reduced to minutes Runtime
 performance improved dramatically: what took ~8 minutes in Pentaho now finished in under 1
 minute Most importantly, theteam could now fully own and improve the codebase— it was no
 longer a mystery locked inside a GUI.
 ==================================================
-Chunk 16:
+Chunk 31:
 Looking Forward Though our Python-based ETL proved
 highly effective, several advanced options are now within reach: Graph Databases (e.g.,
 Neo4j)for modeling recursive BOMs natively with weighted edges dbt (Data Build Tool)for

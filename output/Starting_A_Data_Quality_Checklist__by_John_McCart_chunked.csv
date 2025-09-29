@@ -1,24 +1,32 @@
 Chunk Number,Chunk Text
 1,"Starting A Data Quality Checklist | by John McCarthy | Medium
 By John McCarthy
-I have some bad news for you. Something in the data you used in your last project is
+I have some bad news for you."
+2,"Something in the data you used in your last project is
 wrong."
-2,"You just don’t know it yet. “But, no!"
-3,"I got that data from the UI team. They said
+3,You just don’t know it yet.
+4,"“But, no!"
+5,I got that data from the UI team.
+6,"They said
 it was reviewed!” Congratulations."
-4,"You can tell that to everyone while you are being
+7,"You can tell that to everyone while you are being
 walked respectfully out of the building because your new marketing model caused $200,000
-in lost revenue. Don’t blame Google because you thought Coffeyville, Kansas was a
+in lost revenue."
+8,"Don’t blame Google because you thought Coffeyville, Kansas was a
 meaningful predictor when it was just the default geocentric center of the United States."
-5,"No, it is not another team’s fault. It is not the rushed timeline’s fault."
-6,"It is not some
-great universal struggle that is impossible to overcome. The quality of the product you
+9,"No, it is not another team’s fault."
+10,It is not the rushed timeline’s fault.
+11,"It is not some
+great universal struggle that is impossible to overcome."
+12,"The quality of the product you
 create is YOUR responsibility."
-7,"The inputs and the outputs belong to YOU. Welcome to the
+13,The inputs and the outputs belong to YOU.
+14,"Welcome to the
 thankless world of data quality."
-8,"There are different levels of investment and effort that
-you can put into quality control. At the very least, you should keep a series of lists,
+15,"There are different levels of investment and effort that
+you can put into quality control."
+16,"At the very least, you should keep a series of lists,
 around each data source, for errors that you have run into so that you can prevent the
 same error from happening twice."
-9,"If you don’t already have something like that in place, I
+17,"If you don’t already have something like that in place, I
 can give you a jump start."
