@@ -106,3 +106,12 @@ venv.bak/
 .mypy_cache/
 
 .idea/*
+__pycache__/
+.venv/
+.env
+*.pyc
+cache/
+outputs/
+downloads/
+.ipynb_checkpoints/
+
