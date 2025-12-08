@@ -74,7 +74,7 @@ def load_pdf(pdf_path: str) -> list[Document]:
 
 # Audio Ingestion
 def load_audio(audio_path: str) -> Document | None:
-    """Transcribe a local audio file (MP3/WAV/MP4) using Whisper."""
+    """Transcribe a local audio file (MP3/MP4) using Whisper."""
     try:
         if not os.path.exists(audio_path):
             print("Audio file not found.")
