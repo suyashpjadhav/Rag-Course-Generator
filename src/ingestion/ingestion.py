@@ -1,7 +1,7 @@
 # src/ingestion/ingestion.py
 import os
 from typing import List
-from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_core.documents import Document
 from src.config.config import settings
 from src.ingestion.loaders import load_pdf, load_pptx, load_manual_transcript
