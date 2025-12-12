@@ -1,116 +1,58 @@
+# src/ingestion/ingestion.py
 import os
-from urllib.parse import urlparse, parse_qs
-from youtube_transcript_api import YouTubeTranscriptApi, NoTranscriptFound, TranscriptsDisabled
-from pytube import YouTube
-import whisper
-from langchain_community.document_loaders import PyPDFLoader, UnstructuredFileLoader
+from typing import List
+from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_core.documents import Document
+from src.config.config import settings
+from src.ingestion.loaders import load_pdf, load_pptx, load_manual_transcript
+from src.embedding_store.vectorstore import create_index_if_not_exists, upsert_documents_to_pinecone
 
+CHUNK_SIZE = settings.CHUNK_SIZE
+CHUNK_OVERLAP = settings.CHUNK_OVERLAP
 
-# YouTube Ingestion
-def extract_video_id(url: str) -> str | None:
-    query = urlparse(url)
-    if query.hostname == 'youtu.be':
-        return query.path[1:]
-    if query.hostname in ('www.youtube.com', 'youtube.com'):
-        if query.path == '/watch':
-            return parse_qs(query.query)['v'][0]
-        if query.path.startswith('/embed/'):
-            return query.path.split('/')[2]
-    return None
+def split_documents(documents: List[Document], chunk_size: int = CHUNK_SIZE, chunk_overlap: int = CHUNK_OVERLAP) -> List[Document]:
+    splitter = RecursiveCharacterTextSplitter(chunk_size=chunk_size, chunk_overlap=chunk_overlap)
+    out = []
+    for doc in documents:
+        text_chunks = splitter.split_text(doc.page_content)
+        for chunk in text_chunks:
+            out.append(Document(page_content=chunk, metadata=doc.metadata))
+    print(f"[ingestion] split into {len(out)} chunks")
+    return out
 
-def load_youtube(video_url: str) -> Document | None:
-    try:
-        video_id = extract_video_id(video_url)
+def ingest_files(file_paths: List[str], manual_texts: List[str] | None = None, index_name: str | None = None):
+    index_name = index_name or settings.PINECONE_INDEX_NAME
+    # Ensure index exists
+    create_index_if_not_exists(index_name, dimension=settings.VECTOR_DIM)
 
-        # 1) Try official transcript
-        try:
-            transcript_list = YouTubeTranscriptApi.list_transcripts(video_id)
-            transcript = transcript_list.find_transcript(['en'])
-            items = transcript.fetch()
-            text = " ".join([item["text"] for item in items])
-            print(f"Transcript fetched via API ({len(text)} chars)")
-            return Document(page_content=text, metadata={"source": video_url})
+    # Load files
+    docs = []
+    for f in file_paths:
+        f = f.strip()
+        if not os.path.exists(f):
+            print(f"[ingestion] file not found: {f}")
+            continue
+        if f.lower().endswith(".pdf"):
+            docs.extend(load_pdf(f))
+        elif f.lower().endswith((".ppt", ".pptx")):
+            docs.extend(load_pptx(f))
+        else:
+            print(f"[ingestion] unsupported file type, skipping: {f}")
 
-        except Exception as e:
-            print(f"No captions available via API ({e}). Falling back to Whisper.")
+    # Manual texts
+    if manual_texts:
+        for t in manual_texts:
+            d = load_manual_transcript(t)
+            if d:
+                docs.append(d)
 
-            # 2) Download audio
-            try:
-                yt = YouTube(f"https://www.youtube.com/watch?v={video_id}")
-                os.makedirs("downloads", exist_ok=True)
-                audio_path = os.path.join("downloads", f"{yt.video_id}.mp4")
-                if not os.path.exists(audio_path):
-                    stream = yt.streams.get_audio_only()
-                    stream.download(filename=audio_path)
-            except Exception as e:
-                print("Audio download failed:", e)
-                return None
+    if not docs:
+        print("[ingestion] no documents loaded; aborting ingestion.")
+        return
 
-            # 3) Transcribe with Whisper
-            model = whisper.load_model("base")
-            result = model.transcribe(audio_path)
-            text = result.get("text", "")
-            print(f"Transcript fetched via Whisper ({len(text)} chars)")
-            return Document(page_content=text, metadata={"source": video_url})
+    # Chunk
+    chunks = split_documents(docs)
 
-    except Exception as e:
-        print("YouTube ingestion completely failed:", e)
-        return None
-
-
-# PDF Ingestion
-def load_pdf(pdf_path: str) -> list[Document]:
-    """Load a PDF file and return it as LangChain Documents."""
-    try:
-        loader = PyPDFLoader(pdf_path)
-        docs = loader.load()
-        print(f"PDF ingestion successful — {len(docs)} pages loaded")
-        return docs
-    except Exception as e:
-        print("PDF ingestion failed:", e)
-        return []
-    
-
-# Audio Ingestion
-def load_audio(audio_path: str) -> Document | None:
-    """Transcribe a local audio file (MP3/MP4) using Whisper."""
-    try:
-        if not os.path.exists(audio_path):
-            print("Audio file not found.")
-            return None
-
-        model = whisper.load_model("base")
-        result = model.transcribe(audio_path)
-        text = result.get("text", "")
-        print(f"Audio transcription successful — {len(text)} characters")
-        return Document(page_content=text, metadata={"source": audio_path})
-
-    except Exception as e:
-        print("Audio ingestion failed:", e)
-        return None    
-
-
-# PPT Ingestion
-def load_pptx(ppt_path: str) -> list[Document]:
-    """Load a PPT file and return it as LangChain Documents."""
-    try:
-        loader = UnstructuredFileLoader(ppt_path)
-        docs = loader.load()
-        print(f"PowerPoint ingestion successful — {len(docs)} slides/chunks loaded")
-        return docs
-    except Exception as e:
-        print("PowerPoint ingestion failed:", e)
-        return []
-    
-
-# Manual Ingestion
-def load_manual_transcript(transcript_text: str, source: str = "manual_input") -> Document | None:
-    """Load a manually pasted transcript."""
-    if not transcript_text.strip():
-        print("Empty transcript text provided.")
-        return None
-    print(f"Manual transcript loaded ({len(transcript_text)} characters)")
-    return Document(page_content=transcript_text.strip(), metadata={"source": source})
-
-
+    # Upsert to Pinecone
+    upsert_documents_to_pinecone(chunks, index_name=index_name)
+    print("[ingestion] Done.")
