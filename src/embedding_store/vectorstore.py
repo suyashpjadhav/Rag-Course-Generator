@@ -1,115 +1,52 @@
-import os
-import math
-from typing import Iterable, List, Dict, Any
-import pinecone
+from pinecone import Pinecone
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_core.documents import Document
 from src.config.config import settings
 
-UPSERT_BATCH_SIZE = 128
+pc = Pinecone(api_key=settings.PINECONE_API_KEY)
 
 def get_embeddings_model():
-    """
-    Initialize and return HuggingFaceEmbeddings (langchain_huggingface).
-    """
     model_name = settings.EMBEDDING_MODEL
-    embeddings = HuggingFaceEmbeddings(model_name=model_name)
-    print(f"[vectorstore] Embedding model '{model_name}' loaded successfully.")
-    return embeddings
+    return HuggingFaceEmbeddings(model_name=model_name)
 
-def init_pinecone():
-    """
-    Initialize pinecone client.
-    """
-    api_key = settings.PINECONE_API_KEY
-    env = settings.PINECONE_ENVIRONMENT
-    if not api_key or not env:
-        raise ValueError("PINECONE_API_KEY and PINECONE_ENVIRONMENT must be set in env.")
-    pinecone.init(api_key=api_key, environment=env)
-    return pinecone
+class PineconeRetrieverWrapper:
+    def __init__(self, index_name: str = None):
+        self.index_name = index_name or settings.PINECONE_INDEX_NAME
+        self.index = pc.Index(self.index_name)
+        self.embedder = get_embeddings_model()
 
-def create_index_if_not_exists(index_name: str, dimension: int):
-    init_pinecone()
-    if index_name in pinecone.list_indexes():
-        print(f"[vectorstore] Pinecone index '{index_name}' already exists.")
-        return
-    pinecone.create_index(index_name, dimension=dimension, metric="cosine")
-    print(f"[vectorstore] Pinecone index '{index_name}' created (dim={dimension}).")
+    def as_retriever(self, search_kwargs: dict = None):
+        search_kwargs = search_kwargs or {}
+        top_k = search_kwargs.get("k", settings.TOP_K)
 
-def upsert_documents_to_pinecone(documents: List[Document], index_name: str = None):
-    """
-    Upsert documents (as chunks) into Pinecone. Documents are LangChain Document objects.
-    Each vector's metadata will include document metadata and optionally snippet text.
-    """
-    if not documents:
-        print("[vectorstore] No documents to upsert.")
-        return
+        class Retriever:
+            def __init__(self, index, embedder, top_k):
+                self.index = index
+                self.embedder = embedder
+                self.top_k = top_k
 
-    index_name = index_name or settings.PINECONE_INDEX_NAME
-    embeddings = get_embeddings_model()
-    init_pinecone()
-    index = pinecone.Index(index_name)
+            def get_relevant_documents(self, query: str):
+                q_emb = self.embedder.embed_query(query)
+                # using pinecone v4 Index.query
+                res = self.index.query(vector=q_emb, top_k=self.top_k, include_metadata=True)
+                docs = []
+                matches = res.get("matches", []) or res.get("results", [])
+                # support both return shapes
+                if isinstance(matches, list):
+                    iterable = matches
+                else:
+                    # results shape may be {'results': [{'matches':[...]}]}
+                    iterable = []
+                    for r in matches:
+                        iterable.extend(r.get("matches", []))
+                for m in iterable:
+                    md = m.get("metadata", {}) or {}
+                    # prefer stored preview; if not, leave blank
+                    text = md.get("_text_preview", "")
+                    docs.append(Document(page_content=text, metadata=md))
+                return docs
 
-    # Prepare texts for embedding
-    texts = [doc.page_content for doc in documents]
-    # Embed in batches
-    all_vectors = []
-    for i in range(0, len(texts), UPSERT_BATCH_SIZE):
-        batch_texts = texts[i:i+UPSERT_BATCH_SIZE]
-        batch_embeddings = embeddings.embed_documents(batch_texts)
-        for j, emb in enumerate(batch_embeddings):
-            idx = str(i + j)
-            metadata = documents[i + j].metadata or {}
-            # include a short preview for safer downstream usage
-            metadata["_text_preview"] = documents[i + j].page_content[:400]
-            all_vectors.append((idx, emb, metadata))
-
-    # Upsert in batches
-    for i in range(0, len(all_vectors), UPSERT_BATCH_SIZE):
-        batch = all_vectors[i:i+UPSERT_BATCH_SIZE]
-        index.upsert(vectors=batch)
-        print(f"[vectorstore] Upserted batch {i // UPSERT_BATCH_SIZE + 1}")
-
-    print(f"[vectorstore] Total upserted vectors: {len(all_vectors)}")
+        return Retriever(self.index, self.embedder, top_k)
 
 def load_vectorstore(index_name: str = None):
-    """
-    Return a lightweight wrapper object with as_retriever(search_kwargs) using Pinecone.
-    This wrapper behaves similarly to a LangChain vectorstore for your pipeline.
-    """
-    index_name = index_name or settings.PINECONE_INDEX_NAME
-    init_pinecone()
-    index = pinecone.Index(index_name)
-    embeddings = get_embeddings_model()
-
-    # We'll create a simple retriever wrapper using the pinecone index and embeddings
-    class PineconeRetriever:
-        def __init__(self, index, embedder):
-            self.index = index
-            self.embedder = embedder
-
-        def as_retriever(self, search_kwargs: Dict[str, Any] = None):
-            search_kwargs = search_kwargs or {}
-            top_k = search_kwargs.get("k", settings.TOP_K)
-
-            class RetrieverInner:
-                def __init__(self, index, embedder, top_k):
-                    self.index = index
-                    self.embedder = embedder
-                    self.top_k = top_k
-
-                def get_relevant_documents(self, query: str):
-                    # embed the query
-                    q_emb = self.embedder.embed_query(query)
-                    # query pinecone
-                    res = self.index.query(q_emb, top_k=self.top_k, include_metadata=True)
-                    docs = []
-                    for match in res.get("matches", []):
-                        md = match.get("metadata", {})
-                        content = md.get("_text_preview", "")
-                        docs.append(Document(page_content=content, metadata=md))
-                    return docs
-
-            return RetrieverInner(self.index, self.embedder, top_k)
-
-    return PineconeRetriever(index, embeddings)
+    return PineconeRetrieverWrapper(index_name=index_name)
