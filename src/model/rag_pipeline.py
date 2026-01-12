@@ -31,9 +31,16 @@ def get_llm():
         raise ValueError("Invalid LLM_PROVIDER")
 
 
-def create_retriever():
+def create_retriever(coverage_level: str = "focused"):
     vecstore = load_vectorstore()
-    return vecstore.as_retriever(search_kwargs={"k": settings.TOP_K})
+
+    if coverage_level == "broad":
+        k = settings.TOP_K * 3 
+    else:
+        k = settings.TOP_K
+
+    return vecstore.as_retriever(search_kwargs={"k": k})
+
 
 def create_qa_chain(retriever):
     llm = get_llm()
@@ -127,6 +134,14 @@ Generate structured educational content now.
     return rag_chain
 
 
-def build_rag_pipeline():
-    retriever = create_retriever()
+def build_rag_pipeline(coverage_level: str = "focused"):
+    """
+    Builds a full RAG pipeline:
+    - Uses persisted vectorstore
+    - Retrieves relevant chunks
+    - Generates structured educational content
+
+    This function does NOT handle ingestion.
+    """
+    retriever = create_retriever(coverage_level)
     return create_qa_chain(retriever)
