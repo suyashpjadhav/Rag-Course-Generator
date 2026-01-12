@@ -115,3 +115,6 @@ outputs/
 downloads/
 .ipynb_checkpoints/
 
+training_data.json
+scripts/test_*.py
+scripts/debug_*.py
