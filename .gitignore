@@ -111,10 +111,24 @@ __pycache__/
 .env
 *.pyc
 cache/
-outputs/
-downloads/
+output/
+faiss_index/
+notebooks/
 .ipynb_checkpoints/
 
 training_data.json
-scripts/test_*.py
+
+scripts/test_chroma.py
+scripts/test_env.py
+scripts/test_ingestion.py
+scripts/test_pinecone.py
+scripts/test_rag.py
+scripts/test_vectorstore.py
 scripts/debug_*.py
+
+src/config/prompts.py
+
+data/*.pdf
+data/*.db
+
+dspy/
