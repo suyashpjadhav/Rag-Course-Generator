@@ -132,3 +132,5 @@ data/*.pdf
 data/*.db
 
 dspy/
+embedding_store/
+ingestion/
