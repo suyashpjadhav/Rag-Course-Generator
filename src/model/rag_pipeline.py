@@ -1,14 +1,22 @@
-import os
+import math
+from typing import List
 from dotenv import load_dotenv
+
+from langchain_core.documents import Document
 from langchain_core.prompts import PromptTemplate
 from langchain_core.runnables import RunnablePassthrough, RunnableLambda
 from langchain_huggingface import ChatHuggingFace, HuggingFaceEndpoint
 from langchain_openai import ChatOpenAI
-from src.embedding_store.vectorstore import load_vectorstore
+
+from src.embedding_store.vectorstore import get_embeddings_model
 from src.config.config import settings
+
+# VECTOR STORE
+from vector_store.query_documents import search_similar_chunks
 
 load_dotenv()
 
+# LLM
 def get_llm():
     if settings.LLM_PROVIDER == "openai":
         return ChatOpenAI(
@@ -27,82 +35,149 @@ def get_llm():
             )
         )
 
-    else:
-        raise ValueError("Invalid LLM_PROVIDER")
+    raise ValueError("Invalid LLM_PROVIDER")
+
+# Retrieval utilities
+def estimate_tokens(text: str) -> int:
+    """Rough token estimation (1 token ≈ 4 chars)."""
+    return math.ceil(len(text) / 4)
 
 
-def create_retriever(coverage_level: str = "focused"):
-    vecstore = load_vectorstore()
+def dedupe_documents(
+    docs: List[Document],
+    embeddings,
+    similarity_threshold: float = 0.85
+) -> List[Document]:
+    if not docs:
+        return []
 
-    if coverage_level == "broad":
-        k = settings.TOP_K * 3 
-    else:
-        k = settings.TOP_K
+    texts = [d.page_content for d in docs]
+    vectors = embeddings.embed_documents(texts)
 
-    return vecstore.as_retriever(search_kwargs={"k": k})
+    unique_docs = []
+    unique_vectors = []
+
+    for doc, vec in zip(docs, vectors):
+        is_duplicate = False
+        for uvec in unique_vectors:
+            similarity = sum(a * b for a, b in zip(vec, uvec))
+            if similarity >= similarity_threshold:
+                is_duplicate = True
+                break
+
+        if not is_duplicate:
+            unique_docs.append(doc)
+            unique_vectors.append(vec)
+
+    return unique_docs
 
 
-def create_qa_chain(retriever):
+def token_budget_for_minutes(minutes: int) -> int:
+    """
+    Approximation:
+    1 minute ≈ 700 context tokens
+    """
+    return minutes * 700
+
+
+def select_documents_with_token_budget(
+    docs: List[Document],
+    max_tokens: int
+) -> List[Document]:
+    selected = []
+    used_tokens = 0
+
+    for doc in docs:
+        tokens = estimate_tokens(doc.page_content)
+        if used_tokens + tokens > max_tokens:
+            break
+        selected.append(doc)
+        used_tokens += tokens
+
+    return selected
+
+# CLIENT RETRIEVAL 
+def retrieve_from_client_vector_store(
+    query: str,
+    coverage_level: str
+) -> List[Document]:
+    base_k = settings.TOP_K
+    k = base_k * 3 if coverage_level == "broad" else base_k
+
+    response = search_similar_chunks(query, top_k=k)
+
+    if "error" in response:
+        return []
+
+    docs = []
+    for item in response["results"]:
+        docs.append(
+            Document(
+                page_content=item["text"],
+                metadata={
+                    "source": item.get("source"),
+                    "chunk_index": item.get("chunk_index")
+                }
+            )
+        )
+
+    return docs
+
+# CONTEXT PREPARATION
+def retrieve_and_prepare_context(
+    query: str,
+    coverage_level: str,
+    submodule_minutes: int
+) -> str:
+    # Step 1: Retrieve from client Chroma DB
+    docs = retrieve_from_client_vector_store(query, coverage_level)
+
+    # Step 2: Deduplicate semantically
+    embeddings = get_embeddings_model()
+    docs = dedupe_documents(docs, embeddings)
+
+    # Step 3: Apply time-based token budget
+    max_tokens = token_budget_for_minutes(submodule_minutes)
+    docs = select_documents_with_token_budget(docs, max_tokens)
+
+    return "\n\n".join(d.page_content for d in docs)
+
+# RAG CHAIN
+def create_qa_chain(coverage_level: str):
     llm = get_llm()
 
     prompt = PromptTemplate(
         input_variables=["context", "input"],
-        template="""You are an expert instructional designer and subject-matter explainer.
+        template="""
+You are an expert instructional designer and subject-matter explainer.
 
 Your job is to analyze the PROVIDED CONTEXT and transform it into
 high-quality educational modules written in a STYLE, DEPTH,
 and CLARITY that are CONSISTENT with the way the CONTEXT itself is written.
 
-You must follow these rules strictly:
+STOP GENERATION RULE:
+- Generate at most ONE module at a time.
+- Do NOT repeat any section headers.
+- End output cleanly after the Mini Summary.
 
-CONTENT RULES
+CONTENT RULES:
 - Use ONLY the provided CONTEXT.
 - Do NOT add external facts, examples, or assumptions.
 - Do NOT rely on any unseen or external reference material.
-- If the context is insufficient to explain a concept clearly, say:
-  "Insufficient context."
+- If the context is insufficient, say "Insufficient context."
 
-STRUCTURE & STYLE RULES
-- First, infer the DOMAIN from the context (e.g., manufacturing, finance,
-  biology, computer science, operations, etc.).
-- Do NOT mention the domain explicitly unless the context itself does.
-- Organize content into clear MODULES and SUB-MODULES.
-- Each sub-module must explain ONE core idea only.
-
-NAMING RULES (VERY IMPORTANT)
-- Module titles should express the BIG IDEA or PURPOSE.
-- Sub-module titles must be:
-  - Human-readable
-  - Conceptual, not academic
-  - Derived directly from the language and intent of the context
-  - Similar in tone to:
-    "Process, parameter, and variation - in plain language"
-    "From risk to SOPs at the machine"
-    "Checking correctly: good measurement habits"
-- Do NOT use textbook-style headings.
-
-EXPLANATION STYLE
-For each sub-module:
-1. Start with a real-world situation or problem implied by the context.
-2. Explain the concept in simple, everyday language.
-3. Use analogies ONLY if they already exist in the context.
-4. Connect the idea back to the system, process, or workflow described.
-5. Clearly explain why this matters in practice.
-6. End with a short transfer section that helps the learner apply the idea.
-
-OUTPUT FORMAT (MANDATORY)
+OUTPUT FORMAT (MANDATORY):
 
 ### Module Title
 Short overview explaining why this module exists.
 
 #### Sub-module Title
-(Explain one idea using the layered style described above)
 
 #### Key Takeaways
-- 3 to 5 concise, practical points
+- 3 to 5 concise points
 
 #### Mini Summary
-- 2 to 3 lines reinforcing the main insight
+- 2 to 3 lines
 
 --------------------
 CONTEXT:
@@ -112,19 +187,18 @@ CONTEXT:
 USER QUERY:
 {input}
 --------------------
-
-Generate structured educational content now.
 """
     )
 
-    def retrieve_and_format(query):
-        docs = retriever.get_relevant_documents(query)
-        return "\n\n".join([d.page_content for d in docs])
-
-
     rag_chain = (
         {
-            "context": RunnableLambda(retrieve_and_format),
+            "context": RunnableLambda(
+                lambda q: retrieve_and_prepare_context(
+                    query=q,
+                    coverage_level=coverage_level,
+                    submodule_minutes=3
+                )
+            ),
             "input": RunnablePassthrough(),
         }
         | prompt
@@ -133,15 +207,15 @@ Generate structured educational content now.
 
     return rag_chain
 
-
+# PIPELINE ENTRY POINT
 def build_rag_pipeline(coverage_level: str = "focused"):
     """
-    Builds a full RAG pipeline:
-    - Uses persisted vectorstore
-    - Retrieves relevant chunks
-    - Generates structured educational content
+    Builds the course-generation RAG pipeline.
 
-    This function does NOT handle ingestion.
+    Uses:
+    - Client semantic chunking
+    - Client Chroma vector store
+    - Internal dedup + token budgeting
+    - Structured generation
     """
-    retriever = create_retriever(coverage_level)
-    return create_qa_chain(retriever)
+    return create_qa_chain(coverage_level)

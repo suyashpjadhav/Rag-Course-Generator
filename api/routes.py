@@ -2,6 +2,7 @@ from fastapi import APIRouter, UploadFile, File, Form, HTTPException
 from pydantic import BaseModel
 from vector_store.index_documents import index_pdf_chunks
 from vector_store.query_documents import search_similar_chunks
+from src.service.course_service import generate_course
 import os
 
 router = APIRouter()
@@ -35,5 +36,32 @@ def index_handler(file: UploadFile = File(...), doc_id: str = Form(...)):
         index_pdf_chunks(file_path, doc_id)
         return {"message": "Indexed successfully", "doc_id": doc_id}
     
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+class CourseRequest(BaseModel):
+    documents: list[str]
+    user_goal: str
+    level: str
+    duration: str
+    coverage_level: str = "focused"
+
+@router.post("/generate-course")
+def generate_course_handler(body: CourseRequest):
+    try:
+        result = generate_course(
+            documents=body.documents,
+            user_goal=body.user_goal,
+            level=body.level,
+            duration=body.duration,
+            coverage_level=body.coverage_level
+        )
+
+        return {
+            "status": "success",
+            "content": result["content"]
+        }
+
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
