@@ -7,9 +7,9 @@ from src.service.course_service import generate_course
 if __name__ == "__main__":
     result = generate_course(
         documents=["DBMS_Full_Notes.pdf"],
-        user_goal="Prepare for DBMS semester exam",
+        user_goal="explain the architecture schema to the professor in viva",
         level="Intermediate",
-        duration="6 weeks",
+        duration="10 minutes",
         coverage_level="focused"
     )
 

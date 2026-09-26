@@ -135,6 +135,6 @@ dspy/
 embedding_store/
 ingestion/
 
-tests/config.py
+tests/test_config.py
 tests/test_ingestion.py
 tests/test_vectorstore.py
