@@ -20,6 +20,7 @@ PyDrive2  # No need to pin unless you know incompatibility
 fastapi  # Avoid pinning, it evolves fast
 uvicorn  # Same here
 pydantic>=1.10  # Allow future patch updates
+python-multipart
 
 # --- Web Scraping ---
 requests>=2.28  # Required by chromadb

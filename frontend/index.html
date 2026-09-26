@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RAG Course Generator | AI Instructional Designer</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Marked.js for Markdown Rendering -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="app-wrapper">
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-icon">
+          <i class="fa-solid fa-graduation-cap"></i>
+        </div>
+        <div class="brand-text">
+          <h2>RAG Course</h2>
+          <span class="badge">AI Generator</span>
+        </div>
+      </div>
+
+      <nav class="nav-menu">
+        <button class="nav-btn active" data-tab="generator">
+          <i class="fa-solid fa-wand-magic-sparkles"></i>
+          <span>Course Studio</span>
+        </button>
+        <button class="nav-btn" data-tab="indexer">
+          <i class="fa-solid fa-file-circle-plus"></i>
+          <span>Document Indexer</span>
+        </button>
+        <button class="nav-btn" data-tab="search">
+          <i class="fa-solid fa-database"></i>
+          <span>Vector Search</span>
+        </button>
+        <button class="nav-btn" data-tab="health">
+          <i class="fa-solid fa-server"></i>
+          <span>System Health</span>
+        </button>
+      </nav>
+
+      <div class="api-status-card">
+        <div class="status-indicator online" id="status-dot"></div>
+        <div class="status-info">
+          <span class="status-title">Backend API</span>
+          <span class="status-subtitle" id="status-text">Connected</span>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+      <!-- Top Header Bar -->
+      <header class="top-header">
+        <div class="header-title">
+          <h1 id="page-title">Course Studio</h1>
+          <p id="page-subtitle">Transform raw documents into structured educational modules using RAG</p>
+        </div>
+        <div class="header-actions">
+          <a href="/docs" target="_blank" class="action-btn outline">
+            <i class="fa-solid fa-book"></i> API Docs
+          </a>
+          <button id="theme-toggle" class="action-btn icon-only" title="Toggle Theme">
+            <i class="fa-solid fa-moon"></i>
+          </button>
+        </div>
+      </header>
+
+      <!-- TAB 1: COURSE GENERATOR STUDIO -->
+      <section id="tab-generator" class="tab-pane active">
+        <div class="studio-grid">
+          <!-- Configuration Panel -->
+          <div class="glass-card config-panel">
+            <div class="card-header">
+              <h3><i class="fa-solid fa-sliders"></i> Course Specification</h3>
+            </div>
+
+            <form id="course-form" class="form-layout">
+              <div class="form-group">
+                <label for="user-goal">
+                  Course Topic / Learning Goal <span class="required">*</span>
+                </label>
+                <div class="input-with-icon">
+                  <i class="fa-solid fa-bullseye"></i>
+                  <textarea id="user-goal" rows="3" placeholder="e.g. Master Three Schema Architecture & Data Independence in DBMS for semester exam..." required></textarea>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="level">Target Audience Level</label>
+                  <div class="select-wrapper">
+                    <i class="fa-solid fa-layer-group"></i>
+                    <select id="level">
+                      <option value="Beginner">Beginner</option>
+                      <option value="Intermediate" selected>Intermediate</option>
+                      <option value="Advanced">Advanced</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="duration">Target Duration / Reading Horizon</label>
+                  <div class="input-with-icon">
+                    <i class="fa-solid fa-clock"></i>
+                    <input type="text" id="duration" value="10 minutes" placeholder="e.g. 10 minutes, 1 hour, 2 weeks">
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="coverage-level">Retrieval Coverage Strategy</label>
+                  <div class="select-wrapper">
+                    <i class="fa-solid fa-bullseye"></i>
+                    <select id="coverage-level">
+                      <option value="focused" selected>Focused (High precision top chunks)</option>
+                      <option value="broad">Broad (Comprehensive 3x chunk coverage)</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="doc-filter">Document Filter (Optional ID)</label>
+                  <div class="input-with-icon">
+                    <i class="fa-solid fa-file-lines"></i>
+                    <input type="text" id="doc-filter" placeholder="e.g. DBMS_Full_Notes.pdf">
+                  </div>
+                </div>
+              </div>
+
+              <button type="submit" id="generate-btn" class="submit-btn glowing">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                <span>Generate Course Module</span>
+              </button>
+            </form>
+          </div>
+
+          <!-- Output Results Panel -->
+          <div class="glass-card output-panel">
+            <div class="card-header">
+              <h3><i class="fa-solid fa-file-signature"></i> Generated Course Material</h3>
+              <div class="output-actions">
+                <button id="copy-btn" class="icon-btn" title="Copy to Clipboard" disabled>
+                  <i class="fa-regular fa-copy"></i>
+                </button>
+                <button id="download-btn" class="icon-btn" title="Download Markdown" disabled>
+                  <i class="fa-solid fa-download"></i>
+                </button>
+              </div>
+            </div>
+
+            <!-- Loader State -->
+            <div id="loader-state" class="center-state hidden">
+              <div class="glowing-spinner"></div>
+              <h4>Synthesizing Educational Content...</h4>
+              <p>Retrieving chunks &bull; Deduplicating context &bull; Generating structured module</p>
+            </div>
+
+            <!-- Empty State -->
+            <div id="empty-state" class="center-state">
+              <div class="empty-icon"><i class="fa-solid fa-book-open-reader"></i></div>
+              <h4>No Course Generated Yet</h4>
+              <p>Specify your learning goal and target parameters on the left, then click <strong>Generate Course Module</strong>.</p>
+            </div>
+
+            <!-- Markdown Render View -->
+            <div id="course-output" class="markdown-body hidden"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TAB 2: DOCUMENT INDEXER -->
+      <section id="tab-indexer" class="tab-pane">
+        <div class="grid-two-col">
+          <div class="glass-card">
+            <div class="card-header">
+              <h3><i class="fa-solid fa-cloud-arrow-up"></i> Upload & Index Document</h3>
+            </div>
+            <form id="index-form" class="form-layout">
+              <div class="form-group">
+                <label for="index-doc-id">Document Identifier / Name <span class="required">*</span></label>
+                <div class="input-with-icon">
+                  <i class="fa-solid fa-tag"></i>
+                  <input type="text" id="index-doc-id" placeholder="e.g. Operating_Systems_Chapter1" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label>Chunked Document File (.txt) <span class="required">*</span></label>
+                <div class="dropzone" id="dropzone">
+                  <i class="fa-solid fa-file-arrow-up"></i>
+                  <p>Drag & drop your <code>.txt</code> chunk file here, or <span class="highlight">browse</span></p>
+                  <input type="file" id="file-input" accept=".txt,.pdf" required hidden>
+                  <span id="file-name" class="file-name-badge hidden"></span>
+                </div>
+              </div>
+
+              <button type="submit" id="index-btn" class="submit-btn primary">
+                <i class="fa-solid fa-bolt"></i> Index into Vector Store
+              </button>
+            </form>
+          </div>
+
+          <div class="glass-card">
+            <div class="card-header">
+              <h3><i class="fa-solid fa-database"></i> Vector Store Index Information</h3>
+            </div>
+            <div class="info-box">
+              <div class="info-item">
+                <i class="fa-solid fa-microchip"></i>
+                <div>
+                  <strong>Embedding Model</strong>
+                  <p>sentence-transformers/all-MiniLM-L6-v2 (384 dims)</p>
+                </div>
+              </div>
+              <div class="info-item">
+                <i class="fa-solid fa-cubes"></i>
+                <div>
+                  <strong>Vector Database</strong>
+                  <p>ChromaDB Persistent Local Store</p>
+                </div>
+              </div>
+              <div class="info-item">
+                <i class="fa-solid fa-shield-halved"></i>
+                <div>
+                  <strong>Context Preparation</strong>
+                  <p>Automatic semantic deduplication (threshold 0.85) + token budgeting</p>
+                </div>
+              </div>
+            </div>
+            <div id="index-response" class="response-toast hidden"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TAB 3: VECTOR SEARCH QUERY -->
+      <section id="tab-search" class="tab-pane">
+        <div class="glass-card search-card">
+          <div class="card-header">
+            <h3><i class="fa-solid fa-magnifying-glass"></i> Direct Vector Similarity Search</h3>
+          </div>
+          <form id="search-form" class="form-layout horizontal">
+            <div class="form-group flex-grow">
+              <div class="input-with-icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" id="search-prompt" placeholder="Query the ChromaDB vector database (e.g., What is physical data independence?)" required>
+              </div>
+            </div>
+            <div class="form-group small">
+              <input type="number" id="search-top-k" value="3" min="1" max="20">
+            </div>
+            <button type="submit" id="search-btn" class="submit-btn primary">
+              <span>Search</span>
+            </button>
+          </form>
+
+          <div id="search-results" class="results-grid"></div>
+        </div>
+      </section>
+
+      <!-- TAB 4: SYSTEM HEALTH -->
+      <section id="tab-health" class="tab-pane">
+        <div class="glass-card">
+          <div class="card-header">
+            <h3><i class="fa-solid fa-heart-pulse"></i> Pipeline Architecture Status</h3>
+          </div>
+          <div class="health-grid">
+            <div class="health-card">
+              <div class="health-header">
+                <i class="fa-solid fa-server"></i>
+                <span>FastAPI Server</span>
+              </div>
+              <div class="health-value positive" id="health-api">Online</div>
+            </div>
+
+            <div class="health-card">
+              <div class="health-header">
+                <i class="fa-solid fa-database"></i>
+                <span>ChromaDB Vector Store</span>
+              </div>
+              <div class="health-value positive" id="health-vector">Active</div>
+            </div>
+
+            <div class="health-card">
+              <div class="health-header">
+                <i class="fa-solid fa-brain"></i>
+                <span>LLM Engine</span>
+              </div>
+              <div class="health-value" id="health-llm">OpenAI (gpt-4o-mini)</div>
+            </div>
+
+            <div class="health-card">
+              <div class="health-header">
+                <i class="fa-solid fa-filter"></i>
+                <span>Context Filter</span>
+              </div>
+              <div class="health-value">Semantic Dedup + Token Budget</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
