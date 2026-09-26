@@ -26,15 +26,16 @@ def query_handler(body: QueryRequest):
 @router.post("/index")
 def index_handler(file: UploadFile = File(...), doc_id: str = Form(...)):
     try:
-        # Save uploaded file to output/ directory
+        # Save uploaded file to output/ directory safely
+        safe_doc_id = os.path.basename(doc_id)
         os.makedirs("output", exist_ok=True)
-        file_path = f"output/{doc_id}_chunked.txt"
+        file_path = f"output/{safe_doc_id}_chunked.txt"
 
         with open(file_path, "wb") as f:
             f.write(file.file.read())
 
-        index_pdf_chunks(file_path, doc_id)
-        return {"message": "Indexed successfully", "doc_id": doc_id}
+        index_pdf_chunks(file_path, safe_doc_id)
+        return {"message": "Indexed successfully", "doc_id": safe_doc_id}
     
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))

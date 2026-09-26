@@ -6,6 +6,7 @@ class Settings(BaseSettings):
     # API KEYS
     OPENAI_API_KEY: str | None = None
     HUGGINGFACEHUB_API_TOKEN: str | None = None
+    HUGGINGFACE_API_KEY: str | None = None
 
     # PINECONE (global vector DB)
     PINECONE_API_KEY: str | None = None

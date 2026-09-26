@@ -9,12 +9,17 @@ from dotenv import load_dotenv
 load_dotenv()
 
 from huggingface_hub import login
-login(os.getenv("HUGGINGFACE_API_KEY"))
+hf_key = os.getenv("HUGGINGFACE_API_KEY") or os.getenv("HUGGINGFACEHUB_API_TOKEN")
+if hf_key:
+    login(hf_key)
+
 debug = os.getenv("DEBUG", "false").lower() == "true"
 
 nltk.download('punkt')
 nltk.download('punkt_tab')
+
 # Set up logging
+os.makedirs('logs', exist_ok=True)
 logging.basicConfig(
     filename='logs/chunking.log', 
     level=logging.INFO,
