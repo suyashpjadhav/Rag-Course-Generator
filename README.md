@@ -4,23 +4,23 @@ An intelligent, end-to-end **Retrieval-Augmented Generation (RAG)** system built
 
 ---
 
-## 🌟 Key Features
+## Key Features
 
-- ✂️ **Semantic Document Chunking**: Segments unstructured PDFs and web text based on sentence embeddings and cosine similarity thresholds, outputting to `.txt`, `.json`, and `.csv`.
-- 🌐 **Multi-Source Ingestion**: Supports local PDF files, web scraping (`BeautifulSoup` + `Readability`), and Firecrawl scraper integrations.
-- 🗄️ **Vector Database & Retrieval**: Fast, persistent embedding vector search using **ChromaDB** with optional Pinecone support.
-- 🎯 **Smart Context Filtering**:
+- **Semantic Document Chunking**: Segments unstructured PDFs and web text based on sentence embeddings and cosine similarity thresholds, outputting to `.txt`, `.json`, and `.csv`.
+- **Multi-Source Ingestion**: Supports local PDF files, web scraping (`BeautifulSoup` + `Readability`), and Firecrawl scraper integrations.
+- **Vector Database & Retrieval**: Fast, persistent embedding vector search using **ChromaDB** with optional Pinecone support.
+- **Smart Context Filtering**:
   - **Semantic Deduplication**: Eliminates redundant content using embedding vector thresholding.
   - **Token Budgeting**: Dynamically constrains retrieved context based on target module reading/learning time.
   - **Coverage Control**: Supports `focused` and `broad` context retrieval strategies.
-- 🤖 **Flexible LLM Backend**: Configurable integration with **OpenAI** (GPT-4/GPT-3.5) and **HuggingFace Inference Endpoints**.
-- ⚡ **DSPy Optimization Pipeline**: Programs, signatures, and modules for programmatic prompt tuning and output optimization.
-- 🚀 **RESTful API**: Fast, async web endpoints powered by **FastAPI** with CORS support.
-- 🐳 **Production Ready**: Includes `Dockerfile` and `render.yaml` for containerized cloud deployment (Render, AWS, GCP, Azure).
+- **Flexible LLM Backend**: Configurable integration with **OpenAI** (GPT-4/GPT-3.5) and **HuggingFace Inference Endpoints**.
+- **DSPy Optimization Pipeline**: Programs, signatures, and modules for programmatic prompt tuning and output optimization.
+- **RESTful API**: Fast, async web endpoints powered by **FastAPI** with CORS support.
+- **Production Ready**: Includes `Dockerfile` and `render.yaml` for containerized cloud deployment (Render, AWS, GCP, Azure).
 
 ---
 
-## 🏗️ Architecture Overview
+## Architecture Overview
 
 ```mermaid
 flowchart TD
@@ -40,7 +40,7 @@ flowchart TD
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```text
 Rag-Course-Generator/
@@ -75,7 +75,7 @@ Rag-Course-Generator/
 
 ---
 
-## ⚙️ Environment Configuration
+## Environment Configuration
 
 Create a `.env` file in the project root directory with the following environment variables:
 
@@ -100,7 +100,7 @@ DEBUG=false
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### 1. Prerequisites
 - **Python 3.9+** installed on your system.
@@ -137,7 +137,7 @@ DEBUG=false
 
 ---
 
-## 💻 Running the Application
+## Running the Application
 
 ### Option A: Run Batch PDF Chunking
 
@@ -158,11 +158,11 @@ uvicorn api.main:app --reload --host 0.0.0.0 --port 8000
 ```
 
 Access the interactive API documentation (Swagger UI) at:
-👉 **`http://localhost:8000/docs`**
+**`http://localhost:8000/docs`**
 
 ---
 
-## 🔌 API Endpoints Reference
+## API Endpoints Reference
 
 ### 1. Index a Document
 - **Endpoint**: `POST /api/index`
@@ -214,7 +214,7 @@ curl -X POST "http://localhost:8000/api/index" \
 
 ---
 
-## 🧪 Testing & Debugging
+## Testing & Debugging
 
 Run test suites and debug scripts using Python's `unittest` module:
 
@@ -228,7 +228,7 @@ python scripts/test_course_service.py
 
 ---
 
-## 🐳 Docker & Cloud Deployment
+## Docker & Cloud Deployment
 
 ### Run with Docker
 
@@ -250,7 +250,7 @@ This repository includes a pre-configured `render.yaml` specification for zero-c
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Please follow these steps:
 1. Fork the project repository.
@@ -258,9 +258,3 @@ Contributions are welcome! Please follow these steps:
 3. Commit your changes (`git commit -m 'Add some AmazingFeature'`).
 4. Push to the branch (`git push origin feature/AmazingFeature`).
 5. Open a Pull Request.
-
----
-
-## 📄 License
-
-Distributed under the MIT License. See `LICENSE` for more information.
